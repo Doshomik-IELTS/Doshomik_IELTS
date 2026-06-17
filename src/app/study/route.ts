@@ -34,8 +34,8 @@ export async function GET() {
     </div>
   `;
 
-  // Insert banner after <body> (which has class "dark")
-  html = html.replace('<body class="dark">', `<body class="dark">\n${banner}`);
+  // Insert banner after <body> (data-theme="blue")
+  html = html.replace('<body>', `<body data-theme="blue">\n${banner}`);
 
   return new NextResponse(html, {
     headers: { "Content-Type": "text/html; charset=utf-8" },
