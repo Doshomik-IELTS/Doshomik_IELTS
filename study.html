@@ -1,0 +1,3928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Study — Doshomik IELTS Vocabulary</title>
+<meta name="description" content="Practice IELTS vocabulary with 5 study modes: Flashcards, Learn, Test, Match, Blast."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1120'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-weight='700' fill='white'%3ED%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   DESIGN SYSTEM — shadcn-inspired CSS variables
+   Matches index.html exactly
+   ============================================ */
+:root {
+  --background: 42 58% 86%;
+  --foreground: 30 42% 14%;
+  --muted: 40 42% 80%;
+  --muted-foreground: 32 20% 38%;
+  --border: 38 32% 68%;
+  --ring: 30 42% 14%;
+  --card: 42 48% 90%;
+  --card-foreground: 30 42% 14%;
+  --popover: 42 48% 93%;
+  --popover-foreground: 30 42% 14%;
+  --primary: 40 90% 50%;
+  --primary-foreground: 40 40% 94%;
+  --secondary: 40 35% 82%;
+  --secondary-foreground: 30 42% 14%;
+  --input: 38 32% 68%;
+  --success: 142 60% 42%;
+  --success-foreground: 0 0% 100%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 20 40% 10%;
+  --destructive: 0 72% 48%;
+  --destructive-foreground: 0 0% 100%;
+  --info: 200 80% 48%;
+  --info-foreground: 0 0% 100%;
+  --hud-rgb: 180, 130, 60;
+  --hud-accent-rgb: 210, 160, 50;
+  --hud-panel-rgb: 255, 240, 210;
+  --hud-glow-rgb: 235, 185, 60;
+  --hero-canvas-opacity: 0.46;
+  --radius: 0.5rem;
+  --font-sans: 'Instrument Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* ============================================
+   THEME: Sky Blue — soothing night-study mode
+   ============================================ */
+[data-theme="blue"] {
+  --background: 215 25% 14%;
+  --foreground: 210 15% 88%;
+  --muted: 215 20% 20%;
+  --muted-foreground: 210 10% 62%;
+  --border: 215 18% 26%;
+  --ring: 210 15% 88%;
+  --card: 215 22% 17%;
+  --card-foreground: 210 15% 88%;
+  --popover: 215 22% 22%;
+  --popover-foreground: 210 15% 88%;
+  --primary: 200 75% 52%;
+  --primary-foreground: 215 25% 14%;
+  --secondary: 215 18% 24%;
+  --secondary-foreground: 210 15% 88%;
+  --input: 215 18% 26%;
+  --success: 160 60% 40%;
+  --success-foreground: 0 0% 95%;
+  --warning: 38 85% 50%;
+  --warning-foreground: 20 40% 10%;
+  --destructive: 350 70% 48%;
+  --destructive-foreground: 0 0% 95%;
+  --info: 200 70% 50%;
+  --info-foreground: 0 0% 95%;
+  --hud-rgb: 180, 200, 225;
+  --hud-accent-rgb: 64, 160, 255;
+  --hud-panel-rgb: 30, 45, 65;
+  --hud-glow-rgb: 64, 180, 255;
+  --hero-canvas-opacity: 0.25;
+}
+
+/* ============================================
+   THEME: Dark Forest — nature-inspired calm
+   ============================================ */
+[data-theme="green"] {
+  --background: 150 25% 10%;
+  --foreground: 140 8% 85%;
+  --muted: 150 20% 16%;
+  --muted-foreground: 140 6% 60%;
+  --border: 145 15% 22%;
+  --ring: 140 8% 85%;
+  --card: 150 22% 14%;
+  --card-foreground: 140 8% 85%;
+  --popover: 150 22% 18%;
+  --popover-foreground: 140 8% 85%;
+  --primary: 155 65% 42%;
+  --primary-foreground: 150 25% 10%;
+  --secondary: 150 20% 20%;
+  --secondary-foreground: 140 8% 85%;
+  --input: 145 15% 22%;
+  --success: 155 55% 40%;
+  --success-foreground: 0 0% 95%;
+  --warning: 35 80% 50%;
+  --warning-foreground: 20 40% 10%;
+  --destructive: 360 65% 45%;
+  --destructive-foreground: 0 0% 95%;
+  --info: 195 60% 45%;
+  --info-foreground: 0 0% 95%;
+  --hud-rgb: 160, 200, 170;
+  --hud-accent-rgb: 80, 200, 120;
+  --hud-panel-rgb: 25, 45, 35;
+  --hud-glow-rgb: 80, 210, 130;
+  --hero-canvas-opacity: 0.25;
+}
+
+/* ============================================
+   BASE RESET / UTILITY
+   ============================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(circle at 80% 12%, rgba(var(--hud-glow-rgb), 0.12), transparent 32rem),
+    radial-gradient(circle at 12% 85%, rgba(var(--hud-accent-rgb), 0.08), transparent 26rem),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; font-family: inherit; }
+ul { list-style: none; }
+
+.font-sans { font-family: var(--font-sans); }
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+.text-muted { color: hsl(var(--muted-foreground)); }
+.text-sm { font-size: 0.875rem; }
+.text-xs { font-size: 0.75rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.text-4xl { font-size: 2.25rem; }
+.text-center { text-align: center; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.max-w-\[1400px\] { max-width: 1400px; }
+.max-w-\[1200px\] { max-width: 1200px; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+.py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-12 { margin-bottom: 3rem; }
+.mb-16 { margin-bottom: 4rem; }
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
+.gap-4 { gap: 1rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.grid { display: grid; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.flex-col { flex-direction: column; }
+.flex-1 { flex: 1; }
+.shrink-0 { flex-shrink: 0; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.top-0 { top: 0; }
+.left-0 { left: 0; }
+.right-0 { right: 0; }
+.bottom-0 { bottom: 0; }
+.z-10 { z-index: 10; }
+.z-40 { z-index: 40; }
+.z-50 { z-index: 50; }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.overflow-hidden { overflow: hidden; }
+.leading-relaxed { line-height: 1.625; }
+.tracking-tight { letter-spacing: -0.025em; }
+.text-center { text-align: center; }
+.antialiased { -webkit-font-smoothing: antialiased; }
+.pointer-events-none { pointer-events: none; }
+.border { border: 1px solid hsl(var(--border)); }
+.border-b { border-bottom: 1px solid hsl(var(--border)); }
+.border-t { border-top: 1px solid hsl(var(--border)); }
+.rounded-full { border-radius: 9999px; }
+.rounded-xl { border-radius: 1rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.shadow-xs { box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); }
+.transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.duration-300 { transition-duration: 300ms; }
+.duration-500 { transition-duration: 500ms; }
+.duration-700 { transition-duration: 700ms; }
+.opacity-0 { opacity: 0; }
+.opacity-30 { opacity: 0.3; }
+.opacity-40 { opacity: 0.4; }
+.opacity-50 { opacity: 0.5; }
+.opacity-60 { opacity: 0.6; }
+.opacity-80 { opacity: 0.8; }
+.bg-transparent { background: transparent; }
+.bg-background { background: hsl(var(--background)); }
+.bg-foreground { background: hsl(var(--foreground)); }
+.bg-muted { background: hsl(var(--muted)); }
+.text-background { color: hsl(var(--background)); }
+.text-foreground { color: hsl(var(--foreground)); }
+.no-select { user-select: none; }
+.hidden { display: none; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+/* ============================================
+   HEADER (glassmorphism, matches index.html)
+   ============================================ */
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 50;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+header.scrolled {
+  background: hsl(var(--background) / 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid hsl(var(--border) / 0.3);
+}
+header nav {
+  margin: 0 auto;
+  max-width: 1400px;
+  transition: all 0.5s;
+}
+header .nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  height: 5rem;
+  transition: all 0.5s;
+}
+@media (min-width: 1024px) {
+  header .nav-inner { padding: 0 2rem; }
+}
+.logo { display: flex; align-items: center; gap: 0.5rem; }
+.logo-icon {
+  width: 36px; height: 36px;
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: -0.025em;
+}
+.logo-tm {
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  margin-top: 0.25rem;
+}
+.nav-links { display: none; gap: 3rem; }
+@media (min-width: 768px) { .nav-links { display: flex; } }
+.nav-links a {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  transition: color 0.3s;
+  position: relative;
+}
+.nav-links a:hover { color: hsl(var(--foreground)); }
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 1px;
+  background: hsl(var(--foreground));
+  transition: width 0.3s;
+}
+.nav-links a:hover::after { width: 100%; }
+.nav-actions { display: none; gap: 1rem; align-items: center; }
+@media (min-width: 768px) { .nav-actions { display: flex; } }
+.nav-actions a {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem;
+  transition: color 0.3s;
+}
+.nav-actions a:hover { color: hsl(var(--foreground)); }
+
+/* Mobile toggle */
+.mobile-toggle { display: block; padding: 0.5rem; background: none; border: none; color: hsl(var(--foreground)); }
+@media (min-width: 768px) { .mobile-toggle { display: none; } }
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: hsl(var(--background));
+  z-index: 40;
+  transition: all 0.5s;
+  opacity: 0;
+  pointer-events: none;
+}
+.mobile-overlay.open { opacity: 1; pointer-events: auto; }
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 7rem 2rem 2rem;
+}
+.mobile-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.mobile-links a {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: hsl(var(--foreground));
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all 0.5s;
+}
+.mobile-overlay.open .mobile-links a { opacity: 1; transform: translateY(0); }
+.mobile-overlay.open .mobile-links a:nth-child(1) { transition-delay: 0ms; }
+.mobile-overlay.open .mobile-links a:nth-child(2) { transition-delay: 50ms; }
+.mobile-overlay.open .mobile-links a:nth-child(3) { transition-delay: 100ms; }
+.mobile-overlay.open .mobile-links a:nth-child(4) { transition-delay: 150ms; }
+.mobile-overlay.open .mobile-links a:nth-child(5) { transition-delay: 200ms; }
+.mobile-buttons {
+  display: flex; gap: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid hsl(var(--border));
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all 0.5s 200ms;
+}
+.mobile-overlay.open .mobile-buttons { opacity: 1; transform: translateY(0); }
+.mobile-buttons .btn { flex: 1; height: 3.5rem; font-size: 1rem; }
+
+/* ============================================
+   BUTTONS (shadcn-style, matches index.html)
+   ============================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+  border-radius: 9999px;
+  text-decoration: none;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+.btn:disabled { pointer-events: none; opacity: 0.5; }
+.btn-sm { height: 2rem; padding: 0 1.25rem; }
+.btn-md { height: 2.5rem; padding: 0 1.5rem; }
+.btn-lg { height: 3.5rem; padding: 0 2rem; font-size: 1rem; }
+.btn-xl { height: 3.75rem; padding: 0 2rem; font-size: 1rem; border-radius: 9999px; }
+.btn-primary {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+}
+.btn-primary:hover { opacity: 0.9; }
+.btn-outline {
+  background: transparent;
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+}
+.btn-outline:hover { background: hsl(var(--foreground) / 0.05); }
+.btn-ghost {
+  background: transparent;
+  color: hsl(var(--muted-foreground));
+}
+.btn-ghost:hover { color: hsl(var(--foreground)); }
+.btn .icon-arrow {
+  width: 1rem; height: 1rem;
+  transition: transform 0.3s;
+}
+.btn:hover .icon-arrow { transform: translateX(2px); }
+
+/* Color accent buttons */
+.btn-success {
+  background: #10b981;
+  color: #fff;
+}
+.btn-success:hover { opacity: 0.9; }
+.btn-warning {
+  background: #f59e0b;
+  color: #fff;
+}
+.btn-warning:hover { opacity: 0.9; }
+.btn-danger {
+  background: #f43f5e;
+  color: #fff;
+}
+.btn-danger:hover { opacity: 0.9; }
+
+/* ============================================
+   REVEAL ANIMATIONS (scroll-triggered)
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ============================================
+   CHAR-IN ANIMATION
+   ============================================ */
+@keyframes charIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+.char-in {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(1rem);
+  animation: charIn 0.6s forwards;
+}
+
+/* ============================================
+   PAGE HEADER
+   ============================================ */
+.page-header {
+  padding: 8rem 0 3rem;
+  text-align: center;
+  position: relative;
+}
+.page-header .section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 1.5rem;
+}
+.page-header .section-tag .line {
+  width: 2rem; height: 1px;
+  background: hsl(var(--foreground) / 0.3);
+}
+.page-header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+}
+.page-header p {
+  font-size: 1.125rem;
+  color: hsl(var(--muted-foreground));
+  max-width: 32rem;
+  margin: 0 auto 2rem;
+}
+
+/* ============================================
+   MODE SELECTOR TABS
+   ============================================ */
+.mode-selector {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.5rem;
+  background: hsl(var(--muted));
+  border-radius: 9999px;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.mode-selector::-webkit-scrollbar { display: none; }
+@media (max-width: 767px) {
+  .mode-selector {
+    justify-content: flex-start;
+    border-radius: 9999px;
+    padding: 0.4rem;
+  }
+}
+.mode-tab {
+  flex-shrink: 0;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 9999px;
+  background: transparent;
+  color: hsl(var(--muted-foreground));
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+.mode-tab:hover { color: hsl(var(--foreground)); }
+.mode-tab.active {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+/* ============================================
+   STUDY CONTENT
+   ============================================ */
+.study-content {
+  padding: 2rem 1.5rem 4rem;
+  min-height: 60vh;
+}
+.study-content .max-w-\[1200px\] {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Mode panels */
+.mode-panel {
+  display: none;
+  animation: fadeIn 0.15s ease-out;
+}
+.mode-panel.active { display: block; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(8px); }
+}
+
+/* ============================================
+   FLASHCARDS MODE
+   ============================================ */
+.flashcard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.flashcard-progress {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+.flashcard-progress .progress-bar {
+  width: 100%;
+  height: 4px;
+  background: hsl(var(--muted));
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+.flashcard-progress .progress-bar .progress-fill {
+  height: 100%;
+  background: hsl(var(--foreground));
+  border-radius: 9999px;
+  transition: width 0.3s;
+}
+.flashcard-progress .progress-text {
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+}
+
+.flashcard {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+.flashcard-front, .flashcard-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--background));
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s;
+}
+.flashcard:hover .flashcard-front,
+.flashcard:hover .flashcard-back {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+.flashcard-back {
+  transform: rotateY(180deg);
+}
+.flashcard-front .word {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.flashcard-front .type {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+  padding: 0.25rem 0.75rem;
+  background: hsl(var(--muted));
+  border-radius: 9999px;
+}
+.flashcard-back .definition {
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.flashcard-hint {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground) / 0.6);
+  margin-top: 0.5rem;
+}
+
+/* Pronounce button */
+.word-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.btn-pronounce {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--muted));
+  color: hsl(var(--foreground));
+  cursor: pointer;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+.btn-pronounce:hover {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  border-color: hsl(var(--foreground));
+}
+.btn-pronounce:active {
+  transform: scale(0.92);
+}
+.btn-pronounce.playing {
+  background: hsl(142 76% 36%);
+  color: white;
+  border-color: hsl(142 76% 36%);
+}
+
+/* Flashcard hint overlay */
+.fc-hint-area {
+  min-height: 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+  transition: all 0.3s;
+}
+.fc-hint-area.active {
+  color: hsl(var(--foreground));
+  font-style: italic;
+}
+
+.flashcard-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flashcard-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.flashcard-nav button {
+  width: 48px; height: 48px;
+  border-radius: 9999px;
+  border: 1px solid hsl(var(--border));
+  background: transparent;
+  color: hsl(var(--foreground));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.flashcard-nav button:hover {
+  background: hsl(var(--foreground) / 0.05);
+  border-color: hsl(var(--foreground) / 0.3);
+}
+.flashcard-nav button:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Completion screen */
+.completion-screen {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.completion-screen .icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.completion-screen h2 {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+.completion-screen p {
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 0.5rem;
+}
+.completion-screen .stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.completion-screen .stat-item {
+  text-align: center;
+}
+.completion-screen .stat-item .num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  display: block;
+}
+.completion-screen .stat-item .label {
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+}
+
+/* ============================================
+   LEARN MODE
+   ============================================ */
+.learn-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.learn-progress {
+  margin-bottom: 2rem;
+}
+.learn-progress .progress-bar {
+  width: 100%;
+  height: 4px;
+  background: hsl(var(--muted));
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+.learn-progress .progress-bar .progress-fill {
+  height: 100%;
+  background: hsl(var(--foreground));
+  border-radius: 9999px;
+  transition: width 0.3s;
+}
+.learn-progress .progress-text {
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+}
+.learn-score {
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+  margin-top: 0.25rem;
+}
+
+.learn-question {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.learn-question .word {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.learn-question .type {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+  padding: 0.25rem 0.75rem;
+  background: hsl(var(--muted));
+  border-radius: 9999px;
+  display: inline-block;
+}
+.learn-question .prompt {
+  font-size: 1rem;
+  color: hsl(var(--muted-foreground));
+  margin-top: 1rem;
+}
+
+.learn-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.learn-option {
+  padding: 1rem 1.5rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.75rem;
+  background: transparent;
+  color: hsl(var(--foreground));
+  text-align: left;
+  font-size: 1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  line-height: 1.5;
+}
+.learn-option:hover {
+  border-color: hsl(var(--foreground) / 0.3);
+  background: hsl(var(--foreground) / 0.03);
+}
+.learn-option.selected-correct {
+  border-color: #10b981;
+  background: hsl(152 76% 95%);
+  color: hsl(152 80% 20%);
+}
+.learn-option.selected-incorrect {
+  border-color: #f43f5e;
+  background: hsl(346 100% 95%);
+  color: hsl(346 80% 25%);
+}
+.learn-option.show-correct {
+  border-color: #10b981;
+  background: hsl(152 76% 95%);
+  color: hsl(152 80% 20%);
+}
+.learn-option:disabled {
+  cursor: default;
+}
+.learn-option .option-key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; height: 24px;
+  border-radius: 4px;
+  background: hsl(var(--muted));
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.learn-explanation {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  background: hsl(var(--muted));
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  display: none;
+}
+.learn-explanation.show { display: block; }
+.learn-explanation .correct-text {
+  color: #10b981;
+  font-weight: 600;
+}
+.learn-explanation .incorrect-text {
+  color: #f43f5e;
+  font-weight: 600;
+}
+
+/* ============================================
+   TEST MODE
+   ============================================ */
+.test-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.test-progress {
+  flex: 1;
+  min-width: 150px;
+}
+.test-progress .progress-bar {
+  width: 100%;
+  height: 4px;
+  background: hsl(var(--muted));
+  border-radius: 9999px;
+  overflow: hidden;
+}
+.test-progress .progress-bar .progress-fill {
+  height: 100%;
+  background: hsl(var(--foreground));
+  border-radius: 9999px;
+  transition: width 0.3s;
+}
+.test-timer {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  color: hsl(var(--muted-foreground));
+}
+.test-score {
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+}
+
+.test-question {
+  margin-bottom: 2rem;
+}
+.test-question .question-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+  margin-bottom: 0.75rem;
+}
+.test-question .definition {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.test-question .word-display {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.test-question .type-display {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+  margin-bottom: 1rem;
+}
+
+.test-mc-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.test-mc-option {
+  padding: 1rem 1.5rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.75rem;
+  background: transparent;
+  color: hsl(var(--foreground));
+  text-align: left;
+  font-size: 1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.test-mc-option:hover {
+  border-color: hsl(var(--foreground) / 0.3);
+}
+.test-mc-option.selected-correct {
+  border-color: #10b981;
+  background: hsl(152 76% 95%);
+  color: hsl(152 80% 20%);
+}
+.test-mc-option.selected-incorrect {
+  border-color: #f43f5e;
+  background: hsl(346 100% 95%);
+  color: hsl(346 80% 25%);
+}
+.test-mc-option.show-correct {
+  border-color: #10b981;
+  background: hsl(152 76% 95%);
+  color: hsl(152 80% 20%);
+}
+.test-mc-option:disabled { cursor: default; }
+
+.test-type-area {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.test-type-area input {
+  padding: 1rem 1.25rem;
+  border: 2px solid hsl(var(--border));
+  border-radius: 0.75rem;
+  background: transparent;
+  color: hsl(var(--foreground));
+  font-size: 1.25rem;
+  outline: none;
+  transition: border-color 0.3s;
+  font-family: var(--font-sans);
+}
+.test-type-area input:focus {
+  border-color: hsl(var(--foreground) / 0.5);
+}
+.test-type-area input.correct {
+  border-color: #10b981;
+}
+.test-type-area input.incorrect {
+  border-color: #f43f5e;
+}
+.test-type-area input:disabled {
+  opacity: 0.6;
+}
+.test-type-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.test-feedback {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  display: none;
+}
+.test-feedback.show { display: block; }
+.test-feedback.correct {
+  background: hsl(152 76% 95%);
+  color: hsl(152 80% 20%);
+  border: 1px solid #10b981;
+}
+.test-feedback.incorrect {
+  background: hsl(346 100% 95%);
+  color: hsl(346 80% 25%);
+  border: 1px solid #f43f5e;
+}
+
+/* Test results */
+.test-results {
+  text-align: center;
+  padding: 2rem;
+}
+.test-results .big-score {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+.test-results .score-label {
+  font-size: 1rem;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 2rem;
+}
+.test-results .result-stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.test-results .result-stats .stat {
+  text-align: center;
+}
+.test-results .result-stats .stat .num {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  display: block;
+}
+.test-results .result-stats .stat .label {
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+}
+.test-results .incorrect-list {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+.test-results .incorrect-list h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.test-results .incorrect-item {
+  padding: 0.75rem 1rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.test-results .incorrect-item .wrong {
+  color: #f43f5e;
+}
+.test-results .incorrect-item .right {
+  color: #10b981;
+}
+
+/* ============================================
+   MATCH MODE
+   ============================================ */
+.match-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.match-timer {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+}
+.match-attempts {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+}
+.match-best {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+}
+.match-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .match-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.match-card {
+  padding: 1rem;
+  border: 2px solid hsl(var(--border));
+  border-radius: 0.75rem;
+  background: hsl(var(--background));
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word;
+  user-select: none;
+}
+.match-card:hover {
+  border-color: hsl(var(--foreground) / 0.3);
+  transform: translateY(-1px);
+}
+.match-card.selected {
+  border-color: hsl(var(--foreground));
+  box-shadow: 0 0 0 2px hsl(var(--foreground) / 0.2);
+}
+.match-card.matched {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+  transition: all 0.4s;
+}
+.match-card.wrong {
+  border-color: #f43f5e;
+  animation: shake 0.4s;
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+.match-card.word-card {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.match-card.def-card {
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+}
+
+/* ============================================
+   BLAST MODE
+   ============================================ */
+.blast-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.blast-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.blast-score {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+}
+.blast-lives {
+  display: flex;
+  gap: 0.25rem;
+}
+.blast-life {
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+.blast-life.lost {
+  opacity: 0.2;
+  transform: scale(0.8);
+}
+.blast-level {
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+}
+
+.blast-play-area {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border: 2px solid hsl(var(--border));
+  border-radius: 1rem;
+  overflow: hidden;
+  background: hsl(var(--background));
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .blast-play-area { height: 350px; }
+}
+.blast-danger-line {
+  position: absolute;
+  bottom: 60px;
+  left: 0; right: 0;
+  height: 2px;
+  background: #f43f5e;
+  opacity: 0.5;
+}
+.blast-danger-line::before {
+  content: '';
+  position: absolute;
+  right: 0.5rem;
+  top: -1.25rem;
+  font-size: 0.625rem;
+  font-family: var(--font-mono);
+  color: #f43f5e;
+  opacity: 0.7;
+}
+
+.blast-asteroid {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 350px;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, hsl(var(--muted)), hsl(var(--background)));
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: none;
+  z-index: 5;
+}
+.blast-asteroid .ast-text {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: hsl(var(--foreground));
+}
+.blast-asteroid .ast-label {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+  margin-bottom: 0.5rem;
+}
+
+.blast-input-area {
+  display: flex;
+  gap: 0.75rem;
+}
+.blast-input-area input {
+  flex: 1;
+  padding: 0.875rem 1.25rem;
+  border: 2px solid hsl(var(--border));
+  border-radius: 9999px;
+  background: transparent;
+  color: hsl(var(--foreground));
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+  font-family: var(--font-sans);
+}
+.blast-input-area input:focus {
+  border-color: hsl(var(--foreground) / 0.5);
+}
+.blast-input-area input:disabled {
+  opacity: 0.5;
+}
+
+.blast-feedback {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9375rem;
+  min-height: 1.5rem;
+  transition: all 0.3s;
+}
+.blast-feedback.correct {
+  color: #10b981;
+}
+.blast-feedback.incorrect {
+  color: #f43f5e;
+}
+
+/* Blast explosion animation */
+@keyframes blastExplode {
+  0% { transform: translateX(-50%) scale(1); opacity: 1; }
+  50% { transform: translateX(-50%) scale(1.3); opacity: 0.6; }
+  100% { transform: translateX(-50%) scale(0); opacity: 0; }
+}
+.blast-asteroid.exploding {
+  animation: blastExplode 0.5s forwards;
+}
+
+/* Blast game over overlay */
+.blast-game-over {
+  position: absolute;
+  inset: 0;
+  background: hsl(var(--background) / 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  text-align: center;
+  padding: 2rem;
+}
+.blast-game-over h2 {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+.blast-game-over p {
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 0.25rem;
+}
+.blast-game-over .final-score {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.blast-game-over .btn {
+  margin-top: 1rem;
+}
+
+/* ============================================
+   BLOCKS MODE (Gravity-style)
+   ============================================ */
+.blocks-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.blocks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.blocks-score {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+}
+.blocks-lives {
+  display: flex;
+  gap: 0.25rem;
+}
+.blocks-life {
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+.blocks-life.lost {
+  opacity: 0.2;
+  transform: scale(0.8);
+}
+.blocks-level {
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+}
+
+.blocks-play-area {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border: 2px solid hsl(var(--border));
+  border-radius: 1rem;
+  overflow: hidden;
+  background: hsl(var(--background));
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .blocks-play-area { height: 350px; }
+}
+.blocks-danger-line {
+  position: absolute;
+  bottom: 60px;
+  left: 0; right: 0;
+  height: 2px;
+  background: #f43f5e;
+  opacity: 0.4;
+}
+
+.blocks-block {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 340px;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, hsl(222 47% 25%), hsl(222 47% 15%));
+  border: 1px solid hsl(222 40% 35%);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  text-align: center;
+  z-index: 5;
+  color: #f0f4ff;
+}
+.blocks-block .blocks-bn {
+  font-size: 0.8125rem;
+  font-style: italic;
+  color: hsl(222 30% 70%);
+  margin-bottom: 0.5rem;
+}
+.blocks-block .blocks-def {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.blocks-input-area {
+  display: flex;
+  gap: 0.75rem;
+}
+.blocks-input-area input {
+  flex: 1;
+  padding: 0.875rem 1.25rem;
+  border: 2px solid hsl(var(--border));
+  border-radius: 9999px;
+  background: transparent;
+  color: hsl(var(--foreground));
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+  font-family: var(--font-sans);
+}
+.blocks-input-area input:focus {
+  border-color: hsl(var(--foreground) / 0.5);
+}
+.blocks-input-area input:disabled {
+  opacity: 0.5;
+}
+
+.blocks-feedback {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9375rem;
+  min-height: 1.5rem;
+  transition: all 0.3s;
+}
+.blocks-feedback.correct {
+  color: #10b981;
+}
+.blocks-feedback.incorrect {
+  color: #f43f5e;
+}
+
+/* Blocks explosion animation */
+@keyframes blocksExplode {
+  0% { transform: translateX(-50%) scale(1); opacity: 1; }
+  50% { transform: translateX(-50%) scale(1.4); opacity: 0.5; }
+  100% { transform: translateX(-50%) scale(0); opacity: 0; }
+}
+.blocks-block.exploding {
+  animation: blocksExplode 0.5s forwards;
+}
+
+/* Blocks game over overlay */
+.blocks-game-over {
+  position: absolute;
+  inset: 0;
+  background: hsl(var(--background) / 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  text-align: center;
+  padding: 2rem;
+}
+.blocks-game-over h2 {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+.blocks-game-over p {
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 0.25rem;
+}
+.blocks-game-over .final-score {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.blocks-game-over .btn {
+  margin-top: 1rem;
+}
+
+/* ============================================
+   TOAST
+   ============================================ */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  z-index: 100;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  padding: 4rem 0 2rem;
+  border-top: 1px solid hsl(var(--border));
+}
+.footer-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+.footer-brand .logo-text { display: block; margin-bottom: 0.75rem; }
+.footer-brand p {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  max-width: 20rem;
+  line-height: 1.6;
+}
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.footer-social a {
+  width: 36px; height: 36px;
+  border-radius: 9999px;
+  border: 1px solid hsl(var(--border));
+  display: flex; align-items: center; justify-content: center;
+  color: hsl(var(--muted-foreground));
+  transition: all 0.3s;
+}
+.footer-social a:hover {
+  color: hsl(var(--foreground));
+  border-color: hsl(var(--foreground) / 0.5);
+}
+.footer-col h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.footer-col ul li { margin-bottom: 0.5rem; }
+.footer-col ul li a {
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+  transition: color 0.3s;
+}
+.footer-col ul li a:hover { color: hsl(var(--foreground)); }
+.footer-bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid hsl(var(--border));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+}
+.footer-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-status .dot {
+  width: 8px; height: 8px;
+  border-radius: 9999px;
+  background: hsl(142 72% 29%);
+  animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground)); }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (min-width: 640px) {
+  .text-4xl { font-size: 3rem; }
+}
+@media (min-width: 1024px) {
+  .px-6 { padding-left: 2rem; padding-right: 2rem; }
+}
+
+/* ============================================
+   FLASHCARD BACK — new display elements
+   ============================================ */
+.flashcard-bn {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: hsl(var(--muted-foreground));
+  text-align: center;
+  margin-bottom: 0.75rem;
+  direction: rtl;
+}
+.flashcard-detail {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 90%;
+  margin-bottom: 0.25rem;
+}
+.detail-label {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-family: var(--font-mono);
+}
+.detail-value {
+  color: hsl(var(--foreground));
+}
+
+/* Learn mode hint (Bangla) */
+.learn-bn-hint {
+  font-size: 0.9375rem;
+  font-style: italic;
+  color: hsl(var(--muted-foreground));
+  margin-top: 0.75rem;
+  direction: rtl;
+}
+
+/* Utility additions */
+@keyframes pulse-ring {
+  0% { r: 20; opacity: 0.5; }
+  100% { r: 60; opacity: 0; }
+}
+
+/* ============================================
+   THEME TOGGLE (matches index.html)
+   ============================================ */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 9999px;
+  border: 1px solid hsl(var(--border));
+  background: transparent;
+  color: hsl(var(--muted-foreground));
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+.theme-toggle:hover {
+  color: hsl(var(--foreground));
+  border-color: hsl(var(--foreground) / 0.5);
+  background: hsl(var(--foreground) / 0.05);
+}
+.theme-toggle svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s;
+}
+.theme-toggle:hover svg {
+  transform: rotate(15deg);
+}
+.theme-toggle .sun-icon { display: block; }
+.theme-toggle .moon-icon,
+.theme-toggle .leaf-icon { display: none; }
+[data-theme="blue"] .theme-toggle .sun-icon { display: none; }
+[data-theme="blue"] .theme-toggle .moon-icon { display: block; }
+[data-theme="green"] .theme-toggle .sun-icon,
+[data-theme="green"] .theme-toggle .moon-icon { display: none; }
+[data-theme="green"] .theme-toggle .leaf-icon { display: block; }
+</style>
+</head>
+<body data-theme="blue">
+
+<!-- ============================================
+     HEADER (glassmorphism, matches index.html)
+     ============================================ -->
+<header id="header" role="banner">
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">D</div>
+        <div>
+          <span class="logo-text">Doshomik</span>
+          <span class="logo-tm">IELTS</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/study">Study</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggleDesktop" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="leaf-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 19 2c1 2 2 4.5 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+        </button>
+        <a href="/login">Sign in</a>
+        <a href="/register"><button class="btn btn-primary btn-sm">Sign up</button></a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay" id="mobileOverlay" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <div class="mobile-menu">
+      <div class="mobile-links">
+        <a href="/" class="mobile-link">Home</a>
+        <a href="/dashboard" class="mobile-link">Dashboard</a>
+        <a href="/study" class="mobile-link">Study</a>
+        <a href="/login" class="mobile-link">Sign in</a>
+        <a href="/register" class="mobile-link">Sign up</a>
+      </div>
+      <div class="mobile-buttons">
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="leaf-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 19 2c1 2 2 4.5 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+        </button>
+        <a href="/login" class="btn btn-outline btn-xl" style="text-decoration:none;">Sign in</a>
+        <a href="/register" class="btn btn-primary btn-xl" style="text-decoration:none;">Sign up</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================
+     PAGE HEADER
+     ============================================ -->
+<section class="page-header">
+  <div class="max-w-[1200px] mx-auto px-6">
+    <div class="section-tag reveal">
+      <span class="line"></span>
+      IELTS Vocabulary Practice
+    </div>
+    <h1 class="section-title" id="pageTitle">Study Mode</h1>
+    <p class="reveal">Master 300 essential IELTS vocabulary words with <span class="text-muted">6 interactive study modes</span>.</p>
+
+    <!-- Mode selector tabs -->
+    <div class="mode-selector reveal" id="modeSelector">
+      <button class="mode-tab active" data-mode="flashcards">Flashcards</button>
+      <button class="mode-tab" data-mode="learn">Learn</button>
+      <button class="mode-tab" data-mode="test">Test</button>
+      <button class="mode-tab" data-mode="match">Match</button>
+      <button class="mode-tab" data-mode="blast">Blast</button>
+      <button class="mode-tab" data-mode="blocks">Blocks</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     STUDY CONTENT
+     ============================================ -->
+<section class="study-content">
+  <div class="max-w-[1200px] mx-auto px-6">
+
+    <!-- ==========================================
+         MODE 1: FLASHCARDS
+         ========================================== -->
+    <div class="mode-panel active" id="panel-flashcards">
+      <div class="flashcard-container" id="flashcardContainer">
+        <div class="flashcard-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" id="fcProgressFill" style="width:0%"></div>
+          </div>
+          <div class="progress-text" id="fcProgressText">1 / 150</div>
+        </div>
+
+        <div class="flashcard" id="flashcard">
+          <div class="flashcard-inner">
+            <div class="flashcard-front" id="fcFront">
+              <div class="word-row">
+                <div class="word" id="fcWord">Analyze</div>
+                <button class="btn-pronounce" id="fcPronounce" aria-label="Pronounce word" title="Pronounce">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                </button>
+              </div>
+              <div class="fc-hint-area" id="fcHintArea"></div>
+              <span class="type" id="fcType">verb</span>
+            </div>
+            <div class="flashcard-back" id="fcBack">
+              <div class="flashcard-bn" id="fcBn">বিশ্লেষণ করা</div>
+              <div class="definition" id="fcDef">To examine something in detail to understand it better.</div>
+              <div class="flashcard-detail"><span class="detail-label">Synonym: </span><span class="detail-value" id="fcSynonym">Examine, Investigate, Study</span></div>
+              <div class="flashcard-detail" id="fcAntonymRow"><span class="detail-label">Antonym: </span><span class="detail-value" id="fcAntonym">Ignore, Overlook, Neglect</span></div>
+              <div class="flashcard-detail"><span class="detail-label">Example: </span><span class="detail-value" id="fcExample">Scientists analyze data to draw conclusions.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard-hint">Tap to flip · Use ← → keys to navigate</div>
+
+        <div class="flashcard-nav">
+          <button id="fcPrev" aria-label="Previous card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button id="fcNext" aria-label="Next card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+
+        <div class="flashcard-actions">
+          <button class="btn btn-ghost btn-sm" id="fcHintBtn">💡 Hint</button>
+          <button class="btn btn-success" id="fcGotIt">Got it ✓</button>
+          <button class="btn btn-warning" id="fcStudyAgain">Study Again ↻</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         MODE 2: LEARN
+         ========================================== -->
+    <div class="mode-panel" id="panel-learn">
+      <div class="learn-container" id="learnContainer">
+        <div class="learn-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" id="learnProgressFill" style="width:0%"></div>
+          </div>
+          <div class="flex justify-between">
+            <span class="progress-text" id="learnProgressText">Word 1 of 150</span>
+            <span class="learn-score" id="learnScoreDisplay">0 correct / 0 attempted — 0%</span>
+          </div>
+        </div>
+
+        <div class="learn-question" id="learnQuestion">
+          <div class="word-row">
+            <div class="word" id="learnWord">Analyze</div>
+            <button class="btn-pronounce" id="learnPronounce" aria-label="Pronounce word" title="Pronounce">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </button>
+          </div>
+          <span class="type" id="learnType">v.</span>
+          <div class="flashcard-bn" id="learnBnHint" style="margin-top:0.75rem;font-size:0.9375rem;">বিশ্লেষণ করা</div>
+          <div class="prompt">Which definition matches this word?</div>
+        </div>
+
+        <div class="learn-options" id="learnOptions">
+          <!-- Options injected by JS -->
+        </div>
+
+        <div class="learn-explanation" id="learnExplanation">
+          <span id="learnExplanationText"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         MODE 3: TEST
+         ========================================== -->
+    <div class="mode-panel" id="panel-test">
+      <div class="test-container" id="testContainer">
+        <div class="test-header">
+          <div class="test-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" id="testProgressFill" style="width:0%"></div>
+            </div>
+            <span class="test-score" id="testProgressText">0 / 150</span>
+          </div>
+          <span class="test-timer" id="testTimer">00:00</span>
+        </div>
+
+        <div class="test-question" id="testQuestion">
+          <div class="question-label" id="testQuestionLabel">Multiple Choice</div>
+          <div class="definition" id="testDefinition">What is the definition of this word?</div>
+          <div class="word-row">
+            <div class="word-display" id="testWordDisplay">Analyze</div>
+            <button class="btn-pronounce" id="testPronounce" aria-label="Pronounce word" title="Pronounce">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </button>
+          </div>
+          <div class="type-display" id="testTypeDisplay">verb</div>
+        </div>
+
+        <div id="testContent">
+          <!-- MC options or type area injected by JS -->
+        </div>
+
+        <div class="test-feedback" id="testFeedback">
+          <span id="testFeedbackText"></span>
+        </div>
+
+        <div class="flex gap-3" style="margin-top:1rem;">
+          <button class="btn btn-ghost" id="testSkipBtn">Skip</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         MODE 4: MATCH
+         ========================================== -->
+    <div class="mode-panel" id="panel-match">
+      <div class="match-container" id="matchContainer">
+        <div class="match-header">
+          <div>
+            <div class="match-timer" id="matchTimer">00:00</div>
+            <div class="match-best" id="matchBestDisplay"></div>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="match-attempts" id="matchAttempts">Attempts: 0</span>
+            <button class="btn btn-primary btn-sm" id="matchNewGame">New Game</button>
+          </div>
+        </div>
+        <div class="match-grid" id="matchGrid">
+          <!-- Cards injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         MODE 5: BLAST
+         ========================================== -->
+    <div class="mode-panel" id="panel-blast">
+      <div class="blast-container" id="blastContainer">
+        <div class="blast-header">
+          <div class="blast-score" id="blastScoreDisplay">Score: 0</div>
+          <div class="blast-lives" id="blastLives">
+            <span class="blast-life" id="life1">❤</span>
+            <span class="blast-life" id="life2">❤</span>
+            <span class="blast-life" id="life3">❤</span>
+          </div>
+          <div class="blast-level" id="blastLevelDisplay">Level 1</div>
+        </div>
+
+        <div class="blast-play-area" id="blastPlayArea">
+          <div class="blast-danger-line"></div>
+          <div class="blast-asteroid" id="blastAsteroid">
+            <div class="ast-label">Definition</div>
+            <div class="ast-text" id="blastAstText">To examine something in detail to understand it better.</div>
+          </div>
+          <!-- Game over overlay initially hidden -->
+          <div class="blast-game-over hidden" id="blastGameOver">
+            <h2>Game Over!</h2>
+            <p id="blastGameOverMsg">You ran out of lives.</p>
+            <div class="final-score" id="blastFinalScore">0</div>
+            <p>points</p>
+            <button class="btn btn-primary" id="blastPlayAgain">Play Again</button>
+          </div>
+        </div>
+
+        <div class="blast-input-area">
+          <input type="text" id="blastInput" placeholder="Type the word..." autocomplete="off" autocapitalize="none" spellcheck="false">
+          <button class="btn btn-primary" id="blastSubmit">Blast!</button>
+        </div>
+        <div class="blast-feedback" id="blastFeedback"></div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         MODE 6: BLOCKS (Gravity-style)
+         ========================================== -->
+    <div class="mode-panel" id="panel-blocks">
+      <div class="blocks-container" id="blocksContainer">
+        <div class="blocks-header">
+          <div class="blocks-score" id="blocksScoreDisplay">Score: 0</div>
+          <div class="blocks-lives">
+            <span class="blocks-life" id="blocksLife1">❤</span>
+            <span class="blocks-life" id="blocksLife2">❤</span>
+            <span class="blocks-life" id="blocksLife3">❤</span>
+          </div>
+          <div class="blocks-level" id="blocksLevelDisplay">Level 1</div>
+        </div>
+
+        <div class="blocks-play-area" id="blocksPlayArea">
+          <div class="blocks-danger-line"></div>
+          <div class="blocks-block" id="blocksBlock">
+            <div class="blocks-bn" id="blocksBn">বাংলা অর্থ</div>
+            <div class="blocks-def" id="blocksDef">Definition</div>
+          </div>
+          <!-- Game over overlay -->
+          <div class="blocks-game-over hidden" id="blocksGameOver">
+            <h2>Game Over!</h2>
+            <p id="blocksGameOverMsg">You ran out of lives.</p>
+            <div class="final-score" id="blocksFinalScore">0</div>
+            <p>points</p>
+            <button class="btn btn-primary" id="blocksPlayAgain">Play Again</button>
+          </div>
+        </div>
+
+        <div class="blocks-input-area">
+          <input type="text" id="blocksInput" placeholder="Type the word..." autocomplete="off" autocapitalize="none" spellcheck="false">
+          <button class="btn btn-primary" id="blocksSubmit">Enter</button>
+        </div>
+        <div class="blocks-feedback" id="blocksFeedback"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================
+     FOOTER (matches index.html style)
+     ============================================ -->
+<footer>
+  <div class="max-w-[1400px] mx-auto px-6">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">Doshomik</span>
+        <p style="margin-bottom:1rem;">Focused IELTS vocabulary practice with flashcards, learn mode, tests, matching, and speed recall.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+          <div class="footer-col"><h4>Product</h4><ul><li><a href="/">Home</a></li><li><a href="/dashboard">Dashboard</a></li><li><a href="/study">Study</a></li></ul></div>
+          <div class="footer-col"><h4>IELTS</h4><ul><li><a href="/#">Reading</a></li><li><a href="/#">Listening</a></li><li><a href="/#">Writing</a></li></ul></div>
+          <div class="footer-col"><h4>Trust</h4><ul><li><a href="/">Original content</a></li><li><a href="/">Private attempts</a></li><li><a href="/">Unofficial estimates</a></li></ul></div>
+      <div class="footer-col"><h4>Progress</h4><ul><li><a href="#" id="resetProgressLink">Reset Study Progress</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Doshomik IELTS. All rights reserved.</span>
+      <div class="footer-status">
+        <span class="dot"></span>
+        Study progress saved locally
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast for notifications -->
+<div class="toast" id="toast"></div>
+
+<!-- ============================================
+     JAVASCRIPT
+     ============================================ -->
+<script>
+(function() {
+  'use strict';
+
+  // ================================================
+  // VOCABULARY DATASET (300 words)
+  // ================================================
+  const vocabulary = [
+    // --- 1-35 ---
+    {id:1, word:"Analyze", type:"v.", meaning_en:"To examine something in detail to understand it better.", meaning_bn:"বিশ্লেষণ করা", synonym:"Examine, Investigate, Study", antonym:"Ignore, Overlook, Neglect", example:"Scientists analyze data to draw conclusions."},
+    {id:2, word:"Significant", type:"adj.", meaning_en:"Important or large enough to be noticed.", meaning_bn:"গুরুত্বপূর্ণ", synonym:"Notable, Remarkable, Substantial", antonym:"Insignificant, Trivial, Minor", example:"There has been a significant increase in population."},
+    {id:3, word:"Consequently", type:"adv.", meaning_en:"As a result or effect of something.", meaning_bn:"ফলস্বরূপ", synonym:"Therefore, Hence, Thus, Accordingly", antonym:"", example:"He was late; consequently, he missed the bus."},
+    {id:4, word:"Implement", type:"v.", meaning_en:"To put a plan or decision into effect.", meaning_bn:"বাস্তবায়ন করা", synonym:"Execute, Enforce, Apply", antonym:"Neglect, Abandon, Ignore", example:"The school will implement a new curriculum."},
+    {id:5, word:"Environment", type:"n.", meaning_en:"The surroundings or conditions in which a person lives.", meaning_bn:"পরিবেশ", synonym:"Surroundings, Habitat, Setting", antonym:"", example:"We must protect the environment for future generations."},
+    {id:6, word:"Potential", type:"adj.", meaning_en:"Having the capacity to develop or become something.", meaning_bn:"সম্ভাব্য", synonym:"Possible, Latent, Prospective", antonym:"Actual, Realized, Proven", example:"She has the potential to become a great writer."},
+    {id:7, word:"According to", type:"phr.", meaning_en:"As stated or reported by someone or something.", meaning_bn:"অনুসারে", synonym:"As per, In accordance with, As stated by", antonym:"", example:"According to the report, sales increased by 20%."},
+    {id:8, word:"Therefore", type:"adv.", meaning_en:"For that reason; consequently.", meaning_bn:"সুতরাং", synonym:"Thus, Hence, Consequently, Accordingly", antonym:"", example:"The evidence was clear; therefore, he was convicted."},
+    {id:9, word:"Economic", type:"adj.", meaning_en:"Relating to the economy or finances.", meaning_bn:"অর্থনৈতিক", synonym:"Financial, Monetary, Fiscal", antonym:"", example:"The country faces economic challenges."},
+    {id:10, word:"Establish", type:"v.", meaning_en:"To set up or create something on a firm basis.", meaning_bn:"প্রতিষ্ঠা করা", synonym:"Found, Create, Set up", antonym:"Abolish, Dismantle, Destroy", example:"They established a new company in 2020."},
+    {id:11, word:"Global", type:"adj.", meaning_en:"Relating to the whole world.", meaning_bn:"বৈশ্বিক", synonym:"Worldwide, International, Universal", antonym:"Local, Regional, Domestic", example:"Climate change is a global issue."},
+    {id:12, word:"Assume", type:"v.", meaning_en:"To suppose something without proof.", meaning_bn:"ধরে নেওয়া", synonym:"Presume, Suppose, Believe", antonym:"Know, Prove, Verify", example:"I assume you have completed the assignment."},
+    {id:13, word:"Contribute", type:"v.", meaning_en:"To give something to help achieve something.", meaning_bn:"অবদান রাখা", synonym:"Donate, Provide, Supply", antonym:"Withhold, Withdraw, Hinder", example:"Everyone should contribute to the team effort."},
+    {id:14, word:"Impact", type:"n.", meaning_en:"The effect or influence of something.", meaning_bn:"প্রভাব", synonym:"Effect, Influence, Consequence", antonym:"", example:"The new policy had a positive impact on education."},
+    {id:15, word:"Strategy", type:"n.", meaning_en:"A plan of action designed to achieve a long-term goal.", meaning_bn:"কৌশল", synonym:"Plan, Approach, Tactic", antonym:"", example:"The company developed a new marketing strategy."},
+    {id:16, word:"Innovation", type:"n.", meaning_en:"A new method, idea, or product.", meaning_bn:"উদ্ভাবন", synonym:"Invention, Creativity, Novelty", antonym:"", example:"Technological innovation drives progress."},
+    {id:17, word:"Acquire", type:"v.", meaning_en:"To gain or obtain something.", meaning_bn:"অর্জন করা", synonym:"Obtain, Gain, Attain", antonym:"Lose, Relinquish, Surrender", example:"She acquired new skills through training."},
+    {id:18, word:"Diverse", type:"adj.", meaning_en:"Showing a great deal of variety.", meaning_bn:"বৈচিত্র্যময়", synonym:"Varied, Assorted, Multifarious", antonym:"Uniform, Homogeneous, Identical", example:"The city has a diverse population."},
+    {id:19, word:"Efficient", type:"adj.", meaning_en:"Achieving maximum productivity with minimum waste.", meaning_bn:"কার্যকর", synonym:"Productive, Effective, Competent", antonym:"Inefficient, Wasteful, Ineffective", example:"The new system is more efficient than the old one."},
+    {id:20, word:"Sustain", type:"v.", meaning_en:"To maintain or keep something going.", meaning_bn:"টিকিয়ে রাখা", synonym:"Maintain, Continue, Preserve", antonym:"Deplete, Exhaust, Cease", example:"We must sustain economic growth."},
+    {id:21, word:"Approximately", type:"adv.", meaning_en:"Roughly; about; around.", meaning_bn:"প্রায়", synonym:"Roughly, Around, About", antonym:"Exactly, Precisely, Accurately", example:"The project will take approximately three months."},
+    {id:22, word:"Component", type:"n.", meaning_en:"A part or element of a larger whole.", meaning_bn:"উপাদান", synonym:"Element, Part, Constituent", antonym:"Whole, Entirety, Aggregate", example:"Each component of the machine must be checked."},
+    {id:23, word:"Generate", type:"v.", meaning_en:"To produce or create something.", meaning_bn:"উৎপন্ন করা", synonym:"Produce, Create, Yield", antonym:"Consume, Destroy, Reduce", example:"The wind turbines generate electricity."},
+    {id:24, word:"Interpret", type:"v.", meaning_en:"To explain or understand the meaning of something.", meaning_bn:"ব্যাখ্যা করা", synonym:"Explain, Clarify, Decipher", antonym:"Misunderstand, Confuse, Obscure", example:"It is difficult to interpret the data accurately."},
+    {id:25, word:"Legislation", type:"n.", meaning_en:"Laws enacted by a government body.", meaning_bn:"আইন", synonym:"Law, Statute, Regulation", antonym:"", example:"New legislation was passed to reduce pollution."},
+    {id:26, word:"Occur", type:"v.", meaning_en:"To happen or take place.", meaning_bn:"ঘটা", synonym:"Happen, Take place, Transpire", antonym:"", example:"The accident occurred at midnight."},
+    {id:27, word:"Principle", type:"n.", meaning_en:"A fundamental truth or rule.", meaning_bn:"নীতি", synonym:"Rule, Doctrine, Tenet", antonym:"", example:"The principle of equality is important."},
+    {id:28, word:"Regulate", type:"v.", meaning_en:"To control or supervise by rules.", meaning_bn:"নিয়ন্ত্রণ করা", synonym:"Control, Govern, Manage", antonym:"Deregulate, Loosen, Free", example:"The agency regulates the banking industry."},
+    {id:29, word:"Transfer", type:"v.", meaning_en:"To move from one place to another.", meaning_bn:"স্থানান্তর করা", synonym:"Move, Shift, Relocate", antonym:"Keep, Retain, Hold", example:"She transferred to a new university."},
+    {id:30, word:"Utilize", type:"v.", meaning_en:"To make practical use of something.", meaning_bn:"ব্যবহার করা", synonym:"Use, Employ, Apply", antonym:"Waste, Neglect, Misuse", example:"We should utilize renewable energy sources."},
+    {id:31, word:"Vary", type:"v.", meaning_en:"To change or differ.", meaning_bn:"পরিবর্তিত হওয়া", synonym:"Change, Differ, Fluctuate", antonym:"Remain constant, Stabilize, Persist", example:"Prices vary depending on the season."},
+    {id:32, word:"Adequate", type:"adj.", meaning_en:"Sufficient or satisfactory in quality.", meaning_bn:"পর্যাপ্ত", synonym:"Sufficient, Enough, Suitable", antonym:"Inadequate, Insufficient, Deficient", example:"The supply is adequate for our needs."},
+    {id:33, word:"Benefit", type:"n.", meaning_en:"An advantage or profit gained.", meaning_bn:"সুবিধা", synonym:"Advantage, Gain, Profit", antonym:"Disadvantage, Drawback, Harm", example:"The new policy has many benefits."},
+    {id:34, word:"Compensate", type:"v.", meaning_en:"To make up for something; to pay for work.", meaning_bn:"ক্ষতিপূরণ দেওয়া", synonym:"Reimburse, Reward, Repay", antonym:"Deprive, Penalize, Withhold", example:"The company compensates employees well."},
+    {id:35, word:"Demonstrate", type:"v.", meaning_en:"To show clearly; to prove.", meaning_bn:"প্রদর্শন করা", synonym:"Show, Prove, Exhibit", antonym:"Conceal, Hide, Disprove", example:"The experiment demonstrates the theory."},
+    // --- 36-70 ---
+    {id:36, word:"Perspective", type:"n.", meaning_en:"A particular way of viewing things.", meaning_bn:"দৃষ্টিভঙ্গি", synonym:"Viewpoint, Outlook, Standpoint", antonym:"", example:"The article offers a fresh perspective on the issue."},
+    {id:37, word:"Contemporary", type:"adj.", meaning_en:"Belonging to the present time.", meaning_bn:"সমসাময়িক", synonym:"Modern, Current, Present-day", antonym:"Outdated, Antique, Old-fashioned", example:"Contemporary art often challenges traditional boundaries."},
+    {id:38, word:"Conventional", type:"adj.", meaning_en:"Based on traditional customs or standards.", meaning_bn:"প্রচলিত", synonym:"Traditional, Standard, Orthodox", antonym:"Unconventional, Innovative, Radical", example:"Conventional farming methods are being replaced."},
+    {id:39, word:"Prevail", type:"v.", meaning_en:"To prove more powerful than opposing forces.", meaning_bn:"প্রবল হওয়া", synonym:"Triumph, Win, Overcome", antonym:"Fail, Surrender, Succumb", example:"Justice will prevail in the end."},
+    {id:40, word:"Advocate", type:"v.", meaning_en:"To publicly support or recommend.", meaning_bn:"সমর্থন করা", synonym:"Support, Endorse, Promote", antonym:"Oppose, Criticize, Reject", example:"Many experts advocate for renewable energy."},
+    {id:41, word:"Contradict", type:"v.", meaning_en:"To be in conflict with.", meaning_bn:"বিরোধ করা", synonym:"Oppose, Deny, Refute", antonym:"Agree, Confirm, Support", example:"His actions contradict his words."},
+    {id:42, word:"Hypothesis", type:"n.", meaning_en:"A proposed explanation for something.", meaning_bn:"অনুমান", synonym:"Theory, Assumption, Proposition", antonym:"", example:"The scientist tested her hypothesis through experiments."},
+    {id:43, word:"Methodology", type:"n.", meaning_en:"A system of methods used in a particular area.", meaning_bn:"পদ্ধতি", synonym:"Approach, Technique, Procedure", antonym:"", example:"The research methodology was carefully designed."},
+    {id:44, word:"Phenomenon", type:"n.", meaning_en:"A fact or event that can be observed.", meaning_bn:"ঘটনা", synonym:"Occurrence, Event, Incident", antonym:"", example:"The phenomenon was studied by many scientists."},
+    {id:45, word:"Paradigm", type:"n.", meaning_en:"A typical example or pattern of something.", meaning_bn:"দৃষ্টান্ত", synonym:"Model, Pattern, Framework", antonym:"", example:"This discovery represents a paradigm shift in physics."},
+    {id:46, word:"Empirical", type:"adj.", meaning_en:"Based on observation or experience.", meaning_bn:"অভিজ্ঞতাভিত্তিক", synonym:"Experimental, Observed, Practical", antonym:"Theoretical, Abstract, Speculative", example:"The study provides empirical evidence for the theory."},
+    {id:47, word:"Theoretical", type:"adj.", meaning_en:"Concerned with theory rather than practice.", meaning_bn:"তাত্ত্বিক", synonym:"Abstract, Conceptual, Academic", antonym:"Practical, Empirical, Applied", example:"Theoretical physics explores fundamental laws."},
+    {id:48, word:"Framework", type:"n.", meaning_en:"A basic structure underlying a system.", meaning_bn:"কাঠামো", synonym:"Structure, System, Outline", antonym:"", example:"The legal framework protects citizens' rights."},
+    {id:49, word:"Dimension", type:"n.", meaning_en:"An aspect or feature of a situation.", meaning_bn:"মাত্রা", synonym:"Aspect, Element, Facet", antonym:"", example:"The problem has several dimensions."},
+    {id:50, word:"Parameter", type:"n.", meaning_en:"A limit or boundary that defines a system.", meaning_bn:"পরামিতি", synonym:"Limit, Boundary, Criterion", antonym:"", example:"The experiment was conducted within set parameters."},
+    {id:51, word:"Variable", type:"n.", meaning_en:"An element that can change or vary.", meaning_bn:"পরিবর্তনশীল", synonym:"Factor, Element, Component", antonym:"Constant, Invariable, Fixed", example:"Temperature is an important variable in the experiment."},
+    {id:52, word:"Correlation", type:"n.", meaning_en:"A mutual relationship between two things.", meaning_bn:"সম্পর্ক", synonym:"Connection, Relation, Association", antonym:"", example:"There is a correlation between exercise and health."},
+    {id:53, word:"Inference", type:"n.", meaning_en:"A conclusion reached on the basis of evidence.", meaning_bn:"অনুমান", synonym:"Conclusion, Deduction, Reasoning", antonym:"", example:"The inference was drawn from the available data."},
+    {id:54, word:"Implication", type:"n.", meaning_en:"A possible consequence or effect.", meaning_bn:"প্রভাব", synonym:"Consequence, Outcome, Ramification", antonym:"", example:"The policy has far-reaching implications."},
+    {id:55, word:"Allocation", type:"n.", meaning_en:"The distribution of resources.", meaning_bn:"বণ্টন", synonym:"Distribution, Assignment, Apportionment", antonym:"", example:"The allocation of funds was carefully planned."},
+    {id:56, word:"Distribution", type:"n.", meaning_en:"The process of spreading something over an area.", meaning_bn:"বিতরণ", synonym:"Dispersion, Spreading, Allocation", antonym:"Collection, Gathering, Accumulation", example:"The distribution of resources was uneven."},
+    {id:57, word:"Accumulate", type:"v.", meaning_en:"To gather or collect over time.", meaning_bn:"সঞ্চয় করা", synonym:"Gather, Collect, Amass", antonym:"Disperse, Scatter, Distribute", example:"Dust accumulates on surfaces over time."},
+    {id:58, word:"Fluctuate", type:"v.", meaning_en:"To rise and fall irregularly.", meaning_bn:"ওঠানামা করা", synonym:"Oscillate, Vary, Alternate", antonym:"Stabilize, Steady, Remain constant", example:"Stock prices fluctuate throughout the day."},
+    {id:59, word:"Eliminate", type:"v.", meaning_en:"To completely remove or get rid of.", meaning_bn:"দূর করা", synonym:"Remove, Erase, Eradicate", antonym:"Preserve, Retain, Keep", example:"The new vaccine may eliminate the disease."},
+    {id:60, word:"Diminish", type:"v.", meaning_en:"To make or become less.", meaning_bn:"কমানো", synonym:"Reduce, Decrease, Lessen", antonym:"Increase, Grow, Expand", example:"The resources are diminishing rapidly."},
+    {id:61, word:"Enhance", type:"v.", meaning_en:"To improve the quality or value of something.", meaning_bn:"বৃদ্ধি করা", synonym:"Improve, Boost, Augment", antonym:"Diminish, Reduce, Impair", example:"The software enhances productivity."},
+    {id:62, word:"Optimize", type:"v.", meaning_en:"To make the best or most effective use of.", meaning_bn:"সর্বোত্তম করা", synonym:"Improve, Refine, Streamline", antonym:"Worsen, Degrade, Impair", example:"We need to optimize our production process."},
+    {id:63, word:"Facilitate", type:"v.", meaning_en:"To make an action or process easier.", meaning_bn:"সহজতর করা", synonym:"Enable, Ease, Simplify", antonym:"Hinder, Obstruct, Complicate", example:"The new system will facilitate communication."},
+    {id:64, word:"Expedite", type:"v.", meaning_en:"To make a process happen more quickly.", meaning_bn:"দ্রুততর করা", synonym:"Accelerate, Hasten, Speed up", antonym:"Delay, Slow, Hinder", example:"The shipment was expedited to arrive on time."},
+    {id:65, word:"Mitigate", type:"v.", meaning_en:"To make less severe or serious.", meaning_bn:"লাঘব করা", synonym:"Alleviate, Reduce, Lessen", antonym:"Aggravate, Intensify, Worsen", example:"Measures were taken to mitigate the damage."},
+    {id:66, word:"Alleviate", type:"v.", meaning_en:"To make suffering or a problem less severe.", meaning_bn:"উপশম করা", synonym:"Relieve, Ease, Lessen", antonym:"Aggravate, Worsen, Intensify", example:"Medicine helps alleviate the pain."},
+    {id:67, word:"Remedy", type:"n.", meaning_en:"A means of solving a problem.", meaning_bn:"প্রতিকার", synonym:"Solution, Cure, Treatment", antonym:"Problem, Issue, Cause", example:"There is no quick remedy for the crisis."},
+    {id:68, word:"Deteriorate", type:"v.", meaning_en:"To become progressively worse.", meaning_bn:"খারাপ হওয়া", synonym:"Decline, Worsen, Decay", antonym:"Improve, Recover, Strengthen", example:"The patient's condition deteriorated rapidly."},
+    {id:69, word:"Rejuvenate", type:"v.", meaning_en:"To make something look or feel younger or better.", meaning_bn:"পুনরুজ্জীবিত করা", synonym:"Revitalize, Renew, Refresh", antonym:"Exhaust, Deplete, Age", example:"The vacation helped rejuvenate her spirit."},
+    {id:70, word:"Consolidate", type:"v.", meaning_en:"To combine into a single more effective whole.", meaning_bn:"একত্র করা", synonym:"Unify, Combine, Merge", antonym:"Separate, Divide, Split", example:"The two departments were consolidated."},
+    // --- 71-105 ---
+    {id:71, word:"Autonomous", type:"adj.", meaning_en:"Having the freedom to govern itself.", meaning_bn:"স্বায়ত্তশাসিত", synonym:"Independent, Self-governing, Free", antonym:"Dependent, Controlled, Subordinate", example:"The region became an autonomous state."},
+    {id:72, word:"Viable", type:"adj.", meaning_en:"Capable of working successfully.", meaning_bn:"কার্যকর", synonym:"Feasible, Workable, Practical", antonym:"Impractical, Unworkable, Impossible", example:"The plan is economically viable."},
+    {id:73, word:"Feasible", type:"adj.", meaning_en:"Possible and practical to achieve.", meaning_bn:"সম্ভাবনীয়", synonym:"Achievable, Attainable, Realizable", antonym:"Impractical, Unattainable, Impossible", example:"The project is feasible within the budget."},
+    {id:74, word:"Coherent", type:"adj.", meaning_en:"Logical and consistent.", meaning_bn:"সুসংগত", synonym:"Logical, Consistent, Clear", antonym:"Incoherent, Confused, Disjointed", example:"She presented a coherent argument."},
+    {id:75, word:"Ambiguous", type:"adj.", meaning_en:"Open to more than one interpretation.", meaning_bn:"অস্পষ্ট", synonym:"Unclear, Vague, Equivocal", antonym:"Clear, Explicit, Unambiguous", example:"The statement was deliberately ambiguous."},
+    {id:76, word:"Elaborate", type:"adj.", meaning_en:"Involving many carefully arranged parts.", meaning_bn:"বিস্তারিত", synonym:"Detailed, Complex, Intricate", antonym:"Simple, Plain, Basic", example:"The plan was elaborate and comprehensive."},
+    {id:77, word:"Lucrative", type:"adj.", meaning_en:"Producing a great deal of profit.", meaning_bn:"লাভজনক", synonym:"Profitable, Gainful, Rewarding", antonym:"Unprofitable, Losing, Unrewarding", example:"Real estate can be a lucrative investment."},
+    {id:78, word:"Rigorous", type:"adj.", meaning_en:"Extremely thorough and careful.", meaning_bn:"কঠোর", synonym:"Strict, Thorough, Meticulous", antonym:"Careless, Lax, Negligent", example:"The research underwent rigorous testing."},
+    {id:79, word:"Stringent", type:"adj.", meaning_en:"Strict and precise.", meaning_bn:"কড়া", synonym:"Strict, Tight, Rigid", antonym:"Loose, Flexible, Lenient", example:"Stringent safety regulations were enforced."},
+    {id:80, word:"Superficial", type:"adj.", meaning_en:"Existing only at the surface level.", meaning_bn:"ভাসাভাসা", synonym:"Shallow, Surface, Cursory", antonym:"Deep, Thorough, Profound", example:"He has only a superficial understanding."},
+    {id:81, word:"Profound", type:"adj.", meaning_en:"Very great or intense; deeply meaningful.", meaning_bn:"গভীর", synonym:"Deep, Intense, Thoughtful", antonym:"Shallow, Superficial, Trivial", example:"The book had a profound impact on me."},
+    {id:82, word:"Trivial", type:"adj.", meaning_en:"Of little value or importance.", meaning_bn:"তুচ্ছ", synonym:"Unimportant, Minor, Petty", antonym:"Significant, Important, Major", example:"Don't waste time on trivial matters."},
+    {id:83, word:"Subtle", type:"adj.", meaning_en:"So delicate or precise as to be difficult to notice.", meaning_bn:"সূক্ষ্ম", synonym:"Faint, Delicate, Nuanced", antonym:"Obvious, Blatant, Overt", example:"There was a subtle difference in meaning."},
+    {id:84, word:"Explicit", type:"adj.", meaning_en:"Stated clearly with no room for confusion.", meaning_bn:"স্পষ্ট", synonym:"Clear, Direct, Plain", antonym:"Vague, Ambiguous, Implicit", example:"She gave explicit instructions."},
+    {id:85, word:"Implicit", type:"adj.", meaning_en:"Implied but not directly stated.", meaning_bn:"অন্তর্নিহিত", synonym:"Implied, Understood, Unspoken", antonym:"Explicit, Stated, Expressed", example:"Trust is implicit in their relationship."},
+    {id:86, word:"Inherent", type:"adj.", meaning_en:"Existing as a natural part of something.", meaning_bn:"সহজাত", synonym:"Intrinsic, Innate, Inborn", antonym:"Acquired, External, Added", example:"There are inherent risks in any investment."},
+    {id:87, word:"Integral", type:"adj.", meaning_en:"Necessary to make a whole complete.", meaning_bn:"অবিচ্ছেদ্য", synonym:"Essential, Fundamental, Vital", antonym:"Peripheral, Unnecessary, Optional", example:"Teamwork is integral to our success."},
+    {id:88, word:"Peripheral", type:"adj.", meaning_en:"Relating to the outer edges; minor.", meaning_bn:"গৌণ", synonym:"Marginal, Minor, Secondary", antonym:"Central, Core, Primary", example:"Peripheral issues were not discussed."},
+    {id:89, word:"Marginal", type:"adj.", meaning_en:"Relating to the edge; very small.", meaning_bn:"প্রান্তিক", synonym:"Minor, Slight, Borderline", antonym:"Significant, Major, Central", example:"The change had only a marginal effect."},
+    {id:90, word:"Paramount", type:"adj.", meaning_en:"More important than anything else.", meaning_bn:"সর্বোচ্চ", synonym:"Supreme, Primary, Foremost", antonym:"Minor, Secondary, Trivial", example:"Safety is of paramount importance."},
+    {id:91, word:"Predominant", type:"adj.", meaning_en:"Present as the strongest element.", meaning_bn:"প্রধান", synonym:"Dominant, Principal, Main", antonym:"Subordinate, Minor, Secondary", example:"English is the predominant language in business."},
+    {id:92, word:"Disparate", type:"adj.", meaning_en:"Essentially different in kind.", meaning_bn:"ভিন্ন", synonym:"Different, Dissimilar, Distinct", antonym:"Similar, Alike, Homogeneous", example:"They come from disparate backgrounds."},
+    {id:93, word:"Homogeneous", type:"adj.", meaning_en:"Of the same kind; uniform.", meaning_bn:"সমজাতীয়", synonym:"Uniform, Consistent, Alike", antonym:"Diverse, Heterogeneous, Varied", example:"The population is relatively homogeneous."},
+    {id:94, word:"Heterogeneous", type:"adj.", meaning_en:"Diverse in character or content.", meaning_bn:"বিষমজাতীয়", synonym:"Diverse, Varied, Mixed", antonym:"Homogeneous, Uniform, Similar", example:"The group was heterogeneous in age and background."},
+    {id:95, word:"Reciprocate", type:"v.", meaning_en:"To respond with a corresponding action.", meaning_bn:"প্রতিদান দেওয়া", synonym:"Return, Exchange, Respond", antonym:"Ignore, Withhold, Neglect", example:"She reciprocated his kindness."},
+    {id:96, word:"Congruent", type:"adj.", meaning_en:"In agreement or harmony.", meaning_bn:"সামঞ্জস্যপূর্ণ", synonym:"Compatible, Consistent, Harmonious", antonym:"Incompatible, Discordant, Conflicting", example:"Their findings are congruent with ours."},
+    {id:97, word:"Plausible", type:"adj.", meaning_en:"Seeming reasonable or probable.", meaning_bn:"যুক্তিযুক্ত", synonym:"Credible, Believable, Reasonable", antonym:"Implausible, Improbable, Unlikely", example:"The explanation seems plausible."},
+    {id:98, word:"Tentative", type:"adj.", meaning_en:"Not certain or fixed; provisional.", meaning_bn:"অস্থায়ী", synonym:"Provisional, Preliminary, Experimental", antonym:"Definite, Final, Confirmed", example:"We reached a tentative agreement."},
+    {id:99, word:"Conclusive", type:"adj.", meaning_en:"Settling a question decisively.", meaning_bn:"চূড়ান্ত", synonym:"Decisive, Definitive, Convincing", antonym:"Inconclusive, Uncertain, Questionable", example:"The evidence was conclusive."},
+    {id:100, word:"Plentiful", type:"adj.", meaning_en:"Existing in large amounts.", meaning_bn:"প্রচুর", synonym:"Abundant, Ample, Copious", antonym:"Scarce, Rare, Sparse", example:"The region has plentiful natural resources."},
+    {id:101, word:"Scarce", type:"adj.", meaning_en:"Insufficient for demand.", meaning_bn:"দুর্লভ", synonym:"Rare, Limited, Insufficient", antonym:"Plentiful, Abundant, Ample", example:"Water is scarce in the desert."},
+    {id:102, word:"Prudent", type:"adj.", meaning_en:"Acting with careful thought.", meaning_bn:"বিবেচক", synonym:"Cautious, Wise, Judicious", antonym:"Foolish, Reckless, Imprudent", example:"It is prudent to save money."},
+    {id:103, word:"Negligible", type:"adj.", meaning_en:"So small as to be meaningless.", meaning_bn:"নগণ্য", synonym:"Insignificant, Trivial, Minor", antonym:"Significant, Substantial, Considerable", example:"The difference was negligible."},
+    {id:104, word:"Prevalent", type:"adj.", meaning_en:"Widespread in a particular area.", meaning_bn:"প্রচলিত", synonym:"Common, Widespread, Pervasive", antonym:"Rare, Uncommon, Scarce", example:"The disease is prevalent in tropical regions."},
+    {id:105, word:"Prominent", type:"adj.", meaning_en:"Important; well-known.", meaning_bn:"প্রসিদ্ধ", synonym:"Famous, Distinguished, Eminent", antonym:"Obscure, Unknown, Unnoticed", example:"She is a prominent scientist."},
+    // --- 106-140 ---
+    {id:106, word:"Collaborate", type:"v.", meaning_en:"To work jointly on an activity.", meaning_bn:"সহযোগিতা করা", synonym:"Cooperate, Partner, Team up", antonym:"Compete, Oppose, Hinder", example:"The two companies collaborated on the project."},
+    {id:107, word:"Instigate", type:"v.", meaning_en:"To bring about by provoking action.", meaning_bn:"উস্কে দেওয়া", synonym:"Initiate, Provoke, Spark", antonym:"Suppress, Prevent, Deter", example:"He instigated a change in policy."},
+    {id:108, word:"Initiate", type:"v.", meaning_en:"To cause a process to begin.", meaning_bn:"শুরু করা", synonym:"Begin, Start, Launch", antonym:"End, Conclude, Terminate", example:"The company initiated a new training program."},
+    {id:109, word:"Terminate", type:"v.", meaning_en:"To bring to an end.", meaning_bn:"শেষ করা", synonym:"End, Conclude, Finish", antonym:"Begin, Start, Initiate", example:"The contract was terminated early."},
+    {id:110, word:"Perpetuate", type:"v.", meaning_en:"To cause something to continue indefinitely.", meaning_bn:"স্থায়ী করা", synonym:"Maintain, Continue, Preserve", antonym:"Stop, Cease, Halt", example:"This tradition perpetuates cultural values."},
+    {id:111, word:"Validate", type:"v.", meaning_en:"To confirm the truth or correctness of something.", meaning_bn:"প্রমাণ করা", synonym:"Confirm, Verify, Substantiate", antonym:"Invalidate, Disprove, Refute", example:"The results validate our hypothesis."},
+    {id:112, word:"Authenticate", type:"v.", meaning_en:"To prove something is genuine.", meaning_bn:"প্রমাণীকরণ করা", synonym:"Verify, Confirm, Certify", antonym:"Disprove, Discredit, Falsify", example:"The signature was authenticated by an expert."},
+    {id:113, word:"Substantiate", type:"v.", meaning_en:"To provide evidence to support something.", meaning_bn:"প্রমাণসহ দেখানো", synonym:"Prove, Support, Verify", antonym:"Refute, Disprove, Contradict", example:"Can you substantiate your claims?"},
+    {id:114, word:"Refute", type:"v.", meaning_en:"To prove a statement is wrong.", meaning_bn:"খণ্ডন করা", synonym:"Disprove, Contradict, Rebut", antonym:"Prove, Confirm, Support", example:"The evidence refutes the theory."},
+    {id:115, word:"Corroborate", type:"v.", meaning_en:"To confirm by providing evidence.", meaning_bn:"সমর্থন করা", synonym:"Confirm, Verify, Support", antonym:"Contradict, Disprove, Refute", example:"Witnesses corroborated her story."},
+    {id:116, word:"Elucidate", type:"v.", meaning_en:"To make something clear; to explain.", meaning_bn:"ব্যাখ্যা করা", synonym:"Clarify, Explain, Illustrate", antonym:"Confuse, Obscure, Complicate", example:"The teacher elucidated the complex theory."},
+    {id:117, word:"Illustrate", type:"v.", meaning_en:"To explain by giving examples.", meaning_bn:"চিত্রিত করা", synonym:"Demonstrate, Show, Depict", antonym:"", example:"The graph illustrates the population growth."},
+    {id:118, word:"Exemplify", type:"v.", meaning_en:"To serve as a typical example of.", meaning_bn:"উদাহরণ হওয়া", synonym:"Demonstrate, Represent, Typify", antonym:"", example:"This painting exemplifies the artist's style."},
+    {id:119, word:"Hypothesize", type:"v.", meaning_en:"To propose an explanation as a hypothesis.", meaning_bn:"অনুমান করা", synonym:"Assume, Suppose, Theorize", antonym:"Prove, Confirm, Verify", example:"Scientists hypothesize that life exists on other planets."},
+    {id:120, word:"Speculate", type:"v.", meaning_en:"To form a theory without firm evidence.", meaning_bn:"অনুমান করা", synonym:"Guess, Conjecture, Suppose", antonym:"Know, Verify, Confirm", example:"We can only speculate about the future."},
+    {id:121, word:"Derive", type:"v.", meaning_en:"To gain or obtain from a source.", meaning_bn:"উদ্ভূত হওয়া", synonym:"Obtain, Gain, Extract", antonym:"", example:"The word derives from Latin."},
+    {id:122, word:"Deduce", type:"v.", meaning_en:"To reach a conclusion by reasoning.", meaning_bn:"সিদ্ধান্তে আসা", synonym:"Infer, Conclude, Reason", antonym:"", example:"We can deduce the answer from the data."},
+    {id:123, word:"Discern", type:"v.", meaning_en:"To perceive or recognize clearly.", meaning_bn:"উপলব্ধি করা", synonym:"Perceive, Detect, Recognize", antonym:"Overlook, Miss, Ignore", example:"It is difficult to discern the truth."},
+    {id:124, word:"Perceive", type:"v.", meaning_en:"To become aware of through the senses.", meaning_bn:"অনুধাবন করা", synonym:"Notice, Observe, Sense", antonym:"Overlook, Miss, Ignore", example:"She perceived a change in his attitude."},
+    {id:125, word:"Comprehend", type:"v.", meaning_en:"To grasp mentally; understand fully.", meaning_bn:"বুঝতে পারা", synonym:"Understand, Grasp, Apprehend", antonym:"Misunderstand, Confuse, Overlook", example:"The student comprehended the concept quickly."},
+    {id:126, word:"Apprehend", type:"v.", meaning_en:"To understand or perceive.", meaning_bn:"উপলব্ধি করা", synonym:"Grasp, Understand, Comprehend", antonym:"Misunderstand, Confuse", example:"She apprehended the seriousness of the situation."},
+    {id:127, word:"Envision", type:"v.", meaning_en:"To imagine as a future possibility.", meaning_bn:"কল্পনা করা", synonym:"Imagine, Visualize, Foresee", antonym:"", example:"They envision a world without poverty."},
+    {id:128, word:"Scrutinize", type:"v.", meaning_en:"To examine very closely.", meaning_bn:"গভীরভাবে পরীক্ষা করা", synonym:"Examine, Inspect, Analyze", antonym:"Glance, Skim, Overlook", example:"The auditor scrutinized every financial record."},
+    {id:129, word:"Deliberate", type:"v.", meaning_en:"To think deeply before deciding.", meaning_bn:"বিচার করা", synonym:"Consider, Ponder, Reflect", antonym:"Rush, Haste, Ignore", example:"The jury deliberated for three hours."},
+    {id:130, word:"Contemplate", type:"v.", meaning_en:"To look at or think about thoughtfully.", meaning_bn:"চিন্তা করা", synonym:"Consider, Reflect, Meditate", antonym:"Ignore, Dismiss, Neglect", example:"He contemplated the meaning of life."},
+    {id:131, word:"Ponder", type:"v.", meaning_en:"To think about something carefully.", meaning_bn:"গভীরভাবে চিন্তা করা", synonym:"Reflect, Consider, Meditate", antonym:"Disregard, Overlook, Ignore", example:"She pondered the question for a long time."},
+    {id:132, word:"Proliferate", type:"v.", meaning_en:"To increase rapidly in number.", meaning_bn:"বৃদ্ধি পাওয়া", synonym:"Multiply, Increase, Expand", antonym:"Decrease, Decline, Dwindle", example:"Social media platforms proliferated rapidly."},
+    {id:133, word:"Ameliorate", type:"v.", meaning_en:"To make something better.", meaning_bn:"উন্নতি করা", synonym:"Improve, Enhance, Better", antonym:"Worsen, Aggravate, Deteriorate", example:"New policies ameliorated living conditions."},
+    {id:134, word:"Rectify", type:"v.", meaning_en:"To correct or make right.", meaning_bn:"শোধন করা", synonym:"Correct, Fix, Remedy", antonym:"Damage, Worsen, Spoil", example:"We must rectify the error immediately."},
+    {id:135, word:"Revitalize", type:"v.", meaning_en:"To give new life or energy to.", meaning_bn:"পুনরুজ্জীবিত করা", synonym:"Revive, Renew, Refresh", antonym:"Deplete, Drain, Weaken", example:"The program revitalized the local economy."},
+    {id:136, word:"Accommodate", type:"v.", meaning_en:"To provide space or adjust to something.", meaning_bn:"স্থান দেওয়া", synonym:"Adjust, Adapt, Suit", antonym:"Inconvenience, Resist, Reject", example:"The hotel can accommodate 200 guests."},
+    {id:137, word:"Concede", type:"v.", meaning_en:"To admit something is true after resisting.", meaning_bn:"স্বীকার করা", synonym:"Admit, Acknowledge, Yield", antonym:"Deny, Dispute, Reject", example:"He conceded that he was wrong."},
+    {id:138, word:"Acknowledge", type:"v.", meaning_en:"To accept or admit the existence of.", meaning_bn:"স্বীকার করা", synonym:"Admit, Recognize, Accept", antonym:"Deny, Reject, Disregard", example:"She acknowledged her mistake."},
+    {id:139, word:"Articulate", type:"v.", meaning_en:"To express clearly and fluently.", meaning_bn:"স্পষ্টভাবে বলা", synonym:"Express, Voice, Enunciate", antonym:"Mumble, Muddle, Confuse", example:"He articulated his ideas effectively."},
+    {id:140, word:"Assert", type:"v.", meaning_en:"To state confidently and forcefully.", meaning_bn:"দাবি করা", synonym:"Declare, Claim, Affirm", antonym:"Deny, Refute, Disavow", example:"She asserted her right to speak."},
+    // --- 141-150 ---
+    {id:141, word:"Resilience", type:"n.", meaning_en:"The ability to recover quickly from difficulties.", meaning_bn:"স্থিতিস্থাপকতা", synonym:"Toughness, Endurance, Flexibility", antonym:"Weakness, Fragility, Vulnerability", example:"Her resilience helped her overcome the setback."},
+    {id:142, word:"Versatility", type:"n.", meaning_en:"The ability to adapt to many functions.", meaning_bn:"বহুমুখিতা", synonym:"Adaptability, Flexibility, Multifunctionality", antonym:"Inflexibility, Rigidity, Narrowness", example:"The versatility of the tool makes it popular."},
+    {id:143, word:"Proficiency", type:"n.", meaning_en:"A high degree of skill or expertise.", meaning_bn:"দক্ষতা", synonym:"Skill, Expertise, Mastery", antonym:"Incompetence, Ineptitude, Clumsiness", example:"She achieved proficiency in English."},
+    {id:144, word:"Competency", type:"n.", meaning_en:"The ability to do something successfully.", meaning_bn:"যোগ্যতা", synonym:"Ability, Capability, Skill", antonym:"Inability, Incapacity, Incompetence", example:"The test measures professional competency."},
+    {id:145, word:"Credential", type:"n.", meaning_en:"A qualification or achievement proving ability.", meaning_bn:"সনদপত্র", synonym:"Qualification, Certificate, Diploma", antonym:"", example:"Her credentials include a PhD from Oxford."},
+    {id:146, word:"Curriculum", type:"n.", meaning_en:"The subjects studied in a course.", meaning_bn:"পাঠ্যসূচি", synonym:"Syllabus, Course, Program", antonym:"", example:"The curriculum was updated to include new topics."},
+    {id:147, word:"Pedagogy", type:"n.", meaning_en:"The method of teaching.", meaning_bn:"শিক্ষাবিদ্যা", synonym:"Teaching, Instruction, Education", antonym:"", example:"The school adopted a new pedagogy."},
+    {id:148, word:"Syllabus", type:"n.", meaning_en:"An outline of a course of study.", meaning_bn:"পাঠ্যসূচি", synonym:"Curriculum, Outline, Course plan", antonym:"", example:"The syllabus covers all major topics."},
+    {id:149, word:"Thesis", type:"n.", meaning_en:"A long essay or dissertation for a degree.", meaning_bn:"গবেষণাপত্র", synonym:"Dissertation, Essay, Treatise", antonym:"", example:"She defended her thesis successfully."},
+    {id:150, word:"Dissertation", type:"n.", meaning_en:"A long formal piece of academic writing.", meaning_bn:"গবেষণামূলক প্রবন্ধ", synonym:"Thesis, Treatise, Paper", antonym:"", example:"He completed his dissertation on climate change."},
+    {id:151, word:"Scholarship", type:"n.", meaning_en:"A grant or payment to support a student's education.", meaning_bn:"বৃত্তি", synonym:"Grant, Award, Fellowship", antonym:"", example:"She earned a scholarship to study abroad."},
+    {id:152, word:"Digital", type:"adj.", meaning_en:"Relating to technology using electronic or computer-based systems.", meaning_bn:"ডিজিটাল", synonym:"Electronic, Computerized, Virtual", antonym:"Analog, Physical, Manual", example:"The digital revolution has changed how we communicate."},
+    {id:153, word:"Conservation", type:"n.", meaning_en:"The protection of natural resources and environment.", meaning_bn:"সংরক্ষণ", synonym:"Preservation, Protection, Safeguarding", antonym:"Destruction, Depletion, Waste", example:"Wildlife conservation is essential for biodiversity."},
+    {id:154, word:"Nutrition", type:"n.", meaning_en:"The process of providing or obtaining healthy food.", meaning_bn:"পুষ্টি", synonym:"Nourishment, Sustenance, Diet", antonym:"Malnutrition, Starvation", example:"Good nutrition is vital for child development."},
+    {id:155, word:"Demographics", type:"n.", meaning_en:"Statistical data relating to population groups.", meaning_bn:"জনসংখ্যাতত্ত্ব", synonym:"Population statistics, Census data, Vital statistics", antonym:"", example:"The demographics of the city have shifted dramatically."},
+    {id:156, word:"Inflation", type:"n.", meaning_en:"A general increase in prices and fall in purchasing power.", meaning_bn:"মুদ্রাস্ফীতি", synonym:"Price rise, Escalation, Boom", antonym:"Deflation, Stability", example:"Inflation has risen sharply over the past year."},
+    {id:157, word:"Laboratory", type:"n.", meaning_en:"A room equipped for scientific experiments and research.", meaning_bn:"পরীক্ষাগার", synonym:"Lab, Research facility, Workshop", antonym:"", example:"The laboratory conducted groundbreaking genetic research."},
+    {id:158, word:"Heritage", type:"n.", meaning_en:"Cultural traditions, values, and artifacts passed down through generations.", meaning_bn:"ঐতিহ্য", synonym:"Legacy, Tradition, Inheritance", antonym:"", example:"The city is famous for its rich architectural heritage."},
+    {id:159, word:"Discourse", type:"n.", meaning_en:"Written or spoken communication or debate.", meaning_bn:"বক্তৃতা", synonym:"Discussion, Dialogue, Debate", antonym:"Silence, Monologue", example:"Academic discourse often challenges established norms."},
+    {id:160, word:"Occupation", type:"n.", meaning_en:"A job or profession.", meaning_bn:"পেশা", synonym:"Profession, Career, Vocation", antonym:"", example:"Teaching is a highly respected occupation."},
+    {id:161, word:"Constitution", type:"n.", meaning_en:"A set of fundamental principles governing a state.", meaning_bn:"সংবিধান", synonym:"Charter, Bill of rights, Code", antonym:"", example:"The constitution guarantees freedom of speech."},
+    {id:162, word:"Immigration", type:"n.", meaning_en:"The act of entering and settling in a foreign country.", meaning_bn:"অভিবাসন", synonym:"Migration, Relocation, Resettlement", antonym:"Emigration, Departure", example:"Immigration policies have become stricter in recent years."},
+    {id:163, word:"Geography", type:"n.", meaning_en:"The study of Earth's physical features and human activity.", meaning_bn:"ভূগোল", synonym:"Topography, Landscape, Terrain", antonym:"", example:"The geography of the region influences its climate."},
+    {id:164, word:"Cognition", type:"n.", meaning_en:"The mental process of acquiring knowledge and understanding.", meaning_bn:"জ্ঞান", synonym:"Thinking, Reasoning, Perception", antonym:"", example:"Cognition develops rapidly during childhood."},
+    {id:165, word:"Democracy", type:"n.", meaning_en:"A system of government by the whole population through elected representatives.", meaning_bn:"গণতন্ত্র", synonym:"Republic, Self-government, Autonomy", antonym:"Dictatorship, Autocracy, Tyranny", example:"Democracy relies on active citizen participation."},
+    {id:166, word:"Journalism", type:"n.", meaning_en:"The activity of gathering and reporting news.", meaning_bn:"সাংবাদিকতা", synonym:"Reporting, Broadcasting, Press", antonym:"", example:"Investigative journalism plays a crucial role in democracy."},
+    {id:167, word:"Entrepreneur", type:"n.", meaning_en:"A person who starts and runs a business.", meaning_bn:"উদ্যোক্তা", synonym:"Businessperson, Founder, Innovator", antonym:"Employee", example:"The entrepreneur launched a successful tech startup."},
+    {id:168, word:"Masterpiece", type:"n.", meaning_en:"A work of outstanding artistic quality.", meaning_bn:"অমর সৃষ্টি", synonym:"Magnum opus, Classic, Treasure", antonym:"", example:"The Mona Lisa is considered a masterpiece of art."},
+    {id:169, word:"Civilization", type:"n.", meaning_en:"An advanced state of human society with developed culture and governance.", meaning_bn:"সভ্যতা", synonym:"Society, Culture, Community", antonym:"Barbarism, Primitive", example:"Ancient civilization flourished along river valleys."},
+    {id:170, word:"Vocabulary", type:"n.", meaning_en:"The set of words known and used by a person.", meaning_bn:"শব্দভাণ্ডার", synonym:"Lexicon, Terminology, Glossary", antonym:"", example:"Reading widely helps expand your vocabulary."},
+    {id:171, word:"Lecture", type:"n.", meaning_en:"An educational talk given to an audience.", meaning_bn:"বক্তৃতা", synonym:"Talk, Presentation, Address", antonym:"", example:"The professor delivered an engaging lecture on economics."},
+    {id:172, word:"Software", type:"n.", meaning_en:"Programs and operating information used by a computer.", meaning_bn:"সফটওয়্যার", synonym:"Program, Application, System", antonym:"Hardware", example:"The company develops software for healthcare management."},
+    {id:173, word:"Biodiversity", type:"n.", meaning_en:"The variety of plant and animal life in a habitat.", meaning_bn:"জীববৈচিত্র্য", synonym:"Biological variety, Ecological diversity, Species richness", antonym:"Monoculture", example:"Deforestation threatens biodiversity in tropical regions."},
+    {id:174, word:"Diagnosis", type:"n.", meaning_en:"The identification of an illness or condition.", meaning_bn:"রোগনির্ণয়", synonym:"Identification, Detection, Analysis", antonym:"", example:"Early diagnosis can significantly improve treatment outcomes."},
+    {id:175, word:"Urbanization", type:"n.", meaning_en:"The process of population shift from rural to urban areas.", meaning_bn:"নগরায়ন", synonym:"Urban growth, City expansion, Metropolitanization", antonym:"Ruralization", example:"Rapid urbanization has created housing shortages in many cities."},
+    {id:176, word:"Recession", type:"n.", meaning_en:"A period of economic decline.", meaning_bn:"মন্দা", synonym:"Downturn, Slump, Depression", antonym:"Boom, Growth, Prosperity", example:"The country experienced a severe recession last decade."},
+    {id:177, word:"Microscope", type:"n.", meaning_en:"An instrument used to see very small objects.", meaning_bn:"অণুবীক্ষণযন্ত্র", synonym:"Magnifier, Lens, Scope", antonym:"", example:"The scientist observed bacteria under the microscope."},
+    {id:178, word:"Tradition", type:"n.", meaning_en:"A long-established custom or belief.", meaning_bn:"ঐতিহ্য", synonym:"Custom, Practice, Convention", antonym:"Innovation, Change", example:"The tradition of celebrating harvest festivals is ancient."},
+    {id:179, word:"Dialogue", type:"n.", meaning_en:"A conversation between two or more people.", meaning_bn:"সংলাপ", synonym:"Conversation, Discussion, Exchange", antonym:"Monologue", example:"Open dialogue between nations promotes peace."},
+    {id:180, word:"Employment", type:"n.", meaning_en:"The state of having paid work.", meaning_bn:"চাকরি", synonym:"Job, Work, Occupation", antonym:"Unemployment", example:"Full employment remains a key economic goal."},
+    {id:181, word:"Jurisdiction", type:"n.", meaning_en:"The official power to make legal decisions.", meaning_bn:"আইনগত এখতিয়ার", synonym:"Authority, Power, Control", antonym:"", example:"The case falls under federal jurisdiction."},
+    {id:182, word:"Visa", type:"n.", meaning_en:"An official document permitting entry into a country.", meaning_bn:"ভিসা", synonym:"Permit, Pass, Authorization", antonym:"", example:"She applied for a student visa to study in Canada."},
+    {id:183, word:"Vegetation", type:"n.", meaning_en:"Plants considered collectively in a particular area.", meaning_bn:"উদ্ভিদ", synonym:"Flora, Plant life, Greenery", antonym:"Desert, Barren", example:"Dense vegetation covers the rainforest floor."},
+    {id:184, word:"Behavior", type:"n.", meaning_en:"The way a person or animal acts.", meaning_bn:"আচরণ", synonym:"Conduct, Manner, Attitude", antonym:"", example:"Social behavior is influenced by cultural norms."},
+    {id:185, word:"Bureaucracy", type:"n.", meaning_en:"A system of government with complex rules and procedures.", meaning_bn:"আমলাতন্ত্র", synonym:"Administration, Civil service, Officialdom", antonym:"", example:"Bureaucracy can slow down decision-making processes."},
+    {id:186, word:"Censorship", type:"n.", meaning_en:"The suppression of speech or other public communication.", meaning_bn:"সেন্সরশিপ", synonym:"Suppression, Restriction, Control", antonym:"Freedom, Liberty", example:"Press censorship is common in authoritarian regimes."},
+    {id:187, word:"Enterprise", type:"n.", meaning_en:"A business or company.", meaning_bn:"উদ্যোগ", synonym:"Business, Venture, Company", antonym:"", example:"Small enterprise drives local economic growth."},
+    {id:188, word:"Genre", type:"n.", meaning_en:"A category of artistic composition.", meaning_bn:"ধারা", synonym:"Category, Type, Style", antonym:"", example:"Science fiction is a popular literary genre."},
+    {id:189, word:"Ancient", type:"adj.", meaning_en:"Belonging to the very distant past.", meaning_bn:"প্রাচীন", synonym:"Old, Antique, Primitive", antonym:"Modern, Contemporary, Recent", example:"Ancient ruins attract tourists from around the world."},
+    {id:190, word:"Grammar", type:"n.", meaning_en:"The rules of a language governing sentence structure.", meaning_bn:"ব্যাকরণ", synonym:"Syntax, Linguistics, Morphology", antonym:"", example:"Good grammar is essential for clear writing."},
+    {id:191, word:"Assignment", type:"n.", meaning_en:"A task given to a student as part of coursework.", meaning_bn:"নির্ধারিত কাজ", synonym:"Task, Homework, Project", antonym:"", example:"The assignment must be submitted by Friday."},
+    {id:192, word:"Algorithm", type:"n.", meaning_en:"A set of rules for solving a problem in computing.", meaning_bn:"অ্যালগরিদম", synonym:"Procedure, Formula, Process", antonym:"", example:"The search algorithm ranks results by relevance."},
+    {id:193, word:"Ecosystem", type:"n.", meaning_en:"A biological community of interacting organisms and their environment.", meaning_bn:"বাস্তুতন্ত্র", synonym:"Habitat, Biome, Environment", antonym:"", example:"Coral reefs are among the most diverse ecosystems."},
+    {id:194, word:"Therapy", type:"n.", meaning_en:"Treatment intended to relieve or heal a disorder.", meaning_bn:"চিকিৎসা", synonym:"Treatment, Cure, Remediation", antonym:"", example:"Physical therapy helped him recover after surgery."},
+    {id:195, word:"Integration", type:"n.", meaning_en:"The process of combining or uniting different groups.", meaning_bn:"একীকরণ", synonym:"Unification, Inclusion, Assimilation", antonym:"Segregation, Separation", example:"Social integration is key to multicultural harmony."},
+    {id:196, word:"Deficit", type:"n.", meaning_en:"The amount by which something falls short of expectations.", meaning_bn:"ঘাটতি", synonym:"Shortage, Shortfall, Gap", antonym:"Surplus, Excess, Abundance", example:"The budget deficit has raised concerns among economists."},
+    {id:197, word:"Specimen", type:"n.", meaning_en:"A sample used for scientific study.", meaning_bn:"নমুনা", synonym:"Sample, Example, Instance", antonym:"", example:"The biologist collected a specimen of the rare plant."},
+    {id:198, word:"Custom", type:"n.", meaning_en:"A traditional practice followed by a community.", meaning_bn:"প্রথা", synonym:"Tradition, Practice, Habit", antonym:"Innovation", example:"Local customs vary greatly between regions."},
+    {id:199, word:"Debate", type:"n.", meaning_en:"A formal discussion on a particular topic.", meaning_bn:"বিতর্ক", synonym:"Discussion, Argument, Dispute", antonym:"Agreement, Consensus", example:"The debate over climate policy continues."},
+    {id:200, word:"Profession", type:"n.", meaning_en:"A paid occupation requiring advanced education.", meaning_bn:"পেশা", synonym:"Career, Occupation, Vocation", antonym:"", example:"Medicine is a highly demanding profession."},
+    {id:201, word:"Litigation", type:"n.", meaning_en:"The process of taking legal action.", meaning_bn:"মামলা", synonym:"Lawsuit, Legal action, Prosecution", antonym:"Settlement", example:"Litigation can be expensive and time-consuming."},
+    {id:202, word:"Passport", type:"n.", meaning_en:"An official document certifying identity and citizenship.", meaning_bn:"পাসপোর্ট", synonym:"Travel document, Credentials, ID", antonym:"", example:"You need a valid passport for international travel."},
+    {id:203, word:"Climate", type:"n.", meaning_en:"The weather conditions prevailing in an area over a long period.", meaning_bn:"জলবায়ু", synonym:"Weather, Atmosphere, Conditions", antonym:"", example:"Climate change poses a serious threat to coastal cities."},
+    {id:204, word:"Emotion", type:"n.", meaning_en:"A strong feeling derived from one's circumstances.", meaning_bn:"আবেগ", synonym:"Feeling, Sentiment, Passion", antonym:"Reason, Logic", example:"The film evoked strong emotions in the audience."},
+    {id:205, word:"Diplomacy", type:"n.", meaning_en:"The management of international relations.", meaning_bn:"কূটনীতি", synonym:"Negotiation, Statecraft, Tact", antonym:"Aggression, Hostility", example:"Diplomacy is crucial for resolving international conflicts."},
+    {id:206, word:"Broadcasting", type:"n.", meaning_en:"The transmission of programs via radio or television.", meaning_bn:"সম্প্রচার", synonym:"Transmission, Telecast, Airplay", antonym:"", example:"Digital broadcasting has replaced analog signals."},
+    {id:207, word:"Franchise", type:"n.", meaning_en:"A right granted to operate a business under a brand.", meaning_bn:"ফ্র্যাঞ্চাইজি", synonym:"License, Concession, Permit", antonym:"", example:"The fast-food chain operates through a franchise model."},
+    {id:208, word:"Exhibition", type:"n.", meaning_en:"A public display of works of art or items of interest.", meaning_bn:"প্রদর্শনী", synonym:"Show, Display, Fair", antonym:"", example:"The art exhibition featured works by emerging artists."},
+    {id:209, word:"Revolution", type:"n.", meaning_en:"A forcible overthrow of a government or social order.", meaning_bn:"বিপ্লব", synonym:"Uprising, Rebellion, Coup", antonym:"Counter-revolution, Stability", example:"The industrial revolution transformed manufacturing processes."},
+    {id:210, word:"Syntax", type:"n.", meaning_en:"The arrangement of words in a sentence.", meaning_bn:"বাক্যগঠন", synonym:"Sentence structure, Grammar, Ordering", antonym:"", example:"English syntax differs significantly from Bengali syntax."},
+    {id:211, word:"Tutorial", type:"n.", meaning_en:"A teaching session with small group or individual instruction.", meaning_bn:"শিক্ষাদান", synonym:"Lesson, Session, Class", antonym:"", example:"The tutorial helped students understand the complex topic."},
+    {id:212, word:"Database", type:"n.", meaning_en:"A structured set of data stored in a computer.", meaning_bn:"ডাটাবেস", synonym:"Repository, Archive, Store", antonym:"", example:"The company maintains a database of customer information."},
+    {id:213, word:"Emission", type:"n.", meaning_en:"The release of gases or pollutants into the atmosphere.", meaning_bn:"নির্গমন", synonym:"Discharge, Release, Effluent", antonym:"Absorption", example:"Carbon emissions contribute to global warming."},
+    {id:214, word:"Prevention", type:"n.", meaning_en:"The action of stopping something from happening.", meaning_bn:"প্রতিরোধ", synonym:"Precaution, Avoidance, Deterrence", antonym:"Causation, Allowance", example:"Prevention is better than cure when it comes to disease."},
+    {id:215, word:"Inequality", type:"n.", meaning_en:"Lack of equality in status or opportunity.", meaning_bn:"অসমতা", synonym:"Disparity, Imbalance, Disproportion", antonym:"Equality, Equity, Fairness", example:"Income inequality has widened in recent decades."},
+    {id:216, word:"Surplus", type:"n.", meaning_en:"An amount exceeding what is needed.", meaning_bn:"উদ্বৃত্ত", synonym:"Excess, Oversupply, Abundance", antonym:"Deficit, Shortage, Scarcity", example:"The country has a trade surplus with its neighbors."},
+    {id:217, word:"Compound", type:"n.", meaning_en:"A substance made from two or more elements.", meaning_bn:"যৌগ", synonym:"Mixture, Blend, Combination", antonym:"Element", example:"Water is a compound of hydrogen and oxygen."},
+    {id:218, word:"Ritual", type:"n.", meaning_en:"A religious or solemn ceremony involving specific actions.", meaning_bn:"অনুষ্ঠান", synonym:"Ceremony, Rite, Tradition", antonym:"", example:"The wedding ritual lasted for several hours."},
+    {id:219, word:"Negotiate", type:"v.", meaning_en:"To discuss in order to reach an agreement.", meaning_bn:"আলোচনা করা", synonym:"Bargain, Mediate, Arbitrate", antonym:"Dictate, Impose", example:"The union is negotiating better working conditions."},
+    {id:220, word:"Salary", type:"n.", meaning_en:"A fixed regular payment for employment.", meaning_bn:"বেতন", synonym:"Wage, Pay, Income", antonym:"", example:"The job offers a competitive salary and benefits."},
+    {id:221, word:"Verdict", type:"n.", meaning_en:"A decision made by a jury or judge.", meaning_bn:"রায়", synonym:"Judgment, Decision, Ruling", antonym:"", example:"The jury reached a verdict of not guilty."},
+    {id:222, word:"Destination", type:"n.", meaning_en:"The place to which someone is going.", meaning_bn:"গন্তব্য", synonym:"Target, Stop, Location", antonym:"Origin, Starting point", example:"Paris is a popular tourist destination."},
+    {id:223, word:"Topography", type:"n.", meaning_en:"The arrangement of natural and physical features of an area.", meaning_bn:"ভূপ্রকৃতি", synonym:"Terrain, Landscape, Geography", antonym:"", example:"The topography of the region includes mountains and valleys."},
+    {id:224, word:"Motivation", type:"n.", meaning_en:"The reason or drive behind one's actions.", meaning_bn:"প্রেরণা", synonym:"Inspiration, Drive, Incentive", antonym:"Discouragement, Apathy", example:"Financial motivation is not the only reason people work."},
+    {id:225, word:"Sovereignty", type:"n.", meaning_en:"Supreme power or authority of a state.", meaning_bn:"সার্বভৌমত্ব", synonym:"Autonomy, Independence, Self-rule", antonym:"Dependence, Subjugation", example:"Each nation values its sovereignty highly."},
+    {id:226, word:"Editorial", type:"n.", meaning_en:"A newspaper article expressing the editor's opinion.", meaning_bn:"সম্পাদকীয়", synonym:"Opinion piece, Commentary, Column", antonym:"", example:"The editorial criticized the government's policy."},
+    {id:227, word:"Merger", type:"n.", meaning_en:"The combination of two companies into one.", meaning_bn:"একত্রীকরণ", synonym:"Takeover, Acquisition, Amalgamation", antonym:"Split, Division", example:"The merger created the largest bank in the region."},
+    {id:228, word:"Abstract", type:"adj.", meaning_en:"Relating to ideas rather than physical objects.", meaning_bn:"বিমূর্ত", synonym:"Conceptual, Theoretical, Symbolic", antonym:"Concrete, Real, Tangible", example:"Abstract art often provokes different interpretations."},
+    {id:229, word:"Colonization", type:"n.", meaning_en:"The process of settling and establishing control over a place.", meaning_bn:"উপনিবেশ স্থাপন", synonym:"Settlement, Occupation, Conquest", antonym:"Decolonization, Independence", example:"Colonization had lasting effects on indigenous cultures."},
+    {id:230, word:"Dialect", type:"n.", meaning_en:"A regional form of a language with distinct features.", meaning_bn:"উপভাষা", synonym:"Vernacular, Patois, Accent", antonym:"", example:"The dialect spoken in this region is quite distinct."},
+    {id:231, word:"Assessment", type:"n.", meaning_en:"The evaluation of a student's knowledge or performance.", meaning_bn:"মূল্যায়ন", synonym:"Evaluation, Examination, Appraisal", antonym:"", example:"Continuous assessment improves learning outcomes."},
+    {id:232, word:"Automation", type:"n.", meaning_en:"The use of technology to perform tasks automatically.", meaning_bn:"স্বয়ংক্রিয়তা", synonym:"Robotization, Computerization, Mechanization", antonym:"Manual operation", example:"Automation has increased productivity in manufacturing."},
+    {id:233, word:"Renewable", type:"adj.", meaning_en:"Capable of being naturally replenished.", meaning_bn:"নবায়নযোগ্য", synonym:"Sustainable, Inexhaustible, Green", antonym:"Non-renewable, Finite, Exhaustible", example:"Solar and wind are key renewable energy sources."},
+    {id:234, word:"Epidemic", type:"n.", meaning_en:"A widespread occurrence of a disease in a community.", meaning_bn:"মহামারী", synonym:"Outbreak, Plague, Contagion", antonym:"", example:"The government took measures to control the epidemic."},
+    {id:235, word:"Migration", type:"n.", meaning_en:"Movement of people from one place to another.", meaning_bn:"অভিবাসন", synonym:"Relocation, Movement, Exodus", antonym:"Staying, Settlement", example:"Rural to urban migration is a global phenomenon."},
+    {id:236, word:"Taxation", type:"n.", meaning_en:"The system of imposing taxes on citizens.", meaning_bn:"কর", synonym:"Levy, Duty, Tariff", antonym:"", example:"Progressive taxation helps reduce income inequality."},
+    {id:237, word:"Chemical", type:"adj.", meaning_en:"Relating to substances and their reactions.", meaning_bn:"রাসায়নিক", synonym:"Synthetic, Artificial, Compound", antonym:"Organic, Natural", example:"Chemical reactions are fundamental to industrial processes."},
+    {id:238, word:"Folklore", type:"n.", meaning_en:"Traditional stories and beliefs of a community.", meaning_bn:"লোককাহিনী", synonym:"Mythology, Legend, Tradition", antonym:"", example:"Bangladeshi folklore is rich with tales of mythical heroes."},
+    {id:239, word:"Persuasion", type:"n.", meaning_en:"The act of convincing someone to do or believe something.", meaning_bn:"প্ররোচনা", synonym:"Influence, Convincing, Inducement", antonym:"Deterrence, Discouragement", example:"Advertising relies heavily on the art of persuasion."},
+    {id:240, word:"Apprentice", type:"n.", meaning_en:"A person learning a trade from a skilled employer.", meaning_bn:"শিক্ষানবিশ", synonym:"Trainee, Learner, Novice", antonym:"Master, Expert", example:"He worked as an apprentice electrician for two years."},
+    {id:241, word:"Sentence", type:"n.", meaning_en:"The punishment assigned to a convicted defendant.", meaning_bn:"শাস্তি", synonym:"Punishment, Penalty, Judgment", antonym:"Acquittal, Pardon", example:"The judge handed down a prison sentence of ten years."},
+    {id:242, word:"Tourism", type:"n.", meaning_en:"The commercial organization of travel and holidays.", meaning_bn:"পর্যটন", synonym:"Travel, Sightseeing, Vacation", antonym:"", example:"Tourism contributes significantly to the local economy."},
+    {id:243, word:"Peninsula", type:"n.", meaning_en:"A piece of land almost surrounded by water.", meaning_bn:"উপদ্বীপ", synonym:"Cape, Headland, Promontory", antonym:"Island", example:"The Iberian Peninsula is shared by Spain and Portugal."},
+    {id:244, word:"Perception", type:"n.", meaning_en:"The way something is interpreted or understood.", meaning_bn:"ধারণা", synonym:"Understanding, Awareness, Interpretation", antonym:"", example:"Public perception of climate change has evolved."},
+    {id:245, word:"Amendment", type:"n.", meaning_en:"A change or addition to a legal document.", meaning_bn:"সংশোধনী", synonym:"Revision, Modification, Correction", antonym:"", example:"The constitutional amendment guaranteed voting rights."},
+    {id:246, word:"Publication", type:"n.", meaning_en:"The act of making information available to the public.", meaning_bn:"প্রকাশনা", synonym:"Release, Issue, Printing", antonym:"Suppression", example:"The journal accepts research papers for publication."},
+    {id:247, word:"Acquisition", type:"n.", meaning_en:"The purchase of one company by another.", meaning_bn:"অধিগ্রহণ", synonym:"Takeover, Purchase, Buyout", antonym:"Sale, Divestiture", example:"The acquisition expanded the company's market share."},
+    {id:248, word:"Sculpture", type:"n.", meaning_en:"The art of carving or molding three-dimensional forms.", meaning_bn:"ভাস্কর্য", synonym:"Statue, Carving, Figurine", antonym:"", example:"The sculpture was carved from a single block of marble."},
+    {id:249, word:"Medieval", type:"adj.", meaning_en:"Relating to the Middle Ages.", meaning_bn:"মধ্যযুগীয়", synonym:"Feudal, Gothic, Old", antonym:"Modern, Contemporary", example:"Medieval castles are popular tourist attractions."},
+    {id:250, word:"Bilingual", type:"adj.", meaning_en:"Able to speak two languages fluently.", meaning_bn:"দ্বিভাষিক", synonym:"Polyglot, Multilingual", antonym:"Monolingual", example:"Bilingual education programs benefit language development."},
+    {id:251, word:"Enrollment", type:"n.", meaning_en:"The process of registering for a course or program.", meaning_bn:"নিবন্ধন", synonym:"Registration, Admission, Recruitment", antonym:"", example:"Enrollment at the university has increased steadily."},
+    {id:252, word:"Encryption", type:"n.", meaning_en:"The process of encoding information for security.", meaning_bn:"এনক্রিপশন", synonym:"Encoding, Coding, Scrambling", antonym:"Decryption", example:"Encryption protects sensitive financial data."},
+    {id:253, word:"Deforestation", type:"n.", meaning_en:"The clearing of forests on a large scale.", meaning_bn:"বন উজাড়", synonym:"Clearing, Logging, Cutting", antonym:"Reforestation, Afforestation", example:"Deforestation leads to loss of wildlife habitat."},
+    {id:254, word:"Vaccine", type:"n.", meaning_en:"A substance used to stimulate immunity against a disease.", meaning_bn:"টিকা", synonym:"Immunization, Inoculation, Vaccination", antonym:"", example:"The vaccine was developed in record time."},
+    {id:255, word:"Poverty", type:"n.", meaning_en:"The state of being extremely poor.", meaning_bn:"দারিদ্র্য", synonym:"Destitution, Hardship, Need", antonym:"Wealth, Affluence, Prosperity", example:"Education is the key to breaking the cycle of poverty."},
+    {id:256, word:"Subsidy", type:"n.", meaning_en:"Financial support provided by the government.", meaning_bn:"ভর্তুকি", synonym:"Grant, Allowance, Aid", antonym:"Tax, Penalty", example:"The government provides subsidies for renewable energy."},
+    {id:257, word:"Nucleus", type:"n.", meaning_en:"The central core of an atom or cell.", meaning_bn:"নিউক্লিয়াস", synonym:"Core, Center, Hub", antonym:"", example:"The nucleus contains the cell's genetic material."},
+    {id:258, word:"Assimilation", type:"n.", meaning_en:"The process of absorbing into a larger culture.", meaning_bn:"আত্মীকরণ", synonym:"Integration, Absorption, Adaptation", antonym:"Segregation, Isolation", example:"Cultural assimilation can be challenging for immigrants."},
+    {id:259, word:"Rhetoric", type:"n.", meaning_en:"Effective or persuasive speaking or writing.", meaning_bn:"অলঙ্কারশাস্ত্র", synonym:"Oratory, Eloquence, Discourse", antonym:"", example:"The politician's rhetoric appealed to patriotic sentiments."},
+    {id:260, word:"Pension", type:"n.", meaning_en:"A regular payment made to retired workers.", meaning_bn:"পেনশন", synonym:"Retirement fund, Annuity, Superannuation", antonym:"", example:"She receives a monthly pension from her former employer."},
+    {id:261, word:"Testimony", type:"n.", meaning_en:"Evidence given by a witness in court.", meaning_bn:"সাক্ষ্য", synonym:"Evidence, Statement, Deposition", antonym:"", example:"The witness gave testimony before the jury."},
+    {id:262, word:"Itinerary", type:"n.", meaning_en:"A planned route or journey schedule.", meaning_bn:"ভ্রমণসূচি", synonym:"Schedule, Plan, Program", antonym:"", example:"The tour itinerary includes visits to three museums."},
+    {id:263, word:"Plateau", type:"n.", meaning_en:"An area of relatively level high ground.", meaning_bn:"মালভূমি", synonym:"Highland, Tableland, Upland", antonym:"Lowland, Valley", example:"The Tibetan Plateau is the highest in the world."},
+    {id:264, word:"Stimulus", type:"n.", meaning_en:"Something that provokes a response or action.", meaning_bn:"উদ্দীপক", synonym:"Incentive, Spur, Motive", antonym:"Deterrent, Discouragement", example:"The economic stimulus package boosted consumer spending."},
+    {id:265, word:"Election", type:"n.", meaning_en:"A formal process of voting for a candidate.", meaning_bn:"নির্বাচন", synonym:"Vote, Poll, Ballot", antonym:"", example:"The election results were announced last night."},
+    {id:266, word:"Coverage", type:"n.", meaning_en:"The extent to which something is reported or covered.", meaning_bn:"কভারেজ", synonym:"Reporting, Exposure, Scope", antonym:"", example:"Media coverage of the event was extensive."},
+    {id:267, word:"Monopoly", type:"n.", meaning_en:"Exclusive control of a commodity or service.", meaning_bn:"একচেটিয়া অধিকার", synonym:"Dominance, Control, Cartel", antonym:"Competition, Open market", example:"The company was accused of maintaining a monopoly."},
+    {id:268, word:"Portrait", type:"n.", meaning_en:"A painting or photograph of a person.", meaning_bn:"প্রতিকৃতি", synonym:"Painting, Picture, Likeness", antonym:"", example:"The portrait captured her serene expression perfectly."},
+    {id:269, word:"Independence", type:"n.", meaning_en:"The state of being free from outside control.", meaning_bn:"স্বাধীনতা", synonym:"Freedom, Autonomy, Liberty", antonym:"Dependence, Subjugation, Captivity", example:"The country gained independence in 1971."},
+    {id:270, word:"Translation", type:"n.", meaning_en:"The process of converting text from one language to another.", meaning_bn:"অনুবাদ", synonym:"Interpretation, Rendering, Conversion", antonym:"", example:"The translation captures the original meaning well."},
+    {id:271, word:"Diploma", type:"n.", meaning_en:"A certificate awarded for completing a course of study.", meaning_bn:"ডিপ্লোমা", synonym:"Certificate, Degree, Qualification", antonym:"", example:"She received her diploma after three years of study."},
+    {id:272, word:"Artificial", type:"adj.", meaning_en:"Made by human imitation of something natural.", meaning_bn:"কৃত্রিম", synonym:"Synthetic, Man-made, Fake", antonym:"Natural, Genuine, Real", example:"Artificial intelligence is transforming various industries."},
+    {id:273, word:"Pollution", type:"n.", meaning_en:"The presence of harmful substances in the environment.", meaning_bn:"দূষণ", synonym:"Contamination, Toxicity, Filth", antonym:"Cleanliness, Purity", example:"Air pollution causes respiratory problems in urban areas."},
+    {id:274, word:"Hygiene", type:"n.", meaning_en:"Conditions and practices that maintain health.", meaning_bn:"পরিচ্ছন্নতা", synonym:"Cleanliness, Sanitation, Sterility", antonym:"Filth, Contamination", example:"Proper hand hygiene reduces the spread of infection."},
+    {id:275, word:"Discrimination", type:"n.", meaning_en:"Unfair treatment based on race, gender, or other factors.", meaning_bn:"বৈষম্য", synonym:"Prejudice, Bias, Inequality", antonym:"Equality, Fairness, Justice", example:"Laws prohibit discrimination in the workplace."},
+    {id:276, word:"Tariff", type:"n.", meaning_en:"A tax on imported or exported goods.", meaning_bn:"শুল্ক", synonym:"Duty, Levy, Customs", antonym:"", example:"The government imposed tariffs on imported steel."},
+    {id:277, word:"Molecule", type:"n.", meaning_en:"The smallest unit of a chemical compound.", meaning_bn:"অণু", synonym:"Particle, Atom, Element", antonym:"", example:"A water molecule consists of two hydrogen atoms and one oxygen atom."},
+    {id:278, word:"Diversity", type:"n.", meaning_en:"The state of being varied or diverse.", meaning_bn:"বৈচিত্র্য", synonym:"Variety, Multiplicity, Assortment", antonym:"Uniformity, Sameness", example:"Cultural diversity enriches society as a whole."},
+    {id:279, word:"Correspond", type:"v.", meaning_en:"To communicate by exchanging letters or messages.", meaning_bn:"পত্রালাপ করা", synonym:"Communicate, Write, Exchange", antonym:"", example:"We corresponded regularly while she was abroad."},
+    {id:280, word:"Internship", type:"n.", meaning_en:"A period of work experience for students.", meaning_bn:"ইন্টার্নশিপ", synonym:"Placement, Training, Apprenticeship", antonym:"", example:"The internship provided valuable practical experience."},
+    {id:281, word:"Plaintiff", type:"n.", meaning_en:"A person who brings a case against another in court.", meaning_bn:"বাদী", synonym:"Prosecutor, Claimant, Accuser", antonym:"Defendant, Accused", example:"The plaintiff presented evidence to support her claim."},
+    {id:282, word:"Commute", type:"v.", meaning_en:"To travel regularly between home and work.", meaning_bn:"যাতায়াত করা", synonym:"Travel, Journey, Shuttle", antonym:"", example:"Many people commute to the city every day."},
+    {id:283, word:"Wilderness", type:"n.", meaning_en:"An uncultivated, uninhabited natural area.", meaning_bn:"প্রান্তর", synonym:"Wild, Backcountry, Bush", antonym:"City, Urban area", example:"The wilderness area is home to many rare species."},
+    {id:284, word:"Personality", type:"n.", meaning_en:"The combination of characteristics forming an individual's character.", meaning_bn:"ব্যক্তিত্ব", synonym:"Character, Temperament, Disposition", antonym:"", example:"Her outgoing personality makes her a great leader."},
+    {id:285, word:"Campaign", type:"n.", meaning_en:"A series of actions aimed at achieving a goal.", meaning_bn:"প্রচারণা", synonym:"Drive, Effort, Initiative", antonym:"", example:"The election campaign focused on economic issues."},
+    {id:286, word:"Commentary", type:"n.", meaning_en:"A set of remarks explaining an event.", meaning_bn:"মন্তব্য", synonym:"Analysis, Review, Critique", antonym:"", example:"The political commentary was insightful and balanced."},
+    {id:287, word:"Revenue", type:"n.", meaning_en:"Income generated from business activities.", meaning_bn:"রাজস্ব", synonym:"Income, Earnings, Turnover", antonym:"Expenditure, Loss", example:"The company's annual revenue exceeded one billion dollars."},
+    {id:288, word:"Melody", type:"n.", meaning_en:"A sequence of musical notes that is pleasant to hear.", meaning_bn:"সুর", synonym:"Tune, Harmonics, Theme", antonym:"", example:"The melody of the song stayed in my head all day."},
+    {id:289, word:"Dynasty", type:"n.", meaning_en:"A succession of rulers from the same family.", meaning_bn:"রাজবংশ", synonym:"Ruling family, House, Lineage", antonym:"", example:"The Mughal dynasty ruled India for centuries."},
+    {id:290, word:"Fluency", type:"n.", meaning_en:"The ability to speak a language smoothly and accurately.", meaning_bn:"সাবলীলতা", synonym:"Ease, Eloquence, Articulateness", antonym:"Hesitation, Stuttering", example:"Achieving fluency in a second language takes years of practice."},
+    {id:291, word:"Graduate", type:"v.", meaning_en:"To complete a degree or course of study.", meaning_bn:"স্নাতক করা", synonym:"Complete, Finish, Qualify", antonym:"Drop out, Withdraw", example:"She will graduate with honors next spring."},
+    {id:292, word:"Robotics", type:"n.", meaning_en:"The branch of technology dealing with robot design and operation.", meaning_bn:"রোবোটিক্স", synonym:"Automation, Cybernetics, AI", antonym:"", example:"Robotics has revolutionized manufacturing industries."},
+    {id:293, word:"Sustainability", type:"n.", meaning_en:"The ability to maintain ecological balance over time.", meaning_bn:"টেকসইতা", synonym:"Continuity, Viability, Durability", antonym:"Unsustainability, Depletion", example:"Sustainability is central to modern urban planning."},
+    {id:294, word:"Obesity", type:"n.", meaning_en:"The condition of being excessively overweight.", meaning_bn:"স্থূলতা", synonym:"Overweight, Corpulence, Heaviness", antonym:"Thinness, Underweight", example:"Obesity is a growing health concern worldwide."},
+    {id:295, word:"Multicultural", type:"adj.", meaning_en:"Relating to several cultural or ethnic groups.", meaning_bn:"বহুসাংস্কৃতিক", synonym:"Diverse, Pluralistic, Cosmopolitan", antonym:"Monocultural, Homogeneous", example:"Australia is known for its multicultural society."},
+    {id:296, word:"Export", type:"v.", meaning_en:"To send goods to another country for sale.", meaning_bn:"রপ্তানি করা", synonym:"Ship, Trade, Send abroad", antonym:"Import", example:"The country exports textiles to Europe."},
+    {id:297, word:"Organism", type:"n.", meaning_en:"An individual living thing.", meaning_bn:"জীব", synonym:"Creature, Being, Life form", antonym:"", example:"Every organism depends on its environment for survival."},
+    {id:298, word:"Norms", type:"n.", meaning_en:"Standards of behavior typical within a society.", meaning_bn:"নিয়ম", synonym:"Standards, Customs, Conventions", antonym:"Anomalies", example:"Social norms vary across different cultures."},
+    {id:299, word:"Mediate", type:"v.", meaning_en:"To intervene in a dispute to resolve it.", meaning_bn:"মধ্যস্থতা করা", synonym:"Arbitrate, Intervene, Negotiate", antonym:"Antagonize, Provoke", example:"A neutral third party mediated the labor dispute."},
+    {id:300, word:"Promotion", type:"n.", meaning_en:"Advancement to a higher position in employment.", meaning_bn:"পদোন্নতি", synonym:"Advancement, Upgrade, Elevation", antonym:"Demotion, Downgrade", example:"She received a promotion after five years of service."},
+  ];
+
+  // ================================================
+  // HELPERS
+  // ================================================
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function showToast(msg, duration) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(t._timeout);
+    t._timeout = setTimeout(() => t.classList.remove('show'), duration || 2500);
+  }
+
+  // ================================================
+  // LOCALSTORAGE PROGRESS
+  // ================================================
+  const STORAGE_KEY = 'doshomik_study_progress';
+
+  function loadProgress() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        const data = JSON.parse(raw);
+        return {
+          flashcardProgress: data.flashcardProgress || { known: [], review: [] },
+          learnProgress: data.learnProgress || { mastered: [], attempted: [], correct: 0, wrong: 0 },
+          matchBestTime: data.matchBestTime || null,
+          blastHighScore: data.blastHighScore || 0,
+          blocksHighScore: data.blocksHighScore || 0
+        };
+      }
+    } catch(e) {}
+    return {
+      flashcardProgress: { known: [], review: [] },
+      learnProgress: { mastered: [], attempted: [], correct: 0, wrong: 0 },
+      matchBestTime: null,
+      blastHighScore: 0,
+      blocksHighScore: 0
+    };
+  }
+
+  function saveProgress(data) {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    } catch(e) {}
+  }
+
+  let progress = loadProgress();
+
+  // Restore progress toast
+  const totalKnown = progress.flashcardProgress.known.length;
+  if (totalKnown > 0) {
+    showToast('Progress restored — ' + totalKnown + ' words known');
+  }
+
+  // Reset progress
+  document.getElementById('resetProgressLink').addEventListener('click', function(e) {
+    e.preventDefault();
+    if (confirm('Reset all study progress?')) {
+      progress = {
+        flashcardProgress: { known: [], review: [] },
+        learnProgress: { mastered: [], attempted: [], correct: 0, wrong: 0 },
+        matchBestTime: null,
+        blastHighScore: 0
+      };
+      saveProgress(progress);
+      showToast('Progress reset successfully');
+      // Reset current mode UIs
+      if (currentMode === 'flashcards') initFlashcards();
+      if (currentMode === 'learn') initLearn();
+      if (currentMode === 'match') initMatch();
+    }
+  });
+
+  // ================================================
+  // 1. MODE SELECTOR
+  // ================================================
+  let currentMode = 'flashcards';
+
+  const modeTabs = document.querySelectorAll('.mode-tab');
+  const panels = {
+    flashcards: document.getElementById('panel-flashcards'),
+    learn: document.getElementById('panel-learn'),
+    test: document.getElementById('panel-test'),
+    match: document.getElementById('panel-match'),
+    blast: document.getElementById('panel-blast'),
+    blocks: document.getElementById('panel-blocks')
+  };
+
+  function switchMode(mode) {
+    if (mode === currentMode) return;
+
+    // Update tabs
+    modeTabs.forEach(tab => tab.classList.remove('active'));
+    document.querySelector(`.mode-tab[data-mode="${mode}"]`).classList.add('active');
+
+    // Fade out current panel
+    const oldPanel = panels[currentMode];
+    oldPanel.style.opacity = '0';
+    oldPanel.style.transform = 'translateY(8px)';
+    oldPanel.style.transition = 'all 0.15s ease-out';
+
+    setTimeout(() => {
+      oldPanel.classList.remove('active');
+      oldPanel.style.opacity = '';
+      oldPanel.style.transform = '';
+
+      // Show new panel
+      currentMode = mode;
+      const newPanel = panels[mode];
+      newPanel.classList.add('active');
+      newPanel.style.opacity = '0';
+      newPanel.style.transform = 'translateY(8px)';
+      requestAnimationFrame(() => {
+        newPanel.style.transition = 'all 0.15s ease-out';
+        newPanel.style.opacity = '1';
+        newPanel.style.transform = 'translateY(0)';
+        setTimeout(() => {
+          newPanel.style.opacity = '';
+          newPanel.style.transform = '';
+          newPanel.style.transition = '';
+        }, 200);
+      });
+
+      // Initialize mode-specific state
+      if (mode === 'flashcards') initFlashcards();
+      if (mode === 'learn') initLearn();
+      if (mode === 'test') initTest();
+      if (mode === 'match') initMatch();
+      if (mode === 'blast') initBlast();
+      if (mode === 'blocks') initBlocks();
+    }, 150);
+  }
+
+  modeTabs.forEach(tab => {
+    tab.addEventListener('click', () => switchMode(tab.dataset.mode));
+  });
+
+  // ================================================
+  // 2. FLASHCARDS MODE
+  // ================================================
+  let fcIndex = 0;
+  let fcOrder = [];
+  let fcFlipped = false;
+  let fcTouchStartX = 0;
+  let fcHintActive = false;
+
+  function initFlashcards() {
+    fcOrder = shuffle(vocabulary);
+    fcIndex = 0;
+    fcFlipped = false;
+    renderFlashcard();
+  }
+
+  function renderFlashcard() {
+    const card = document.getElementById('flashcard');
+    const total = fcOrder.length;
+
+    if (fcIndex >= total) {
+      // Completion screen
+      document.getElementById('flashcardContainer').innerHTML = `
+        <div class="completion-screen">
+          <div class="icon">🎉</div>
+          <h2>All Done!</h2>
+          <p>You've reviewed all ${total} vocabulary words.</p>
+          <div class="stats">
+            <div class="stat-item">
+              <span class="num">${progress.flashcardProgress.known.length}</span>
+              <span class="label">Known</span>
+            </div>
+            <div class="stat-item">
+              <span class="num">${progress.flashcardProgress.review.length}</span>
+              <span class="label">Needs Review</span>
+            </div>
+          </div>
+          <button class="btn btn-primary" onclick="(function(){initFlashcards(); saveProgress(progress);})()">Study Again</button>
+        </div>
+      `;
+      return;
+    }
+
+    const word = fcOrder[fcIndex];
+    document.getElementById('fcWord').textContent = word.word;
+    document.getElementById('fcType').textContent = word.type;
+    document.getElementById('fcBn').textContent = word.meaning_bn;
+    document.getElementById('fcDef').textContent = word.meaning_en;
+    document.getElementById('fcSynonym').textContent = word.synonym;
+    const antonymRow = document.getElementById('fcAntonymRow');
+    const antonymEl = document.getElementById('fcAntonym');
+    if (word.antonym) {
+      antonymEl.textContent = word.antonym;
+      antonymRow.style.display = '';
+    } else {
+      antonymRow.style.display = 'none';
+    }
+    document.getElementById('fcExample').textContent = word.example;
+    document.getElementById('fcProgressText').textContent = (fcIndex + 1) + ' / ' + total;
+    document.getElementById('fcProgressFill').style.width = ((fcIndex + 1) / total * 100) + '%';
+    document.getElementById('fcPrev').disabled = fcIndex === 0;
+
+    card.classList.remove('flipped');
+    fcFlipped = false;
+    fcHintActive = false;
+    document.getElementById('fcHintArea').textContent = '';
+    document.getElementById('fcHintArea').classList.remove('active');
+    document.getElementById('fcHintBtn').textContent = '💡 Hint';
+  }
+
+  // Flashcard flip
+  document.getElementById('flashcard').addEventListener('click', function() {
+    this.classList.toggle('flipped');
+    fcFlipped = !fcFlipped;
+  });
+
+  // Flashcard nav
+  document.getElementById('fcPrev').addEventListener('click', function() {
+    if (fcIndex > 0) { fcIndex--; renderFlashcard(); }
+  });
+  document.getElementById('fcNext').addEventListener('click', function() {
+    if (fcIndex < fcOrder.length - 1) { fcIndex++; renderFlashcard(); }
+  });
+
+  // Flashcard actions
+  document.getElementById('fcGotIt').addEventListener('click', function() {
+    if (fcIndex >= fcOrder.length) return;
+    const wordId = fcOrder[fcIndex].id;
+    if (!progress.flashcardProgress.known.includes(wordId)) {
+      progress.flashcardProgress.known.push(wordId);
+    }
+    // Remove from review if present
+    const ri = progress.flashcardProgress.review.indexOf(wordId);
+    if (ri !== -1) progress.flashcardProgress.review.splice(ri, 1);
+    saveProgress(progress);
+    if (fcIndex < fcOrder.length - 1) { fcIndex++; renderFlashcard(); }
+    else { fcIndex++; renderFlashcard(); }
+  });
+
+  document.getElementById('fcStudyAgain').addEventListener('click', function() {
+    if (fcIndex >= fcOrder.length) return;
+    const wordId = fcOrder[fcIndex].id;
+    // Remove from known if present
+    const ki = progress.flashcardProgress.known.indexOf(wordId);
+    if (ki !== -1) progress.flashcardProgress.known.splice(ki, 1);
+    if (!progress.flashcardProgress.review.includes(wordId)) {
+      progress.flashcardProgress.review.push(wordId);
+    }
+    saveProgress(progress);
+    if (fcIndex < fcOrder.length - 1) { fcIndex++; renderFlashcard(); }
+    else { fcIndex++; renderFlashcard(); }
+  });
+
+  // Flashcard hint
+  document.getElementById('fcHintBtn').addEventListener('click', function(e) {
+    e.stopPropagation();
+    if (fcIndex >= fcOrder.length) return;
+    const word = fcOrder[fcIndex];
+    const hintArea = document.getElementById('fcHintArea');
+    if (!fcHintActive) {
+      // Show Bangla meaning as hint
+      hintArea.textContent = '💡 ' + word.meaning_bn;
+      hintArea.classList.add('active');
+      fcHintActive = true;
+      this.textContent = '🙈 Hide hint';
+    } else {
+      hintArea.textContent = '';
+      hintArea.classList.remove('active');
+      fcHintActive = false;
+      this.textContent = '💡 Hint';
+    }
+  });
+
+  // Flashcard pronounce (TTS)
+  document.getElementById('fcPronounce').addEventListener('click', function(e) {
+    e.stopPropagation();
+    if (fcIndex >= fcOrder.length) return;
+    const word = fcOrder[fcIndex];
+    pronounceWord(word.word, this);
+  });
+
+  function pronounceWord(text, btn) {
+    if (!('speechSynthesis' in window)) {
+      showToast('Speech synthesis not supported in this browser.');
+      return;
+    }
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.85;
+    utterance.pitch = 1;
+    if (btn) {
+      btn.classList.add('playing');
+      utterance.onend = function() { btn.classList.remove('playing'); };
+      utterance.onerror = function() { btn.classList.remove('playing'); };
+    }
+    window.speechSynthesis.speak(utterance);
+  }
+
+  // Touch swipe for flashcards
+  const fcCard = document.getElementById('flashcard');
+  fcCard.addEventListener('touchstart', function(e) {
+    fcTouchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  fcCard.addEventListener('touchend', function(e) {
+    const dx = e.changedTouches[0].screenX - fcTouchStartX;
+    if (Math.abs(dx) > 60) {
+      if (dx < 0 && fcIndex < fcOrder.length - 1) {
+        fcIndex++;
+        renderFlashcard();
+      } else if (dx > 0 && fcIndex > 0) {
+        fcIndex--;
+        renderFlashcard();
+      }
+    }
+  }, { passive: true });
+
+  // ================================================
+  // 3. LEARN MODE
+  // ================================================
+  let learnQueue = [];
+  let learnCurrent = 0;
+  let learnCorrect = 0;
+  let learnAttempted = 0;
+  let learnMastered = []; // ids mastered (answered correctly twice)
+  let learnAnsweredCorrectly = {}; // { id: count }
+  let learnWaiting = false;
+  let learnTimeout = null;
+
+  function initLearn() {
+    learnQueue = shuffle(vocabulary);
+    learnCurrent = 0;
+    learnCorrect = progress.learnProgress.correct || 0;
+    learnAttempted = progress.learnProgress.attempted || 0;
+    learnMastered = progress.learnProgress.mastered || [];
+    learnAnsweredCorrectly = {};
+    learnMastered.forEach(id => { learnAnsweredCorrectly[id] = 2; });
+    learnWaiting = false;
+    if (learnTimeout) clearTimeout(learnTimeout);
+    renderLearn();
+  }
+
+  function renderLearn() {
+    const total = vocabulary.length;
+    const masteredCount = learnMastered.length;
+
+    // Check if all mastered
+    if (masteredCount >= total) {
+      document.getElementById('learnContainer').innerHTML = `
+        <div class="completion-screen">
+          <div class="icon">🎉</div>
+          <h2>All Words Mastered!</h2>
+          <p>You've mastered all ${total} vocabulary words.</p>
+          <div class="stats">
+            <div class="stat-item">
+              <span class="num">${learnCorrect}</span>
+              <span class="label">Correct</span>
+            </div>
+            <div class="stat-item">
+              <span class="num">${learnAttempted}</span>
+              <span class="label">Attempted</span>
+            </div>
+            <div class="stat-item">
+              <span class="num">${learnAttempted > 0 ? Math.round(learnCorrect/learnAttempted*100) : 0}%</span>
+              <span class="label">Accuracy</span>
+            </div>
+          </div>
+          <button class="btn btn-primary" onclick="(function(){initLearn();})()">Study Again</button>
+        </div>
+      `;
+      return;
+    }
+
+    // Find next unmastered word
+    let word = null;
+    while (learnCurrent < learnQueue.length) {
+      const w = learnQueue[learnCurrent];
+      if (!learnMastered.includes(w.id)) {
+        word = w;
+        break;
+      }
+      learnCurrent++;
+    }
+
+    if (!word) {
+      // All remaining words in queue are mastered, reshuffle remaining
+      const remaining = vocabulary.filter(w => !learnMastered.includes(w.id));
+      if (remaining.length === 0) {
+        document.getElementById('learnContainer').querySelector('.completion-screen') || renderLearn();
+        return;
+      }
+      learnQueue = shuffle(remaining);
+      learnCurrent = 0;
+      renderLearn();
+      return;
+    }
+
+    // Generate options (3 distractors + correct)
+    const distractors = shuffle(vocabulary.filter(w => w.id !== word.id)).slice(0, 3);
+    const options = shuffle([word, ...distractors]);
+
+    document.getElementById('learnWord').textContent = word.word;
+    document.getElementById('learnType').textContent = word.type;
+    document.getElementById('learnBnHint').textContent = word.meaning_bn;
+    document.getElementById('learnProgressText').textContent = 'Word ' + (learnMastered.length + 1) + ' of ' + total;
+    document.getElementById('learnProgressFill').style.width = (masteredCount / total * 100) + '%';
+    document.getElementById('learnScoreDisplay').textContent = learnCorrect + ' correct / ' + learnAttempted + ' attempted — ' + (learnAttempted > 0 ? Math.round(learnCorrect/learnAttempted*100) : 0) + '%';
+
+    const container = document.getElementById('learnOptions');
+    container.innerHTML = '';
+    const keys = ['1', '2', '3', '4'];
+    options.forEach((opt, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'learn-option';
+      btn.dataset.correct = opt.id === word.id ? 'true' : 'false';
+      btn.dataset.wordId = opt.id;
+      btn.innerHTML = '<span class="option-key">' + keys[i] + '</span>' + opt.meaning_en;
+      btn.addEventListener('click', function() {
+        if (learnWaiting) return;
+        handleLearnAnswer(this, word);
+      });
+      container.appendChild(btn);
+    });
+
+    // Reset explanation
+    document.getElementById('learnExplanation').classList.remove('show');
+    learnWaiting = false;
+  }
+
+  function handleLearnAnswer(btn, word) {
+    if (learnWaiting) return;
+    learnWaiting = true;
+    learnAttempted++;
+
+    const isCorrect = btn.dataset.correct === 'true';
+    const allOptions = document.querySelectorAll('.learn-option');
+    allOptions.forEach(o => o.disabled = true);
+
+    if (isCorrect) {
+      btn.classList.add('selected-correct');
+      learnCorrect++;
+      progress.learnProgress.correct = learnCorrect;
+      document.getElementById('learnExplanationText').innerHTML =
+        '<span class="correct-text">✓ Correct!</span> ' + word.meaning_en +
+        '<br><span style="font-size:0.8125rem;color:hsl(var(--muted-foreground));">Synonym: ' + word.synonym +
+        (word.antonym ? '<br>Antonym: ' + word.antonym : '') + '</span>';
+      document.getElementById('learnExplanation').classList.add('show');
+
+      // Track mastery (need 2 correct)
+      learnAnsweredCorrectly[word.id] = (learnAnsweredCorrectly[word.id] || 0) + 1;
+      if (learnAnsweredCorrectly[word.id] >= 2) {
+        if (!learnMastered.includes(word.id)) {
+          learnMastered.push(word.id);
+          progress.learnProgress.mastered = learnMastered;
+        }
+      }
+
+      learnTimeout = setTimeout(() => {
+        learnCurrent++;
+        progress.learnProgress.attempted = learnAttempted;
+        saveProgress(progress);
+        renderLearn();
+      }, 1500);
+    } else {
+      btn.classList.add('selected-incorrect');
+      // Show correct answer
+      allOptions.forEach(o => {
+        if (o.dataset.correct === 'true') {
+          o.classList.add('show-correct');
+        }
+      });
+      progress.learnProgress.wrong = (progress.learnProgress.wrong || 0) + 1;
+      document.getElementById('learnExplanationText').innerHTML =
+        '<span class="incorrect-text">✗ Incorrect.</span> The correct answer is: ' + word.meaning_en +
+        '<br><span style="font-size:0.8125rem;color:hsl(var(--muted-foreground));">Synonym: ' + word.synonym +
+        (word.antonym ? '<br>Antonym: ' + word.antonym : '') + '</span>';
+      document.getElementById('learnExplanation').classList.add('show');
+
+      // Requeue this word (put it back in the queue)
+      learnQueue.push(word);
+
+      learnTimeout = setTimeout(() => {
+        learnCurrent++;
+        progress.learnProgress.attempted = learnAttempted;
+        saveProgress(progress);
+        renderLearn();
+      }, 3000);
+    }
+  }
+
+  // Learn mode pronounce (TTS)
+  document.getElementById('learnPronounce').addEventListener('click', function() {
+    if (learnCurrent >= learnQueue.length) return;
+    const word = learnQueue[learnCurrent];
+    if (word) pronounceWord(word.word, this);
+  });
+
+  // ================================================
+  // 4. TEST MODE
+  // ================================================
+  let testQueue = [];
+  let testCurrent = 0;
+  let testCorrect = 0;
+  let testTotal = 0;
+  let testTimerInterval = null;
+  let testSeconds = 0;
+  let testAnswers = []; // { word, correct, userAnswer }
+  let testActive = false;
+  let testCurrentWord = null;
+  let testAnswered = false;
+
+  function initTest() {
+    testQueue = shuffle(vocabulary);
+    testCurrent = 0;
+    testCorrect = 0;
+    testTotal = 0;
+    testSeconds = 0;
+    testAnswers = [];
+    testActive = true;
+    testAnswered = false;
+    if (testTimerInterval) clearInterval(testTimerInterval);
+
+    // Reset UI
+    document.getElementById('testTimer').textContent = '00:00';
+    document.getElementById('testProgressFill').style.width = '0%';
+    document.getElementById('testProgressText').textContent = '0 / ' + vocabulary.length;
+    document.getElementById('testFeedback').classList.remove('show');
+    document.getElementById('testFeedback').className = 'test-feedback';
+    document.getElementById('testSkipBtn').style.display = 'inline-flex';
+
+    testTimerInterval = setInterval(() => {
+      testSeconds++;
+      const m = String(Math.floor(testSeconds / 60)).padStart(2, '0');
+      const s = String(testSeconds % 60).padStart(2, '0');
+      document.getElementById('testTimer').textContent = m + ':' + s;
+    }, 1000);
+
+    renderTest();
+  }
+
+  function renderTest() {
+    if (!testActive) return;
+
+    const total = vocabulary.length;
+
+    if (testCurrent >= total) {
+      finishTest();
+      return;
+    }
+
+    // Reset answered state
+    testAnswered = false;
+    document.getElementById('testFeedback').classList.remove('show');
+    document.getElementById('testFeedback').className = 'test-feedback';
+
+    const word = testQueue[testCurrent];
+    testCurrentWord = word;
+    const isMC = Math.random() < 0.5;
+
+    document.getElementById('testProgressFill').style.width = (testCurrent / total * 100) + '%';
+    document.getElementById('testProgressText').textContent = testCurrent + ' / ' + total;
+
+    if (isMC) {
+      // Multiple choice: show definition, pick word
+      document.getElementById('testQuestionLabel').textContent = 'Multiple Choice';
+      document.getElementById('testDefinition').textContent = 'Select the word that matches this definition:';
+      document.getElementById('testWordDisplay').style.display = 'none';
+      document.getElementById('testTypeDisplay').style.display = 'none';
+
+      const distractors = shuffle(vocabulary.filter(w => w.id !== word.id)).slice(0, 3);
+      const options = shuffle([word, ...distractors]);
+
+      let html = '<div class="test-mc-options">';
+      options.forEach(opt => {
+        html += '<button class="test-mc-option" data-correct="' + (opt.id === word.id) + '" data-word-id="' + opt.id + '">' +
+          '<strong>' + opt.word + '</strong> <span class="text-muted">(' + opt.type + ')</span>' +
+          '</button>';
+      });
+      html += '</div>';
+      document.getElementById('testContent').innerHTML = html;
+
+      document.querySelectorAll('.test-mc-option').forEach(btn => {
+        btn.addEventListener('click', function() {
+          if (testAnswered) return;
+          testAnswered = true;
+          testTotal++;
+          const isCorrect = this.dataset.correct === 'true';
+          if (isCorrect) testCorrect++;
+          this.classList.add(isCorrect ? 'selected-correct' : 'selected-incorrect');
+          // Show correct
+          document.querySelectorAll('.test-mc-option').forEach(o => {
+            o.disabled = true;
+            if (o.dataset.correct === 'true') o.classList.add('show-correct');
+          });
+          testAnswers.push({
+            word: word.word,
+            correct: isCorrect,
+            userAnswer: this.querySelector('strong') ? this.querySelector('strong').textContent : '?'
+          });
+          showTestFeedback(word, isCorrect, isCorrect ? word.word : this.querySelector('strong').textContent);
+          setTimeout(() => {
+            if (testActive) { testCurrent++; renderTest(); }
+          }, 1500);
+        });
+      });
+
+      // Show def in display
+      const defDiv = document.getElementById('testDefinition');
+      defDiv.innerHTML = '<strong>' + word.meaning_en + '</strong>';
+
+    } else {
+      // Type the answer: show definition, type word
+      document.getElementById('testQuestionLabel').textContent = 'Type the Word';
+      document.getElementById('testDefinition').textContent = 'Type the word that matches this definition:';
+      document.getElementById('testWordDisplay').style.display = 'none';
+      document.getElementById('testTypeDisplay').style.display = 'none';
+
+      document.getElementById('testContent').innerHTML = `
+        <div class="test-type-area">
+          <div style="padding:1rem;background:hsl(var(--muted));border-radius:0.75rem;margin-bottom:0.5rem;line-height:1.6;">
+            <strong>${word.meaning_en}</strong>
+          </div>
+          <input type="text" id="testTypeInput" placeholder="Type the word..." autocomplete="off" autocapitalize="none" spellcheck="false">
+          <div class="test-type-buttons">
+            <button class="btn btn-primary" id="testCheckBtn">Check</button>
+            <button class="btn btn-outline" id="testTypeSkipBtn">Skip</button>
+          </div>
+        </div>
+      `;
+
+      const input = document.getElementById('testTypeInput');
+      const checkBtn = document.getElementById('testCheckBtn');
+      const skipBtn = document.getElementById('testTypeSkipBtn');
+      input.focus();
+
+      const handleSubmit = function() {
+        if (testAnswered) return;
+        testAnswered = true;
+        testTotal++;
+        const userVal = input.value.trim().toLowerCase();
+        const correctVal = word.word.toLowerCase();
+        const isCorrect = userVal === correctVal;
+        if (isCorrect) testCorrect++;
+
+        input.disabled = true;
+        input.classList.add(isCorrect ? 'correct' : 'incorrect');
+        checkBtn.disabled = true;
+        skipBtn.disabled = true;
+
+        testAnswers.push({
+          word: word.word,
+          correct: isCorrect,
+          userAnswer: userVal || '(skipped)'
+        });
+
+        showTestFeedback(word, isCorrect, userVal);
+        setTimeout(() => {
+          if (testActive) { testCurrent++; renderTest(); }
+        }, 1500);
+      };
+
+      checkBtn.addEventListener('click', handleSubmit);
+      input.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') handleSubmit();
+      });
+      skipBtn.addEventListener('click', function() {
+        if (testAnswered) return;
+        testAnswered = true;
+        testTotal++;
+        input.disabled = true;
+        checkBtn.disabled = true;
+        skipBtn.disabled = true;
+        input.classList.add('incorrect');
+        testAnswers.push({
+          word: word.word,
+          correct: false,
+          userAnswer: '(skipped)'
+        });
+        showTestFeedback(word, false, '(skipped)');
+        setTimeout(() => {
+          if (testActive) { testCurrent++; renderTest(); }
+        }, 1500);
+      });
+    }
+
+    // Skip button for current question
+    document.getElementById('testSkipBtn').onclick = function() {
+      if (testAnswered) return;
+      testAnswered = true;
+      testTotal++;
+      testAnswers.push({
+        word: word.word,
+        correct: false,
+        userAnswer: '(skipped)'
+      });
+      if (isMC) {
+        document.querySelectorAll('.test-mc-option').forEach(o => o.disabled = true);
+      } else {
+        const i = document.getElementById('testTypeInput');
+        if (i) { i.disabled = true; i.classList.add('incorrect'); }
+        const cb = document.getElementById('testCheckBtn');
+        if (cb) cb.disabled = true;
+        const sb = document.getElementById('testTypeSkipBtn');
+        if (sb) sb.disabled = true;
+      }
+      showTestFeedback(word, false, '(skipped)');
+      setTimeout(() => {
+        if (testActive) { testCurrent++; renderTest(); }
+      }, 1500);
+    };
+  }
+
+  function showTestFeedback(word, isCorrect, userAnswer) {
+    const fb = document.getElementById('testFeedback');
+    fb.className = 'test-feedback show ' + (isCorrect ? 'correct' : 'incorrect');
+    if (isCorrect) {
+      fb.innerHTML = '<strong>✓ Correct!</strong> ' + word.word + ' — ' + word.meaning_en;
+    } else {
+      fb.innerHTML = '<strong>✗ Incorrect.</strong> Your answer: "' + userAnswer + '". Correct: <strong>' + word.word + '</strong> — ' + word.meaning_en;
+    }
+  }
+
+  function finishTest() {
+    testActive = false;
+    if (testTimerInterval) clearInterval(testTimerInterval);
+
+    const m = String(Math.floor(testSeconds / 60)).padStart(2, '0');
+    const s = String(testSeconds % 60).padStart(2, '0');
+    const incorrect = testAnswers.filter(a => !a.correct);
+
+    let html = `
+      <div class="test-results">
+        <div class="big-score">${testCorrect} / ${testTotal}</div>
+        <div class="score-label">Score</div>
+        <div class="result-stats">
+          <div class="stat"><span class="num">${testCorrect}</span><span class="label">Correct</span></div>
+          <div class="stat"><span class="num">${testTotal - testCorrect}</span><span class="label">Incorrect</span></div>
+          <div class="stat"><span class="num">${m}:${s}</span><span class="label">Time</span></div>
+          <div class="stat"><span class="num">${testTotal > 0 ? Math.round(testCorrect/testTotal*100) : 0}%</span><span class="label">Accuracy</span></div>
+        </div>`;
+
+    if (incorrect.length > 0) {
+      html += '<div class="incorrect-list"><h3>Review Incorrect Answers</h3>';
+      // Show unique incorrect words
+      const seen = new Set();
+      incorrect.forEach(a => {
+        if (!seen.has(a.word)) {
+          seen.add(a.word);
+          const w = vocabulary.find(v => v.word === a.word);
+          html += '<div class="incorrect-item"><span><span class="wrong">✗</span> ' + a.word + '</span><span class="right">✓ ' + (w ? w.meaning_en : '') + (w && w.meaning_bn ? '<br><span style="font-size:0.75rem;color:hsl(var(--muted-foreground));">' + w.meaning_bn + '</span>' : '') + '<br><span style="font-size:0.75rem;color:hsl(var(--muted-foreground));">Syn: ' + (w ? w.synonym : '') + '</span></span></div>';
+        }
+      });
+      html += '</div>';
+    }
+
+    html += `<button class="btn btn-primary" onclick="(function(){initTest();})()">Retake Test</button></div>`;
+    document.getElementById('testContainer').innerHTML = html;
+  }
+
+  // Test mode pronounce (TTS)
+  document.getElementById('testPronounce').addEventListener('click', function() {
+    if (!testCurrentWord) return;
+    pronounceWord(testCurrentWord.word, this);
+  });
+
+  // ================================================
+  // 5. MATCH MODE
+  // ================================================
+  let matchCards = [];
+  let matchSelected = null;
+  let matchAttempts = 0;
+  let matchMatched = 0;
+  let matchTimerInterval = null;
+  let matchSeconds = 0;
+  let matchActive = false;
+  let matchLocked = false;
+
+  function initMatch() {
+    // Pick first 8 words, shuffle
+    const words = shuffle(vocabulary.slice(0, 8));
+    matchCards = [];
+    words.forEach(w => {
+      matchCards.push({ id: w.id, type: 'word', text: w.word, pairId: w.id });
+      matchCards.push({ id: w.id, type: 'def', text: w.meaning_en, pairId: w.id });
+    });
+    matchCards = shuffle(matchCards);
+    matchSelected = null;
+    matchAttempts = 0;
+    matchMatched = 0;
+    matchSeconds = 0;
+    matchActive = true;
+    matchLocked = false;
+    if (matchTimerInterval) clearInterval(matchTimerInterval);
+
+    document.getElementById('matchAttempts').textContent = 'Attempts: 0';
+    document.getElementById('matchTimer').textContent = '00:00';
+
+    // Best time display
+    if (progress.matchBestTime) {
+      const bm = String(Math.floor(progress.matchBestTime / 60)).padStart(2, '0');
+      const bs = String(progress.matchBestTime % 60).padStart(2, '0');
+      document.getElementById('matchBestDisplay').textContent = 'Best: ' + bm + ':' + bs;
+    } else {
+      document.getElementById('matchBestDisplay').textContent = '';
+    }
+
+    matchTimerInterval = setInterval(() => {
+      matchSeconds++;
+      const m = String(Math.floor(matchSeconds / 60)).padStart(2, '0');
+      const s = String(matchSeconds % 60).padStart(2, '0');
+      document.getElementById('matchTimer').textContent = m + ':' + s;
+    }, 1000);
+
+    renderMatchGrid();
+  }
+
+  function renderMatchGrid() {
+    const grid = document.getElementById('matchGrid');
+    grid.innerHTML = '';
+    matchCards.forEach((card, idx) => {
+      const div = document.createElement('div');
+      div.className = 'match-card ' + (card.type === 'word' ? 'word-card' : 'def-card');
+      div.dataset.idx = idx;
+      div.dataset.pairId = card.pairId;
+      div.dataset.type = card.type;
+      div.textContent = card.text;
+      if (card.matched) {
+        div.classList.add('matched');
+        div.style.pointerEvents = 'none';
+      }
+      div.addEventListener('click', function() {
+        if (matchLocked) return;
+        handleMatchClick(idx);
+      });
+      grid.appendChild(div);
+    });
+  }
+
+  function handleMatchClick(idx) {
+    if (!matchActive) return;
+    const card = matchCards[idx];
+    if (card.matched) return;
+
+    const el = document.querySelectorAll('.match-card')[idx];
+    if (el.classList.contains('selected')) {
+      el.classList.remove('selected');
+      matchSelected = null;
+      return;
+    }
+
+    if (matchSelected === null) {
+      el.classList.add('selected');
+      matchSelected = idx;
+    } else {
+      if (matchSelected === idx) return;
+      matchLocked = true;
+      const firstIdx = matchSelected;
+      const first = matchCards[firstIdx];
+      const second = card;
+      matchAttempts++;
+      document.getElementById('matchAttempts').textContent = 'Attempts: ' + matchAttempts;
+
+      const firstEl = document.querySelectorAll('.match-card')[firstIdx];
+      const secondEl = el;
+
+      if (first.pairId === second.pairId && first.type !== second.type) {
+        // Match!
+        matchMatched++;
+        first.matched = true;
+        second.matched = true;
+        firstEl.classList.remove('selected');
+        firstEl.classList.add('matched');
+        secondEl.classList.add('matched');
+        matchSelected = null;
+        matchLocked = false;
+
+        if (matchMatched === 8) {
+          // Complete!
+          matchActive = false;
+          if (matchTimerInterval) clearInterval(matchTimerInterval);
+          if (!progress.matchBestTime || matchSeconds < progress.matchBestTime) {
+            progress.matchBestTime = matchSeconds;
+            saveProgress(progress);
+            showToast('New best time! ' + document.getElementById('matchTimer').textContent);
+          }
+          document.getElementById('matchAttempts').textContent = 'Attempts: ' + matchAttempts + ' ✓ Complete!';
+          document.getElementById('matchTimer').textContent = '✓ Done!';
+        }
+      } else {
+        // No match
+        firstEl.classList.remove('selected');
+        firstEl.classList.add('wrong');
+        secondEl.classList.add('wrong');
+        setTimeout(() => {
+          firstEl.classList.remove('wrong');
+          secondEl.classList.remove('wrong');
+          matchSelected = null;
+          matchLocked = false;
+        }, 500);
+      }
+    }
+  }
+
+  document.getElementById('matchNewGame').addEventListener('click', initMatch);
+
+  // ================================================
+  // 6. BLAST MODE
+  // ================================================
+  let blastWords = [];
+  let blastCurrent = 0;
+  let blastScore = 0;
+  let blastLives = 3;
+  let blastLevel = 1;
+  let blastActive = false;
+  let blastAnimationId = null;
+  let blastStartTime = 0;
+  let blastFallDuration = 3500; // ms
+  let blastPlayHeight = 400;
+  let blastSubmitted = false;
+
+  function initBlast() {
+    blastWords = shuffle(vocabulary);
+    blastCurrent = 0;
+    blastScore = progress.blastHighScore || 0;
+    blastLives = 3;
+    blastLevel = 1;
+    blastActive = true;
+    blastSubmitted = false;
+    blastFallDuration = 3500;
+
+    if (blastAnimationId) {
+      cancelAnimationFrame(blastAnimationId);
+      blastAnimationId = null;
+    }
+
+    document.getElementById('blastScoreDisplay').textContent = 'Score: ' + blastScore;
+    document.getElementById('blastLevelDisplay').textContent = 'Level 1';
+    document.getElementById('blastFeedback').textContent = '';
+    document.getElementById('blastFeedback').className = 'blast-feedback';
+    document.getElementById('blastInput').value = '';
+    document.getElementById('blastInput').disabled = false;
+    document.getElementById('blastSubmit').disabled = false;
+    document.getElementById('blastGameOver').classList.add('hidden');
+    document.getElementById('blastInput').focus();
+
+    // Reset lives
+    for (let i = 1; i <= 3; i++) {
+      const el = document.getElementById('life' + i);
+      el.classList.remove('lost');
+      el.textContent = '❤';
+    }
+
+    // Reset asteroid position
+    const ast = document.getElementById('blastAsteroid');
+    ast.classList.remove('exploding');
+    ast.style.top = '-120px';
+
+    blastPlayHeight = document.getElementById('blastPlayArea').offsetHeight;
+    if (blastPlayHeight < 200) blastPlayHeight = 400;
+
+    showBlastWord();
+  }
+
+  function showBlastWord() {
+    if (!blastActive) return;
+
+    if (blastCurrent >= blastWords.length) {
+      // All words completed — victory!
+      blastActive = false;
+      document.getElementById('blastGameOver').classList.remove('hidden');
+      document.getElementById('blastGameOverMsg').textContent = 'All words completed! Amazing!';
+      document.getElementById('blastFinalScore').textContent = blastScore;
+      if (blastScore > (progress.blastHighScore || 0)) {
+        progress.blastHighScore = blastScore;
+        saveProgress(progress);
+        showToast('New high score: ' + blastScore);
+      }
+      return;
+    }
+
+    const word = blastWords[blastCurrent];
+
+    document.getElementById('blastAstText').innerHTML =
+      '<div style="font-size:0.875rem;font-style:italic;color:hsl(var(--muted-foreground));margin-bottom:0.25rem;">' + word.meaning_bn + '</div>' +
+      '<div>' + word.meaning_en + '</div>';
+    document.getElementById('blastAsteroid').dataset.answer = word.word.toLowerCase();
+    document.getElementById('blastAsteroid').dataset.originalWord = word.word;
+
+    // Reset asteroid
+    const ast = document.getElementById('blastAsteroid');
+    ast.classList.remove('exploding');
+    ast.style.top = '-120px';
+    ast.style.opacity = '1';
+    ast.style.transform = 'translateX(-50%) scale(1)';
+
+    blastStartTime = performance.now();
+    blastSubmitted = false;
+    document.getElementById('blastInput').value = '';
+    document.getElementById('blastInput').disabled = false;
+    document.getElementById('blastSubmit').disabled = false;
+    document.getElementById('blastInput').focus();
+
+    if (blastAnimationId) cancelAnimationFrame(blastAnimationId);
+    animateBlastAsteroid();
+  }
+
+  function animateBlastAsteroid() {
+    if (!blastActive) return;
+
+    const ast = document.getElementById('blastAsteroid');
+    const elapsed = performance.now() - blastStartTime;
+    const progress = Math.min(elapsed / blastFallDuration, 1);
+    const playHeight = blastPlayHeight;
+    const startY = -120;
+    const endY = playHeight - 100; // Above danger line
+    const currentY = startY + (endY - startY) * progress;
+
+    ast.style.top = currentY + 'px';
+
+    if (progress >= 1 && !blastSubmitted) {
+      // Asteroid reached bottom — lose a life
+      blastSubmitted = true;
+      loseBlastLife();
+      return;
+    }
+
+    blastAnimationId = requestAnimationFrame(animateBlastAsteroid);
+  }
+
+  function loseBlastLife() {
+    blastLives--;
+    const lifeEl = document.getElementById('life' + (3 - blastLives));
+    if (lifeEl) {
+      lifeEl.classList.add('lost');
+      lifeEl.textContent = '♡';
+    }
+
+    if (blastLives <= 0) {
+      blastActive = false;
+      if (blastAnimationId) cancelAnimationFrame(blastAnimationId);
+      document.getElementById('blastGameOver').classList.remove('hidden');
+      document.getElementById('blastGameOverMsg').textContent = 'You ran out of lives.';
+      document.getElementById('blastFinalScore').textContent = blastScore;
+      if (blastScore > (progress.blastHighScore || 0)) {
+        progress.blastHighScore = blastScore;
+        saveProgress(progress);
+        showToast('New high score: ' + blastScore);
+      }
+    } else {
+      // Show wrong answer
+      const ast = document.getElementById('blastAsteroid');
+      const fb = document.getElementById('blastFeedback');
+      fb.textContent = '✗ The correct word was: ' + ast.dataset.originalWord;
+      fb.className = 'blast-feedback incorrect';
+
+      setTimeout(() => {
+        if (blastActive) {
+          fb.textContent = '';
+          blastCurrent++;
+          showBlastWord();
+        }
+      }, 1500);
+    }
+  }
+
+  // Blast submit
+  document.getElementById('blastSubmit').addEventListener('click', handleBlastSubmit);
+  document.getElementById('blastInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') handleBlastSubmit();
+  });
+
+  function handleBlastSubmit() {
+    if (!blastActive || blastSubmitted) return;
+    const input = document.getElementById('blastInput').value.trim().toLowerCase();
+    if (!input) return;
+
+    blastSubmitted = true;
+    const ast = document.getElementById('blastAsteroid');
+    const correctAnswer = ast.dataset.answer;
+    const isCorrect = input === correctAnswer;
+
+    if (blastAnimationId) cancelAnimationFrame(blastAnimationId);
+
+    if (isCorrect) {
+      // Explode!
+      blastScore += 10;
+      document.getElementById('blastScoreDisplay').textContent = 'Score: ' + blastScore;
+      const fb = document.getElementById('blastFeedback');
+      fb.textContent = '✓ Correct! +10 points';
+      fb.className = 'blast-feedback correct';
+
+      ast.classList.add('exploding');
+      document.getElementById('blastInput').disabled = true;
+      document.getElementById('blastSubmit').disabled = true;
+
+      // Level up every 10 words
+      if (blastCurrent > 0 && blastCurrent % 10 === 0) {
+        blastLevel++;
+        blastFallDuration = Math.max(1500, blastFallDuration - 200);
+        document.getElementById('blastLevelDisplay').textContent = 'Level ' + blastLevel;
+      }
+
+      setTimeout(() => {
+        blastCurrent++;
+        if (blastActive) {
+          showBlastWord();
+        }
+      }, 800);
+    } else {
+      // Wrong
+      loseBlastLife();
+    }
+  }
+
+  document.getElementById('blastPlayAgain').addEventListener('click', function() {
+    initBlast();
+  });
+
+  // ================================================
+  // 7. BLOCKS MODE (Gravity-style)
+  // ================================================
+  let blocksWords = [];
+  let blocksCurrent = 0;
+  let blocksScore = 0;
+  let blocksLives = 3;
+  let blocksLevel = 1;
+  let blocksActive = false;
+  let blocksAnimationId = null;
+  let blocksStartTime = 0;
+  let blocksFallDuration = 4000;
+  let blocksPlayHeight = 400;
+  let blocksSubmitted = false;
+
+  function initBlocks() {
+    blocksWords = shuffle(vocabulary);
+    blocksCurrent = 0;
+    blocksScore = 0;
+    blocksLives = 3;
+    blocksLevel = 1;
+    blocksActive = true;
+    blocksSubmitted = false;
+    blocksFallDuration = 4000;
+
+    if (blocksAnimationId) {
+      cancelAnimationFrame(blocksAnimationId);
+      blocksAnimationId = null;
+    }
+
+    document.getElementById('blocksScoreDisplay').textContent = 'Score: ' + blocksScore;
+    document.getElementById('blocksLevelDisplay').textContent = 'Level 1';
+    document.getElementById('blocksFeedback').textContent = '';
+    document.getElementById('blocksFeedback').className = 'blocks-feedback';
+    document.getElementById('blocksInput').value = '';
+    document.getElementById('blocksInput').disabled = false;
+    document.getElementById('blocksSubmit').disabled = false;
+    document.getElementById('blocksGameOver').classList.add('hidden');
+
+    const block = document.getElementById('blocksBlock');
+    block.classList.remove('exploding');
+    block.style.top = '-120px';
+    block.style.opacity = '1';
+    block.style.transform = 'translateX(-50%) scale(1)';
+
+    // Reset lives
+    for (let i = 1; i <= 3; i++) {
+      const el = document.getElementById('blocksLife' + i);
+      el.classList.remove('lost');
+      el.textContent = '❤';
+    }
+
+    blocksPlayHeight = document.getElementById('blocksPlayArea').offsetHeight;
+    if (blocksPlayHeight < 200) blocksPlayHeight = 400;
+
+    document.getElementById('blocksInput').focus();
+    showBlocksWord();
+  }
+
+  function showBlocksWord() {
+    if (!blocksActive) return;
+
+    if (blocksCurrent >= blocksWords.length) {
+      blocksActive = false;
+      document.getElementById('blocksGameOver').classList.remove('hidden');
+      document.getElementById('blocksGameOverMsg').textContent = 'All words completed! Amazing!';
+      document.getElementById('blocksFinalScore').textContent = blocksScore;
+      if (blocksScore > (progress.blocksHighScore || 0)) {
+        progress.blocksHighScore = blocksScore;
+        saveProgress(progress);
+        showToast('New high score: ' + blocksScore);
+      }
+      return;
+    }
+
+    const word = blocksWords[blocksCurrent];
+    document.getElementById('blocksBn').textContent = word.meaning_bn;
+    document.getElementById('blocksDef').textContent = word.meaning_en;
+    document.getElementById('blocksBlock').dataset.answer = word.word.toLowerCase();
+    document.getElementById('blocksBlock').dataset.originalWord = word.word;
+
+    const block = document.getElementById('blocksBlock');
+    block.classList.remove('exploding');
+    block.style.top = '-120px';
+    block.style.opacity = '1';
+    block.style.transform = 'translateX(-50%) scale(1)';
+
+    blocksStartTime = performance.now();
+    blocksSubmitted = false;
+    document.getElementById('blocksInput').value = '';
+    document.getElementById('blocksInput').disabled = false;
+    document.getElementById('blocksSubmit').disabled = false;
+    document.getElementById('blocksInput').focus();
+
+    if (blocksAnimationId) cancelAnimationFrame(blocksAnimationId);
+    animateBlocks();
+  }
+
+  function animateBlocks() {
+    if (!blocksActive) return;
+
+    const block = document.getElementById('blocksBlock');
+    const elapsed = performance.now() - blocksStartTime;
+    const progress = Math.min(elapsed / blocksFallDuration, 1);
+    const playHeight = blocksPlayHeight;
+    const startY = -120;
+    const endY = playHeight - 100;
+    const currentY = startY + (endY - startY) * progress;
+
+    block.style.top = currentY + 'px';
+
+    if (progress >= 1 && !blocksSubmitted) {
+      blocksSubmitted = true;
+      loseBlocksLife();
+      return;
+    }
+
+    blocksAnimationId = requestAnimationFrame(animateBlocks);
+  }
+
+  function loseBlocksLife() {
+    blocksLives--;
+    const lifeEl = document.getElementById('blocksLife' + (3 - blocksLives));
+    if (lifeEl) {
+      lifeEl.classList.add('lost');
+      lifeEl.textContent = '♡';
+    }
+
+    if (blocksLives <= 0) {
+      blocksActive = false;
+      if (blocksAnimationId) cancelAnimationFrame(blocksAnimationId);
+      document.getElementById('blocksGameOver').classList.remove('hidden');
+      document.getElementById('blocksGameOverMsg').textContent = 'You ran out of lives.';
+      document.getElementById('blocksFinalScore').textContent = blocksScore;
+      if (blocksScore > (progress.blocksHighScore || 0)) {
+        progress.blocksHighScore = blocksScore;
+        saveProgress(progress);
+        showToast('New high score: ' + blocksScore);
+      }
+    } else {
+      const block = document.getElementById('blocksBlock');
+      const fb = document.getElementById('blocksFeedback');
+      fb.textContent = '✗ The correct word was: ' + block.dataset.originalWord;
+      fb.className = 'blocks-feedback incorrect';
+
+      setTimeout(() => {
+        if (blocksActive) {
+          fb.textContent = '';
+          blocksCurrent++;
+          showBlocksWord();
+        }
+      }, 1500);
+    }
+  }
+
+  document.getElementById('blocksSubmit').addEventListener('click', handleBlocksSubmit);
+  document.getElementById('blocksInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') handleBlocksSubmit();
+  });
+
+  function handleBlocksSubmit() {
+    if (!blocksActive || blocksSubmitted) return;
+    const input = document.getElementById('blocksInput').value.trim().toLowerCase();
+    if (!input) return;
+
+    blocksSubmitted = true;
+    const block = document.getElementById('blocksBlock');
+    const correctAnswer = block.dataset.answer;
+    const isCorrect = input === correctAnswer;
+
+    if (blocksAnimationId) cancelAnimationFrame(blocksAnimationId);
+
+    if (isCorrect) {
+      blocksScore += 10;
+      document.getElementById('blocksScoreDisplay').textContent = 'Score: ' + blocksScore;
+      const fb = document.getElementById('blocksFeedback');
+      fb.textContent = '✓ Correct! +10 points';
+      fb.className = 'blocks-feedback correct';
+
+      block.classList.add('exploding');
+      document.getElementById('blocksInput').disabled = true;
+      document.getElementById('blocksSubmit').disabled = true;
+
+      // Level up every 10 words
+      if (blocksCurrent > 0 && blocksCurrent % 10 === 0) {
+        blocksLevel++;
+        blocksFallDuration = Math.max(1500, blocksFallDuration - 250);
+        document.getElementById('blocksLevelDisplay').textContent = 'Level ' + blocksLevel;
+      }
+
+      setTimeout(() => {
+        blocksCurrent++;
+        if (blocksActive) {
+          showBlocksWord();
+        }
+      }, 800);
+    } else {
+      loseBlocksLife();
+    }
+  }
+
+  document.getElementById('blocksPlayAgain').addEventListener('click', function() {
+    initBlocks();
+  });
+
+  // ================================================
+  // 8. HEADER SCROLL BEHAVIOR
+  // ================================================
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  }, { passive: true });
+
+  // ================================================
+  // 8. MOBILE MENU
+  // ================================================
+  const mobileToggle = document.getElementById('mobileToggle');
+  const mobileOverlay = document.getElementById('mobileOverlay');
+
+  if (mobileToggle && mobileOverlay) {
+    const closeMenu = () => {
+      mobileOverlay.classList.remove('open');
+      mobileToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>';
+      mobileToggle.setAttribute('aria-label', 'Open menu');
+      document.body.style.overflow = '';
+    };
+
+    mobileToggle.addEventListener('click', () => {
+      const isOpen = mobileOverlay.classList.toggle('open');
+      mobileToggle.innerHTML = isOpen
+        ? '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>'
+        : '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>';
+      mobileToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileOverlay.classList.contains('open')) {
+        closeMenu();
+      }
+    });
+  }
+
+  // ================================================
+  // 9. SCROLL-TRIGGERED REVEAL (IntersectionObserver)
+  // ================================================
+  const revealElements = document.querySelectorAll('.reveal');
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    for (const el of revealElements) {
+      observer.observe(el);
+    }
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  }
+
+  // ================================================
+  // 10. CHAR-IN REVEAL ANIMATION for page title
+  // ================================================
+  const pageTitle = document.getElementById('pageTitle');
+  if (pageTitle) {
+    const text = pageTitle.textContent.trim();
+    pageTitle.textContent = '';
+    const wrapper = document.createElement('span');
+    wrapper.className = 'inline-flex flex-wrap';
+    text.split('').forEach((ch, i) => {
+      const span = document.createElement('span');
+      span.className = 'char-in';
+      span.textContent = ch === ' ' ? '\u00A0' : ch;
+      span.style.animationDelay = (i * 40) + 'ms';
+      wrapper.appendChild(span);
+    });
+    pageTitle.appendChild(wrapper);
+  }
+
+  // ================================================
+  // 11. KEYBOARD NAVIGATION
+  // ================================================
+  document.addEventListener('keydown', function(e) {
+    // Escape: deselect match, close mobile
+    if (e.key === 'Escape') {
+      if (currentMode === 'match') {
+        const cards = document.querySelectorAll('.match-card');
+        cards.forEach(c => c.classList.remove('selected'));
+        matchSelected = null;
+      }
+      return;
+    }
+
+    // Flashcards mode
+    if (currentMode === 'flashcards') {
+      if (e.key === 'ArrowLeft' && fcIndex > 0) {
+        fcIndex--;
+        renderFlashcard();
+        e.preventDefault();
+      } else if (e.key === 'ArrowRight' && fcIndex < fcOrder.length - 1) {
+        fcIndex++;
+        renderFlashcard();
+        e.preventDefault();
+      } else if (e.key === ' ' || e.key === 'Enter') {
+        const card = document.getElementById('flashcard');
+        card.classList.toggle('flipped');
+        fcFlipped = !fcFlipped;
+        e.preventDefault();
+      }
+    }
+
+    // Learn mode
+    if (currentMode === 'learn' && !learnWaiting) {
+      const keys = ['1', '2', '3', '4'];
+      const idx = keys.indexOf(e.key);
+      if (idx !== -1) {
+        const options = document.querySelectorAll('.learn-option');
+        if (options[idx]) {
+          options[idx].click();
+          e.preventDefault();
+        }
+      }
+    }
+
+    // Test mode — Enter handled inline
+  });
+
+  // ================================================
+  // 12. THEME TOGGLE (3-way: light → blue → green)
+  // ================================================
+  const body = document.body;
+  const themeToggles = document.querySelectorAll('.theme-toggle');
+  const THEMES = ['light', 'blue', 'green'];
+
+  function getPreferredTheme() {
+    const stored = localStorage.getItem('theme');
+    if (THEMES.includes(stored)) return stored;
+    return 'blue';
+  }
+
+  function applyTheme(theme) {
+    body.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }
+
+  function nextTheme(current) {
+    const idx = THEMES.indexOf(current);
+    return THEMES[(idx + 1) % THEMES.length];
+  }
+
+  // Apply saved theme on load
+  applyTheme(getPreferredTheme());
+
+  // Cycle on click
+  for (const btn of themeToggles) {
+    btn.addEventListener('click', () => {
+      const current = body.getAttribute('data-theme') || 'blue';
+      applyTheme(nextTheme(current));
+    });
+  }
+
+  // ================================================
+  // 13. INIT — load flashcards by default
+  // ================================================
+  initFlashcards();
+
+})();
+</script>
+</body>
+</html>

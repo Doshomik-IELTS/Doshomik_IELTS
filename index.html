@@ -1,0 +1,2614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Doshomik IELTS — IELTS Practice, Mock Tests, and Band Feedback</title>
+<meta name="description" content="Prepare for IELTS with Doshomik: original resources, module-wise practice, mock tests, flashcards, progress tracking, and transparent unofficial band estimates."/>
+<meta property="og:title" content="Doshomik IELTS — Practice, Mock Tests, and Feedback" />
+<meta property="og:description" content="Original IELTS resources, module-wise practice, mock tests, flashcards, progress tracking, and transparent unofficial band estimates." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1120'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-weight='700' fill='white'%3ED%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   DESIGN SYSTEM — shadcn-inspired CSS variables
+   ============================================ */
+:root {
+  --background: 42 58% 86%;
+  --foreground: 30 42% 14%;
+  --muted: 40 42% 80%;
+  --muted-foreground: 32 20% 38%;
+  --border: 38 32% 68%;
+  --ring: 30 42% 14%;
+  --card: 42 48% 90%;
+  --card-foreground: 30 42% 14%;
+  --popover: 42 48% 93%;
+  --popover-foreground: 30 42% 14%;
+  --primary: 40 90% 50%;
+  --primary-foreground: 40 40% 94%;
+  --secondary: 40 35% 82%;
+  --secondary-foreground: 30 42% 14%;
+  --input: 38 32% 68%;
+  --success: 142 60% 42%;
+  --success-foreground: 0 0% 100%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 20 40% 10%;
+  --destructive: 0 72% 48%;
+  --destructive-foreground: 0 0% 100%;
+  --info: 200 80% 48%;
+  --info-foreground: 0 0% 100%;
+  --hud-rgb: 180, 130, 60;
+  --hud-accent-rgb: 210, 160, 50;
+  --hud-panel-rgb: 255, 240, 210;
+  --hud-glow-rgb: 235, 185, 60;
+  --hero-canvas-opacity: 0.46;
+  --radius: 0.5rem;
+  --font-sans: 'Instrument Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* ============================================
+   THEME: Sky Blue — soothing night-study mode
+   ============================================ */
+[data-theme="blue"] {
+  --background: 215 25% 14%;
+  --foreground: 210 15% 88%;
+  --muted: 215 20% 20%;
+  --muted-foreground: 210 10% 62%;
+  --border: 215 18% 26%;
+  --ring: 210 15% 88%;
+  --card: 215 22% 17%;
+  --card-foreground: 210 15% 88%;
+  --popover: 215 22% 22%;
+  --popover-foreground: 210 15% 88%;
+  --primary: 200 75% 52%;
+  --primary-foreground: 215 25% 14%;
+  --secondary: 215 18% 24%;
+  --secondary-foreground: 210 15% 88%;
+  --input: 215 18% 26%;
+  --success: 160 60% 40%;
+  --success-foreground: 0 0% 95%;
+  --warning: 38 85% 50%;
+  --warning-foreground: 20 40% 10%;
+  --destructive: 350 70% 48%;
+  --destructive-foreground: 0 0% 95%;
+  --info: 200 70% 50%;
+  --info-foreground: 0 0% 95%;
+  --hud-rgb: 180, 200, 225;
+  --hud-accent-rgb: 64, 160, 255;
+  --hud-panel-rgb: 30, 45, 65;
+  --hud-glow-rgb: 64, 180, 255;
+  --hero-canvas-opacity: 0.25;
+}
+
+/* ============================================
+   THEME: Dark Forest — nature-inspired calm
+   ============================================ */
+[data-theme="green"] {
+  --background: 150 25% 10%;
+  --foreground: 140 8% 85%;
+  --muted: 150 20% 16%;
+  --muted-foreground: 140 6% 60%;
+  --border: 145 15% 22%;
+  --ring: 140 8% 85%;
+  --card: 150 22% 14%;
+  --card-foreground: 140 8% 85%;
+  --popover: 150 22% 18%;
+  --popover-foreground: 140 8% 85%;
+  --primary: 155 65% 42%;
+  --primary-foreground: 150 25% 10%;
+  --secondary: 150 20% 20%;
+  --secondary-foreground: 140 8% 85%;
+  --input: 145 15% 22%;
+  --success: 155 55% 40%;
+  --success-foreground: 0 0% 95%;
+  --warning: 35 80% 50%;
+  --warning-foreground: 20 40% 10%;
+  --destructive: 360 65% 45%;
+  --destructive-foreground: 0 0% 95%;
+  --info: 195 60% 45%;
+  --info-foreground: 0 0% 95%;
+  --hud-rgb: 160, 200, 170;
+  --hud-accent-rgb: 80, 200, 120;
+  --hud-panel-rgb: 25, 45, 35;
+  --hud-glow-rgb: 80, 210, 130;
+  --hero-canvas-opacity: 0.25;
+}
+
+/* ============================================
+   BASE RESET / UTILITY
+   ============================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(circle at 80% 12%, rgba(var(--hud-glow-rgb), 0.12), transparent 32rem),
+    radial-gradient(circle at 12% 85%, rgba(var(--hud-accent-rgb), 0.08), transparent 26rem),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; font-family: inherit; }
+ul { list-style: none; }
+
+.font-sans { font-family: var(--font-sans); }
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+.text-muted { color: hsl(var(--muted-foreground)); }
+.text-sm { font-size: 0.875rem; }
+.text-xs { font-size: 0.75rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.text-4xl { font-size: 2.25rem; }
+.text-5xl { font-size: 3rem; }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+.max-w-\[1400px\] { max-width: 1400px; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+.py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+.py-32 { padding-top: 8rem; padding-bottom: 8rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-12 { margin-bottom: 3rem; }
+.mb-16 { margin-bottom: 4rem; }
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
+.gap-4 { gap: 1rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+.gap-12 { gap: 3rem; }
+.gap-16 { gap: 4rem; }
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.grid { display: grid; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-baseline { align-items: baseline; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.flex-col { flex-direction: column; }
+.flex-1 { flex: 1; }
+.shrink-0 { flex-shrink: 0; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.top-0 { top: 0; }
+.left-0 { left: 0; }
+.right-0 { right: 0; }
+.bottom-0 { bottom: 0; }
+.z-10 { z-index: 10; }
+.z-40 { z-index: 40; }
+.z-50 { z-index: 50; }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.h-px { height: 1px; }
+.w-px { width: 1px; }
+.w-8 { width: 2rem; }
+.overflow-hidden { overflow: hidden; }
+.overflow-x-hidden { overflow-x: hidden; }
+.whitespace-nowrap { white-space: nowrap; }
+.leading-relaxed { line-height: 1.625; }
+.leading-\[0\.9\] { line-height: 0.9; }
+.tracking-tight { letter-spacing: -0.025em; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.antialiased { -webkit-font-smoothing: antialiased; }
+.pointer-events-none { pointer-events: none; }
+.object-cover { object-fit: cover; }
+.border { border: 1px solid hsl(var(--border)); }
+.border-b { border-bottom: 1px solid hsl(var(--border)); }
+.border-t { border-top: 1px solid hsl(var(--border)); }
+.rounded-full { border-radius: 9999px; }
+.rounded-xl { border-radius: 1rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.shadow-xs { box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); }
+.transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.duration-300 { transition-duration: 300ms; }
+.duration-500 { transition-duration: 500ms; }
+.duration-700 { transition-duration: 700ms; }
+.duration-1000 { transition-duration: 1000ms; }
+.opacity-0 { opacity: 0; }
+.opacity-30 { opacity: 0.3; }
+.opacity-40 { opacity: 0.4; }
+.group:hover .group-hover\:translate-x-1 { transform: translateX(0.25rem); }
+.group:hover .group-hover\:translate-x-2 { transform: translateX(0.5rem); }
+.bg-transparent { background: transparent; }
+.bg-background { background: hsl(var(--background)); }
+.bg-foreground { background: hsl(var(--foreground)); }
+.text-background { color: hsl(var(--background)); }
+.text-foreground { color: hsl(var(--foreground)); }
+.no-select { user-select: none; }
+
+/* ============================================
+   HEADER
+   ============================================ */
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 50;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+header.scrolled {
+  background: hsl(var(--background) / 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid hsl(var(--border) / 0.3);
+}
+/* Shrink nav-inner on scroll */
+header.scrolled .nav-inner {
+  height: 3.5rem;
+}
+header.scrolled .logo-icon {
+  width: 30px; height: 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+header.scrolled .logo-text {
+  font-size: 1.25rem;
+}
+header.scrolled .logo-tm {
+  font-size: 0.5rem;
+  margin-top: 0.15rem;
+}
+header.scrolled .nav-links {
+  gap: 2rem;
+}
+header.scrolled .nav-actions {
+  gap: 0.75rem;
+}
+header nav {
+  margin: 0 auto;
+  max-width: 1400px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+header .nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  height: 5rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 1024px) {
+  header .nav-inner { padding: 0 2rem; }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-icon {
+  width: 36px; height: 36px;
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: -0.025em;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-tm {
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  margin-top: 0.25rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-links { display: none; gap: 3rem; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+@media (min-width: 768px) { .nav-links { display: flex; } }
+.nav-links a {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  transition: color 0.3s;
+  position: relative;
+}
+.nav-links a:hover { color: hsl(var(--foreground)); }
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 1px;
+  background: hsl(var(--foreground));
+  transition: width 0.3s;
+}
+.nav-links a:hover::after { width: 100%; }
+.nav-actions {
+  display: none;
+  gap: 1rem;
+  align-items: center;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) { .nav-actions { display: flex; } }
+.nav-actions a {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-actions a:hover { color: hsl(var(--foreground)); }
+
+/* ============================================
+   BUTTONS (shadcn-style)
+   ============================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+  border-radius: 9999px;
+  text-decoration: none;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+.btn:disabled { pointer-events: none; opacity: 0.5; }
+.btn-sm { height: 2rem; padding: 0 1.25rem; }
+.btn-md { height: 2.5rem; padding: 0 1.5rem; }
+.btn-lg { height: 3.5rem; padding: 0 2rem; font-size: 1rem; }
+.btn-xl { height: 3.75rem; padding: 0 2rem; font-size: 1rem; border-radius: 9999px; }
+.btn-primary {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+.btn-primary:hover { opacity: 0.9; }
+.btn-secondary {
+  background: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+}
+.btn-secondary:hover { opacity: 0.85; }
+.btn-outline {
+  background: transparent;
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+}
+.btn-outline:hover { background: hsl(var(--foreground) / 0.05); }
+.btn-ghost {
+  background: transparent;
+  color: hsl(var(--muted-foreground));
+}
+.btn-ghost:hover { color: hsl(var(--foreground)); }
+.btn .icon-arrow {
+  width: 1rem; height: 1rem;
+  transition: transform 0.3s;
+}
+.btn:hover .icon-arrow { transform: translateX(2px); }
+
+/* ============================================
+   MOBILE MENU
+   ============================================ */
+.mobile-toggle { display: block; padding: 0.5rem; background: none; border: none; color: hsl(var(--foreground)); transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+@media (min-width: 768px) { .mobile-toggle { display: none; } }
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: hsl(var(--background));
+  z-index: 40;
+  transition: all 0.5s;
+  opacity: 0;
+  pointer-events: none;
+}
+.mobile-overlay.open { opacity: 1; pointer-events: auto; }
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 7rem 2rem 2rem;
+}
+.mobile-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.mobile-links a {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: hsl(var(--foreground));
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all 0.5s;
+}
+.mobile-overlay.open .mobile-links a { opacity: 1; transform: translateY(0); }
+.mobile-overlay.open .mobile-links a:nth-child(1) { transition-delay: 0ms; }
+.mobile-overlay.open .mobile-links a:nth-child(2) { transition-delay: 50ms; }
+.mobile-overlay.open .mobile-links a:nth-child(3) { transition-delay: 100ms; }
+.mobile-overlay.open .mobile-links a:nth-child(4) { transition-delay: 150ms; }
+.mobile-overlay.open .mobile-links a:nth-child(5) { transition-delay: 200ms; }
+.mobile-overlay.open .mobile-links a:nth-child(6) { transition-delay: 250ms; }
+.mobile-buttons {
+  display: flex; gap: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid hsl(var(--border));
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all 0.5s 200ms;
+}
+.mobile-overlay.open .mobile-buttons { opacity: 1; transform: translateY(0); }
+.mobile-buttons .btn { flex: 1; height: 3.5rem; font-size: 1rem; }
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-canvas {
+  position: absolute;
+  right: -10rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 600px; height: 600px;
+  opacity: var(--hero-canvas-opacity);
+  pointer-events: none;
+}
+@media (min-width: 1024px) {
+  .hero-canvas { right: 0; width: 800px; height: 800px; opacity: calc(var(--hero-canvas-opacity) + 0.24); }
+}
+@media (min-width: 1280px) {
+  .hero-canvas { right: 1rem; }
+}
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.3;
+}
+.hero-grid .hline {
+  position: absolute;
+  height: 1px;
+  background: hsl(var(--foreground) / 0.08);
+  left: 0; right: 0;
+  animation: gridPulse 6s ease-in-out infinite;
+}
+.hero-grid .vline {
+  position: absolute;
+  width: 1px;
+  background: hsl(var(--foreground) / 0.08);
+  top: 0; bottom: 0;
+  animation: gridPulse 7s ease-in-out infinite;
+}
+@keyframes gridPulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.95; }
+}
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 8rem 1.5rem 6rem;
+}
+@media (min-width: 1024px) {
+  .hero-content { padding: 10rem 3rem 8rem; }
+}
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  font-family: var(--font-mono);
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all 0.7s;
+}
+.hero-tag.visible { opacity: 1; transform: translateY(0); }
+.hero-tag .line {
+  width: 2rem; height: 1px;
+  background: hsl(var(--foreground) / 0.3);
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 12vw, 10rem);
+  line-height: 0.9;
+  letter-spacing: -0.025em;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: all 1s;
+}
+.hero h1.visible { opacity: 1; transform: translateY(0); }
+.hero h1 .char-in {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(1rem);
+  animation: charIn 0.6s forwards;
+}
+@keyframes charIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero h1 .highlight {
+  position: relative;
+  display: inline-block;
+  min-width: 0;
+}
+.hero h1 .highlight-bar {
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0; right: 0;
+  height: 0.5rem;
+  background: hsl(var(--foreground) / 0.08);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.hero h1.visible .highlight-bar { transform: scaleX(1); }
+.hero-word {
+  display: inline-flex;
+}
+.hero-word .letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(1rem) rotateX(25deg);
+  animation: letterRise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes letterRise {
+  to { opacity: 1; transform: translateY(0) rotateX(0); }
+}
+.hero-bottom {
+  display: grid;
+  gap: 3rem;
+  align-items: end;
+}
+@media (min-width: 1024px) {
+  .hero-bottom { grid-template-columns: 1fr 1fr; gap: 6rem; }
+}
+.hero-desc {
+  font-size: 1.125rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.625;
+  max-width: 36rem;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all 0.7s 0.2s;
+}
+.hero-desc.visible { opacity: 1; transform: translateY(0); }
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all 0.7s 0.3s;
+}
+.hero-buttons.visible { opacity: 1; transform: translateY(0); }
+@media (min-width: 640px) {
+  .hero-buttons { flex-direction: row; align-items: flex-start; }
+  .hero-desc { font-size: 1.25rem; }
+}
+
+/* Feature pills in hero */
+.feature-pills {
+  display: flex; flex-wrap: wrap; gap: 1rem;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all 0.7s 0.1s;
+}
+.feature-pills.visible { opacity: 1; transform: translateY(0); }
+.feature-pill {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: hsl(var(--foreground) / 0.05);
+  border: 1px solid hsl(var(--border) / 0.5);
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-family: var(--font-mono);
+  color: hsl(var(--muted-foreground));
+  transform: translateY(0);
+  transition: transform 0.35s, border-color 0.35s, background 0.35s;
+}
+.feature-pill:hover {
+  transform: translateY(-3px);
+  border-color: hsl(var(--foreground) / 0.25);
+  background: hsl(var(--foreground) / 0.08);
+}
+.feature-pill svg { width: 14px; height: 14px; }
+
+/* Marquee */
+.marquee-wrap {
+  position: absolute;
+  bottom: 3rem;
+  left: 0; right: 0;
+  opacity: 0;
+  transition: all 0.7s 0.5s;
+  overflow: hidden;
+}
+.marquee-wrap.visible { opacity: 1; }
+.marquee {
+  display: flex;
+  gap: 4rem;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+  white-space: nowrap;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-item {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+.marquee-item .num {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+}
+@media (min-width: 1024px) { .marquee-item .num { font-size: 3rem; } }
+.marquee-item .label {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+.marquee-item .sub {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+/* ============================================
+   SECTIONS — general
+   ============================================ */
+.section-header {
+  margin-bottom: 4rem;
+}
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 1.5rem;
+}
+.section-tag .line {
+  width: 2rem; height: 1px;
+  background: hsl(var(--foreground) / 0.3);
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+@media (min-width: 1024px) { .section-title { font-size: 3.5rem; } }
+
+/* ============================================
+   FEATURES / MVP
+   ============================================ */
+#features { padding: 6rem 0; }
+.feature-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid hsl(var(--border));
+  transition: all 0.7s;
+  opacity: 0;
+  transform: translateY(3rem);
+}
+.feature-row.visible { opacity: 1; transform: translateY(0); }
+@media (min-width: 1024px) {
+  .feature-row { flex-direction: row; gap: 4rem; padding: 5rem 0; }
+}
+.feature-num {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  flex-shrink: 0;
+}
+.feature-body {
+  flex: 1;
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+@media (min-width: 1024px) { .feature-body { grid-template-columns: 1fr 1fr; } }
+.feature-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  transition: transform 0.5s;
+}
+@media (min-width: 1024px) { .feature-body h3 { font-size: 2.25rem; } }
+.feature-row:hover .feature-body h3 { transform: translateX(0.5rem); }
+.feature-body p {
+  font-size: 1.125rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.625;
+}
+.feature-visual {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@media (min-width: 1024px) { .feature-visual { justify-content: flex-end; } }
+.feature-visual svg { width: 100%; max-width: 26rem; height: auto; aspect-ratio: 5/4; color: hsl(var(--foreground)); }
+.feature-row:hover .feature-visual {
+  transform: scale(1.04);
+}
+/* ============================================
+   COURSES / MODULES
+   ============================================ */
+#courses { padding: 6rem 0; overflow: hidden; }
+.courses-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.course-card {
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+  transform: translateY(2rem);
+}
+.course-card.visible { opacity: 1; transform: translateY(0); }
+.course-card:hover {
+  border-color: hsl(var(--foreground) / 0.3);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+.course-image {
+  height: 160px;
+  background: linear-gradient(135deg, hsl(var(--foreground) / 0.05), hsl(var(--foreground) / 0.02));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.course-image svg {
+  width: 60px; height: 60px;
+  color: hsl(var(--foreground) / 0.15);
+}
+.course-badge {
+  position: absolute;
+  top: 0.75rem; left: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+}
+.course-badge.free { background: hsl(142 72% 29%); }
+.course-body { padding: 1.25rem; }
+.course-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+.course-body p {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.course-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+}
+.course-meta .rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: hsl(39 100% 50%);
+}
+.course-meta .rating svg { width: 14px; height: 14px; fill: currentColor; }
+
+/* ============================================
+   TESTIMONIALS
+   ============================================ */
+#testimonials { padding: 6rem 0; }
+.testimonials-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.testimonial-card {
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s;
+  opacity: 0;
+  transform: translateY(2rem);
+}
+.testimonial-card.visible { opacity: 1; transform: translateY(0); }
+.testimonial-card:hover {
+  border-color: hsl(var(--foreground) / 0.2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.testimonial-card blockquote {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.testimonial-avatar {
+  width: 40px; height: 40px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, hsl(var(--foreground) / 0.1), hsl(var(--foreground) / 0.05));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(var(--muted-foreground));
+}
+.testimonial-name {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.testimonial-role {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+#cta {
+  padding: 6rem 0;
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  text-align: center;
+}
+#cta .section-title { color: hsl(var(--background)); }
+#cta .section-title .text-muted { color: hsl(var(--background) / 0.6); }
+#cta .btn-primary {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+#cta .btn-outline {
+  border-color: hsl(var(--background) / 0.3);
+  color: hsl(var(--background));
+}
+#cta .btn-outline:hover { background: hsl(var(--background) / 0.1); }
+.cta-sub {
+  color: hsl(var(--background) / 0.5);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  padding: 4rem 0 2rem;
+  border-top: 1px solid hsl(var(--border));
+}
+.footer-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+.footer-brand .logo-text { display: block; margin-bottom: 0.75rem; }
+.footer-brand p {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  max-width: 20rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.footer-social a {
+  width: 36px; height: 36px;
+  border-radius: 9999px;
+  border: 1px solid hsl(var(--border));
+  display: flex; align-items: center; justify-content: center;
+  color: hsl(var(--muted-foreground));
+  transition: all 0.3s;
+}
+.footer-social a:hover {
+  color: hsl(var(--foreground));
+  border-color: hsl(var(--foreground) / 0.5);
+}
+.footer-col h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.footer-col ul li { margin-bottom: 0.5rem; }
+.footer-col ul li a {
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+  transition: color 0.3s;
+}
+.footer-col ul li a:hover { color: hsl(var(--foreground)); }
+.footer-bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid hsl(var(--border));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+}
+.footer-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-status .dot {
+  width: 8px; height: 8px;
+  border-radius: 9999px;
+  background: hsl(142 72% 29%);
+  animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* ============================================
+   REVEAL ANIMATIONS (scroll-triggered)
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-2rem);
+  transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-left.visible { opacity: 1; transform: translateX(0); }
+.reveal-right {
+  opacity: 0;
+  transform: translateX(2rem);
+  transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;
+}
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+/* ============================================
+   SEARCH BAR (hero)
+   ============================================ */
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 480px;
+  border: 1px solid hsl(var(--border));
+  border-radius: 9999px;
+  padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+  background: hsl(var(--background));
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+}
+.search-bar:focus-within {
+  border-color: hsl(var(--foreground) / 0.5);
+  box-shadow: 0 0 0 3px hsl(var(--foreground) / 0.1);
+}
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: hsl(var(--foreground));
+}
+.search-bar input::placeholder { color: hsl(var(--muted-foreground) / 0.6); }
+.search-bar button {
+  width: 36px; height: 36px;
+  border-radius: 9999px;
+  border: none;
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.3s;
+}
+.search-bar button:hover { opacity: 0.9; }
+
+/* ============================================
+   SVG ANIMATION HELPERS
+   ============================================ */
+@keyframes pulse-ring {
+  0% { r: 20; opacity: 0.5; }
+  100% { r: 60; opacity: 0; }
+}
+@keyframes scan-line {
+  0% { y1: 40; y2: 40; opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { y1: 120; y2: 120; opacity: 0; }
+}
+@keyframes bar-pulse {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.7; }
+}
+@keyframes data-flow {
+  0% { stroke-dashoffset: 8; }
+  100% { stroke-dashoffset: 0; }
+}
+
+/* ============================================
+   PROCESS SECTION (dark)
+   ============================================ */
+.process-section {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  overflow: hidden;
+}
+.process-section .section-tag { color: hsl(var(--background) / 0.5); }
+.process-section .section-tag .line { background: hsl(var(--background) / 0.3); }
+.process-section .section-title { color: hsl(var(--background)); }
+.process-diagonal {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 40px,
+    currentColor 40px,
+    currentColor 41px
+  );
+}
+.process-layout {
+  display: grid;
+  gap: 4rem;
+}
+@media (min-width: 1024px) { .process-layout { grid-template-columns: 1fr 1fr; gap: 6rem; } }
+.process-step {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 2rem 0;
+  border-bottom: 1px solid hsl(var(--background) / 0.1);
+  opacity: 1;
+  transition: opacity 0.5s;
+  cursor: default;
+}
+.process-step.step-dimmed { opacity: 0.4; }
+.process-step.step-dimmed:hover { opacity: 0.7; }
+.process-step-inner {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.process-step-num {
+  font-family: var(--font-display);
+  font-size: 1.875rem;
+  color: hsl(var(--background) / 0.3);
+  flex-shrink: 0;
+}
+.process-step h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s;
+}
+@media (min-width: 1024px) { .process-step h3 { font-size: 1.875rem; } }
+.process-step:hover h3 { transform: translateX(0.5rem); }
+.process-step p {
+  color: hsl(var(--background) / 0.6);
+  line-height: 1.625;
+}
+.progress-track {
+  margin-top: 1rem;
+  height: 1px;
+  background: hsl(var(--background) / 0.2);
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: hsl(var(--background));
+  width: 0;
+  animation: none;
+}
+.progress-fill.animate { animation: progressFill 5s linear forwards; }
+@keyframes progressFill {
+  to { width: 100%; }
+}
+/* Code panel */
+.code-panel {
+  border: 1px solid hsl(var(--background) / 0.15);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  background: hsl(var(--background) / 0.05);
+}
+.code-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid hsl(var(--background) / 0.1);
+}
+.code-dot {
+  width: 10px; height: 10px;
+  border-radius: 9999px;
+}
+.code-dot:nth-child(1) { background: hsl(0 70% 55%); }
+.code-dot:nth-child(2) { background: hsl(39 100% 50%); }
+.code-dot:nth-child(3) { background: hsl(142 72% 29%); }
+.code-filename {
+  margin-left: 0.75rem;
+  font-size: 0.75rem;
+  color: hsl(var(--background) / 0.5);
+}
+.code-body { padding: 1rem; overflow-x: auto; }
+.code-line {
+  white-space: pre;
+  opacity: 0;
+  transform: translateX(-0.5rem);
+}
+.code-line.revealed {
+  animation: codeReveal 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes codeReveal {
+  to { opacity: 1; transform: translateX(0); }
+}
+.code-keyword { color: hsl(220 90% 65%); }
+.code-string { color: hsl(142 70% 45%); }
+.code-comment { color: hsl(var(--background) / 0.35); }
+.code-function { color: hsl(280 70% 65%); }
+
+/* ============================================
+   INFRASTRUCTURE / METRICS
+   ============================================ */
+#infrastructure { padding: 6rem 0; }
+.stats-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin: 3rem 0;
+}
+.stat-card {
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+.stat-card:hover { border-color: hsl(var(--foreground) / 0.3); }
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+.stat-card.visible .stat-num {
+  animation: statPop 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes statPop {
+  0% { opacity: 0; transform: translateY(0.75rem) scale(0.96); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.stat-label {
+  font-size: 0.8125rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+}
+.region-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.region-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.75rem;
+}
+.region-name {
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+.region-area {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+}
+.region-latency {
+  font-size: 0.875rem;
+  font-family: var(--font-mono);
+  color: hsl(142 72% 29%);
+}
+
+/* ============================================
+   INTEGRATIONS MARQUEE
+   ============================================ */
+.integrations-marquee {
+  overflow: hidden;
+  padding: 2rem 0;
+  border-top: 1px solid hsl(var(--border));
+  border-bottom: 1px solid hsl(var(--border));
+}
+.integrations-track {
+  display: flex;
+  gap: 3rem;
+  animation: marquee 40s linear infinite;
+  width: max-content;
+  align-items: center;
+}
+.integration-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+.integration-item svg { width: 32px; height: 32px; color: hsl(var(--muted-foreground)); }
+.integration-item span {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+  font-family: var(--font-mono);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (min-width: 640px) {
+  .text-4xl { font-size: 3rem; }
+  .text-5xl { font-size: 3.75rem; }
+  .section-title { font-size: 3rem; }
+}
+@media (min-width: 1024px) {
+  .px-6 { padding-left: 2rem; padding-right: 2rem; }
+  .py-24 { padding-top: 8rem; padding-bottom: 8rem; }
+  .py-32 { padding-top: 10rem; padding-bottom: 10rem; }
+  .gap-12 { gap: 3rem; }
+  .section-title { font-size: 3.5rem; }
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground)); }
+
+/* ============================================
+   ADDITIONAL UTILITIES
+   ============================================ */
+.hidden { display: none; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+@media (min-width: 768px) { .md\:flex { display: flex; } .md\:hidden { display: none; } }
+@media (min-width: 1024px) { .lg\:grid-cols-2 { grid-template-columns: 1fr 1fr; } }
+
+/* ============================================
+   DESIGN TOUCH-UPS
+   ============================================ */
+.features-desc { font-size: 1.125rem; margin-top: 1rem; max-width: 32rem; line-height: 1.6; }
+.features-link { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.5rem; font-size: 0.875rem; font-weight: 500; color: hsl(var(--foreground)); }
+.cta-title { font-size: clamp(2.5rem, 6vw, 4rem); }
+.cta-desc { font-size: 1.125rem; margin-top: 1.5rem; margin-bottom: 2.5rem; color: hsl(var(--background) / 0.6); max-width: 32rem; margin-left: auto; margin-right: auto; line-height: 1.6; }
+.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.status-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem; }
+.status-dot { width: 8px; height: 8px; border-radius: 9999px; background: hsl(142 72% 29%); animation: pulse-dot 2s infinite; display: inline-block; }
+.text-dim { color: hsl(var(--background) / 0.5); }
+.tag-pill { font-size: 0.625rem; padding: 0.125rem 0.375rem; background: hsl(var(--foreground)); color: hsl(var(--background)); border-radius: 9999px; margin-left: 0.25rem; }
+
+/* Trusted by marquee */
+.trusted-marquee { overflow: hidden; border-top: none; }
+.trusted-track { display: flex; gap: 0; animation: marquee 35s linear infinite; width: max-content; }
+.trusted-name { padding: 0.5rem 1.5rem; font-family: var(--font-display); font-size: 1.25rem; color: hsl(var(--muted-foreground)); flex-shrink: 0; }
+
+/* Feature row transition-delay stagger */
+.feature-row:nth-child(2) { transition-delay: 0ms; }
+.feature-row:nth-child(3) { transition-delay: 100ms; }
+.feature-row:nth-child(4) { transition-delay: 200ms; }
+.feature-row:nth-child(5) { transition-delay: 300ms; }
+.feature-row:nth-child(6) { transition-delay: 400ms; }
+.feature-row:nth-child(7) { transition-delay: 500ms; }
+
+/* Process section heading */
+#process .section-title .text-dim { color: hsl(var(--background) / 0.5); }
+
+/* ============================================
+   THEME TOGGLE
+   ============================================ */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 9999px;
+  border: 1px solid hsl(var(--border));
+  background: transparent;
+  color: hsl(var(--muted-foreground));
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+.theme-toggle:hover {
+  color: hsl(var(--foreground));
+  border-color: hsl(var(--foreground) / 0.5);
+  background: hsl(var(--foreground) / 0.05);
+}
+.theme-toggle svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s;
+}
+.theme-toggle:hover svg {
+  transform: rotate(15deg);
+}
+.theme-toggle .sun-icon { display: block; }
+.theme-toggle .moon-icon,
+.theme-toggle .leaf-icon { display: none; }
+[data-theme="blue"] .theme-toggle .sun-icon { display: none; }
+[data-theme="blue"] .theme-toggle .moon-icon { display: block; }
+[data-theme="green"] .theme-toggle .sun-icon,
+[data-theme="green"] .theme-toggle .moon-icon { display: none; }
+[data-theme="green"] .theme-toggle .leaf-icon { display: block; }
+</style>
+</head>
+<body data-theme="blue">
+
+<!-- ============================================
+     HEADER
+     ============================================ -->
+<header id="header" role="banner">
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">D</div>
+        <div>
+          <span class="logo-text">Doshomik</span>
+          <span class="logo-tm">IELTS</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#courses">Courses</a>
+        <a href="#process">Path</a>
+        <a href="#testimonials">Learners</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggleDesktop" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="leaf-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 19 2c1 2 2 4.5 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+        </button>
+        <a href="#">Sign in</a>
+        <a href="study.html" class="btn btn-primary btn-sm">Start study</a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay" id="mobileOverlay" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <div class="mobile-menu">
+      <div class="mobile-links">
+        <a href="#features" class="mobile-link">Features</a>
+        <a href="#courses" class="mobile-link">Courses</a>
+        <a href="#process" class="mobile-link">Path</a>
+        <a href="#testimonials" class="mobile-link">Learners</a>
+        <a href="#" class="mobile-link">Sign in</a>
+        <a href="study.html" class="mobile-link">Start study</a>
+      </div>
+      <div class="mobile-buttons">
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="leaf-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 19 2c1 2 2 4.5 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+        </button>
+        <button class="btn btn-outline btn-xl">Sign in</button>
+        <a href="study.html" class="btn btn-primary btn-xl">Start study</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================
+     HERO
+     ============================================ -->
+<section class="hero">
+  <!-- Grid overlay -->
+  <div class="hero-grid" id="heroGrid"></div>
+  <!-- Canvas -->
+  <canvas class="hero-canvas" id="heroCanvas"></canvas>
+
+  <div class="hero-content">
+    <div class="hero-tag" id="heroTag">
+      <span class="line"></span>
+      From basic English to exam readiness
+    </div>
+
+    <h1 id="heroTitle">
+      <span class="block">Prepare for IELTS</span>
+      <span class="block">with <span class="highlight">Doshomik<span class="highlight-bar"></span></span></span>
+    </h1>
+
+    <!-- Search bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search grammar, vocabulary, writing, reading..." aria-label="Search the platform" />
+      <button aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+    </div>
+
+    <!-- Feature pills -->
+    <div class="feature-pills" id="featurePills">
+      <span class="feature-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>
+        Original resources
+      </span>
+      <span class="feature-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>
+        Learning path
+      </span>
+      <span class="feature-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>
+        Unofficial band estimates
+      </span>
+    </div>
+
+    <div class="hero-bottom">
+      <p class="hero-desc" id="heroDesc">
+        Study original resources, practise Reading, Listening, Writing, and Speaking, then use full mock tests to understand what to improve next.
+      </p>
+      <div class="hero-buttons" id="heroButtons">
+        <a href="study.html" class="btn btn-primary btn-xl">Start learning free
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-arrow" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#features" class="btn btn-outline btn-xl">Explore platform</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marquee stats -->
+  <div class="marquee-wrap" id="marqueeWrap">
+    <div class="marquee">
+      <!-- Set 1 -->
+      <div class="marquee-item"><span class="num">4</span><span class="label">IELTS modules<span class="sub">READING TO SPEAKING</span></span></div>
+      <div class="marquee-item"><span class="num">5</span><span class="label">Vocabulary modes<span class="sub">FLASHCARD TO BLAST</span></span></div>
+      <div class="marquee-item"><span class="num">100%</span><span class="label">Original workflow<span class="sub">NO BOOK SCANS</span></span></div>
+      <div class="marquee-item"><span class="num">1</span><span class="label">Progress profile<span class="sub">STREAKS AND HISTORY</span></span></div>
+      <div class="marquee-item"><span class="num">7.0+</span><span class="label">Target path<span class="sub">FOCUSED PRACTICE</span></span></div>
+      <!-- Set 2 (duplicate for seamless loop) -->
+      <div class="marquee-item"><span class="num">4</span><span class="label">IELTS modules<span class="sub">READING TO SPEAKING</span></span></div>
+      <div class="marquee-item"><span class="num">5</span><span class="label">Vocabulary modes<span class="sub">FLASHCARD TO BLAST</span></span></div>
+      <div class="marquee-item"><span class="num">100%</span><span class="label">Original workflow<span class="sub">NO BOOK SCANS</span></span></div>
+      <div class="marquee-item"><span class="num">1</span><span class="label">Progress profile<span class="sub">STREAKS AND HISTORY</span></span></div>
+      <div class="marquee-item"><span class="num">7.0+</span><span class="label">Target path<span class="sub">FOCUSED PRACTICE</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FEATURES / MVP
+     ============================================ -->
+<section id="features">
+  <div class="max-w-[1400px] mx-auto px-6">
+    <div class="section-header reveal">
+      <span class="section-tag"><span class="line"></span>Learning system</span>
+      <h2 class="section-title">Everything needed for a complete<br/>IELTS preparation loop.</h2>
+      <p class="features-desc">
+        The platform connects learning resources, focused practice, mock tests, evaluation, and progress tracking.
+      </p>
+      <a href="study.html" class="features-link">
+        Open vocabulary practice
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <!-- Feature 1 -->
+    <div class="feature-row">
+      <span class="feature-num">01</span>
+      <div class="feature-body">
+        <div>
+          <h3>Foundation-to-band path</h3>
+          <p>Move from grammar, vocabulary, synonyms, and common errors into IELTS-style practice without losing the foundations.</p>
+        </div>
+        <div class="feature-visual">
+          <svg viewBox="0 0 200 160" aria-label="Band staircase">
+            <rect x="5" y="5" width="190" height="150" rx="8" fill="none" stroke="currentColor" stroke-width="1" opacity="0.06"/>
+            <path d="M 20 140 L 20 114 L 55 114 L 55 88 L 90 88 L 90 62 L 125 62 L 125 36 L 160 36 L 160 22 L 195 22" fill="none" stroke="currentColor" stroke-width="3" opacity="0.15" stroke-linejoin="round"/>
+            <rect x="20" y="114" width="35" height="26" fill="currentColor" opacity="0.06" rx="2"/>
+            <rect x="55" y="88" width="35" height="26" fill="currentColor" opacity="0.06" rx="2"/>
+            <rect x="90" y="62" width="35" height="26" fill="currentColor" opacity="0.06" rx="2"/>
+            <rect x="125" y="36" width="35" height="26" fill="currentColor" opacity="0.06" rx="2"/>
+            <text x="37" y="137" text-anchor="middle" font-size="11" font-family="monospace" fill="currentColor" opacity="0.4">4.0</text>
+            <text x="72" y="111" text-anchor="middle" font-size="11" font-family="monospace" fill="currentColor" opacity="0.4">5.0</text>
+            <text x="107" y="85" text-anchor="middle" font-size="11" font-family="monospace" fill="currentColor" opacity="0.4">6.0</text>
+            <text x="142" y="59" text-anchor="middle" font-size="11" font-family="monospace" fill="currentColor" opacity="0.4">7.0</text>
+            <text x="177" y="40" text-anchor="middle" font-size="10" font-family="monospace" fill="currentColor" opacity="0.35">8.0</text>
+            <text x="197" y="18" text-anchor="middle" font-size="11" font-family="monospace" fill="currentColor" opacity="0.5">9.0</text>
+            <path id="stp" d="M 37 127 L 72 102 L 107 77 L 142 52 L 175 32 L 197 18" fill="none" stroke="none"/>
+            <circle r="7" fill="currentColor" opacity="0.9">
+              <animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;0;0.2;0.2;0.4;0.4;0.6;0.6;0.8;0.8;1" keyTimes="0;0.08;0.16;0.24;0.32;0.4;0.48;0.56;0.64;0.72;1"><mpath href="#stp"/></animateMotion>
+            </circle>
+            <circle r="14" fill="currentColor" opacity="0">
+              <animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;0;0.2;0.2;0.4;0.4;0.6;0.6;0.8;0.8;1" keyTimes="0;0.08;0.16;0.24;0.32;0.4;0.48;0.56;0.64;0.72;1"><mpath href="#stp"/></animateMotion>
+              <animate attributeName="opacity" values="0;0.12;0" dur="6s" repeatCount="indefinite" keyTimes="0;0.04;0.08"/>
+            </circle>
+            <circle cx="37" cy="127" r="0" fill="currentColor" opacity="0">
+              <animate attributeName="r" values="0;0;14;0" dur="6s" keyTimes="0;0.08;0.14;0.2" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0;0;0.2;0" dur="6s" keyTimes="0;0.08;0.14;0.2" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="72" cy="102" r="0" fill="currentColor" opacity="0">
+              <animate attributeName="r" values="0;0;14;0" dur="6s" keyTimes="0;0.24;0.3;0.36" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0;0;0.2;0" dur="6s" keyTimes="0;0.24;0.3;0.36" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="107" cy="77" r="0" fill="currentColor" opacity="0">
+              <animate attributeName="r" values="0;0;14;0" dur="6s" keyTimes="0;0.4;0.46;0.52" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0;0;0.2;0" dur="6s" keyTimes="0;0.4;0.46;0.52" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="142" cy="52" r="0" fill="currentColor" opacity="0">
+              <animate attributeName="r" values="0;0;14;0" dur="6s" keyTimes="0;0.56;0.62;0.68" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0;0;0.2;0" dur="6s" keyTimes="0;0.56;0.62;0.68" repeatCount="indefinite"/>
+            </circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="feature-row">
+      <span class="feature-num">02</span>
+      <div class="feature-body">
+        <div>
+          <h3>Original resource library</h3>
+          <p>Study Basic English, vocabulary, synonyms, grammar, Reading, Listening, Writing, and Speaking content from a controlled authoring workflow.</p>
+        </div>
+        <div class="feature-visual">
+          <svg viewBox="0 0 200 160" aria-label="Resource library">
+            <rect x="5" y="5" width="190" height="150" rx="8" fill="none" stroke="currentColor" stroke-width="1" opacity="0.06"/>
+            <rect x="20" y="30" width="160" height="105" rx="4" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
+            <line x1="20" y1="100" x2="180" y2="100" stroke="currentColor" stroke-width="1" opacity="0.15"/>
+            <rect x="35" y="50" width="18" height="50" rx="2" fill="currentColor" opacity="0.08"/>
+            <rect x="57" y="42" width="18" height="58" rx="2" fill="currentColor" opacity="0.16"/>
+            <rect x="79" y="55" width="18" height="45" rx="2" fill="currentColor" opacity="0.08"/>
+            <rect x="101" y="38" width="18" height="62" rx="2" fill="currentColor" opacity="0.16"/>
+            <path d="M 135 55 L 170 55 L 170 95 L 152 100 L 135 95 Z" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+            <path d="M 135 55 L 170 55" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+            <path d="M 135 55 L 152 100 L 170 55" fill="none" stroke="currentColor" stroke-width="1" opacity="0">
+              <animate attributeName="opacity" values="0;0.2;0" dur="3s" repeatCount="indefinite"/>
+            </path>
+            <rect x="138" y="58" width="12" height="35" rx="1" fill="currentColor" opacity="0">
+              <animate attributeName="opacity" values="0;0.1;0" dur="3s" keyTimes="0;0.15;0.3" repeatCount="indefinite"/>
+              <animate attributeName="x" values="138;142;138" dur="3s" keyTimes="0;0.15;0.3" repeatCount="indefinite"/>
+            </rect>
+            <rect x="138" y="58" width="12" height="35" rx="1" fill="currentColor" opacity="0">
+              <animate attributeName="opacity" values="0;0.1;0" dur="3s" keyTimes="0;0.4;0.55" repeatCount="indefinite"/>
+              <animate attributeName="x" values="138;143;138" dur="3s" keyTimes="0;0.4;0.55" repeatCount="indefinite"/>
+            </rect>
+            <rect x="138" y="58" width="12" height="35" rx="1" fill="currentColor" opacity="0">
+              <animate attributeName="opacity" values="0;0.08;0" dur="3s" keyTimes="0;0.65;0.8" repeatCount="indefinite"/>
+              <animate attributeName="x" values="138;144;138" dur="3s" keyTimes="0;0.65;0.8" repeatCount="indefinite"/>
+            </rect>
+            <path id="partArc" d="M 130 45 Q 160 25 180 40" fill="none" stroke="none"/>
+            <circle r="2.5" fill="currentColor" opacity="0">
+              <animateMotion dur="2.5s" repeatCount="indefinite"><mpath href="#partArc"/></animateMotion>
+              <animate attributeName="opacity" values="0;0.3;0" dur="2.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle r="2" fill="currentColor" opacity="0">
+              <animateMotion dur="2.5s" begin="0.4s" repeatCount="indefinite"><mpath href="#partArc"/></animateMotion>
+              <animate attributeName="opacity" values="0;0.25;0" dur="2.5s" begin="0.4s" repeatCount="indefinite"/>
+            </circle>
+            <circle r="1.5" fill="currentColor" opacity="0">
+              <animateMotion dur="2.5s" begin="0.8s" repeatCount="indefinite"><mpath href="#partArc"/></animateMotion>
+              <animate attributeName="opacity" values="0;0.2;0" dur="2.5s" begin="0.8s" repeatCount="indefinite"/>
+            </circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="feature-row">
+      <span class="feature-num">03</span>
+      <div class="feature-body">
+        <div>
+          <h3>Objective practice scoring</h3>
+          <p>Reading, Listening, vocabulary, synonym, and grammar practice marked instantly with accepted answer variants.</p>
+        </div>
+        <div class="feature-visual">
+          <svg viewBox="0 0 200 160" aria-label="Practice scoring">
+            <rect x="5" y="5" width="190" height="150" rx="8" fill="none" stroke="currentColor" stroke-width="1" opacity="0.06"/>
+            <circle cx="100" cy="80" r="55" fill="none" stroke="currentColor" stroke-width="2" opacity="0.08"/>
+            <circle cx="100" cy="80" r="55" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity="0.25"
+              stroke-dasharray="346" stroke-dashoffset="346">
+              <animate attributeName="stroke-dashoffset" values="346;0" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <text x="100" y="88" text-anchor="middle" font-size="28" font-family="monospace" fill="currentColor" opacity="0">
+              <animate attributeName="opacity" values="0;0;1" dur="2.5s" keyTimes="0;0.6;1" repeatCount="indefinite"/>
+              8.5
+            </text>
+            <text x="100" y="103" text-anchor="middle" font-size="8" font-family="monospace" fill="currentColor" opacity="0">
+              <animate attributeName="opacity" values="0;0;0.35" dur="2.5s" keyTimes="0;0.6;1" repeatCount="indefinite"/>
+              BAND SCORE
+            </text>
+            <path d="M 72 80 L 92 100 L 130 60" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="75" stroke-dashoffset="75">
+              <animate attributeName="stroke-dashoffset" values="75;0;75" dur="2.5s" keyTimes="0;0.5;0.55" repeatCount="indefinite"/>
+            </path>
+            <circle cx="155" cy="51" r="3" fill="currentColor" opacity="0">
+              <animate attributeName="opacity" values="0;0.3;0" dur="2.5s" keyTimes="0;0.7;1" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="50" cy="113" r="2" fill="currentColor" opacity="0">
+              <animate attributeName="opacity" values="0;0.2;0" dur="2.5s" keyTimes="0;0.8;1" repeatCount="indefinite"/>
+            </circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 4 -->
+    <div class="feature-row">
+      <span class="feature-num">04</span>
+      <div class="feature-body">
+        <div>
+          <h3>Transparent AI feedback</h3>
+          <p>Writing and Speaking responses receive criterion-level band estimates, strengths, weaknesses, and next-step guidance.</p>
+        </div>
+        <div class="feature-visual">
+          <svg viewBox="0 0 200 160" aria-label="AI feedback">
+            <path d="M 55 35 L 145 35 Q 155 35 155 45 L 155 85 Q 155 95 145 95 L 105 95 L 90 115 L 95 95 L 55 95 Q 45 95 45 85 L 45 45 Q 45 35 55 35 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+            <rect x="60" y="55" width="50" height="6" rx="3" fill="currentColor" opacity="0.15">
+              <animate attributeName="opacity" values="0.15;0.5;0.15" dur="2s" repeatCount="indefinite"/>
+              <animate attributeName="width" values="50;80;50" dur="2s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="60" y="68" width="70" height="6" rx="3" fill="currentColor" opacity="0.15">
+              <animate attributeName="opacity" values="0.15;0.5;0.15" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+              <animate attributeName="width" values="70;90;70" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="60" y="81" width="35" height="6" rx="3" fill="currentColor" opacity="0.15">
+              <animate attributeName="opacity" values="0.15;0.5;0.15" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+              <animate attributeName="width" values="35;60;35" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+            </rect>
+            <circle cx="148" cy="50" r="3" fill="currentColor" opacity="0">
+              <animate attributeName="opacity" values="0;0.6;0" dur="1.5s" repeatCount="indefinite"/>
+              <animate attributeName="r" values="2;5;2" dur="1.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="155" cy="42" r="2" fill="currentColor" opacity="0">
+              <animate attributeName="opacity" values="0;0.4;0" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+              <animate attributeName="r" values="1;3;1" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+            </circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 5 -->
+    <div class="feature-row">
+      <span class="feature-num">05</span>
+      <div class="feature-body">
+        <div>
+          <h3>Learner dashboard</h3>
+          <p>Track streaks, achievements, module progress, recent attempts, saved resources, estimated bands, and score history.</p>
+        </div>
+        <div class="feature-visual">
+          <svg viewBox="0 0 200 160" aria-label="Learner dashboard">
+            <rect x="25" y="30" width="150" height="100" rx="6" fill="none" stroke="currentColor" stroke-width="2"/>
+            <line x1="25" y1="120" x2="175" y2="120" stroke="currentColor" stroke-width="1" opacity="0.15"/>
+            <rect x="45" y="95" width="20" height="25" rx="2" fill="currentColor" opacity="0.2">
+              <animate attributeName="height" values="0;25" dur="1.5s" repeatCount="indefinite"/>
+              <animate attributeName="y" values="120;95" dur="1.5s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="72" y="80" width="20" height="40" rx="2" fill="currentColor" opacity="0.2">
+              <animate attributeName="height" values="0;40" dur="1.5s" begin="0.15s" repeatCount="indefinite"/>
+              <animate attributeName="y" values="120;80" dur="1.5s" begin="0.15s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="99" y="65" width="20" height="55" rx="2" fill="currentColor" opacity="0.2">
+              <animate attributeName="height" values="0;55" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+              <animate attributeName="y" values="120;65" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="126" y="50" width="20" height="70" rx="2" fill="currentColor" opacity="0.2">
+              <animate attributeName="height" values="0;70" dur="1.5s" begin="0.45s" repeatCount="indefinite"/>
+              <animate attributeName="y" values="120;50" dur="1.5s" begin="0.45s" repeatCount="indefinite"/>
+            </rect>
+            <circle cx="55" cy="95" r="2" fill="currentColor" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" begin="0s" repeatCount="indefinite"/></circle>
+            <circle cx="82" cy="80" r="2" fill="currentColor" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" begin="0.3s" repeatCount="indefinite"/></circle>
+            <circle cx="109" cy="65" r="2" fill="currentColor" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" begin="0.6s" repeatCount="indefinite"/></circle>
+            <circle cx="136" cy="50" r="2" fill="currentColor" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" begin="0.9s" repeatCount="indefinite"/></circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 6 -->
+    <div class="feature-row" style="border-bottom:none;">
+      <span class="feature-num">06</span>
+      <div class="feature-body">
+        <div>
+          <h3>Copyright-safe workflow</h3>
+          <p>The platform is structured for original, licensed, public-domain-valid, or internally reviewed generated content only.</p>
+        </div>
+        <div class="feature-visual">
+          <svg viewBox="0 0 200 160" aria-label="Copyright verification">
+            <path d="M 100 15 L 175 50 L 175 90 Q 175 125 100 148 Q 25 125 25 90 L 25 50 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M 100 25 L 162 55 L 162 88 Q 162 118 100 137 Q 38 118 38 88 L 38 55 Z" fill="currentColor" opacity="0.04"/>
+            <path d="M 75 85 L 95 105 L 130 68" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="70" stroke-dashoffset="70">
+              <animate attributeName="stroke-dashoffset" values="70;0" dur="2s" repeatCount="indefinite"/>
+            </path>
+            <circle cx="100" cy="82" r="48" fill="none" stroke="currentColor" stroke-width="1" opacity="0">
+              <animate attributeName="r" values="48;55;48" dur="3s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0;0.15;0" dur="3s" repeatCount="indefinite"/>
+            </circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     COURSES / POPULAR MODULES
+     ============================================ -->
+<section id="courses">
+  <div class="max-w-[1400px] mx-auto px-6">
+    <div class="section-header reveal">
+      <span class="section-tag"><span class="line"></span>Practice modules</span>
+      <div style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:1rem;">
+        <h2 class="section-title">Choose the next skill <span class="text-muted">&gt;</span></h2>
+      </div>
+    </div>
+
+    <div class="courses-grid" id="coursesGrid">
+      <!-- Course cards will be populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PROCESS / HOW IT WORKS (dark section)
+     ============================================ -->
+<section id="process" class="process-section" style="padding:6rem 0;position:relative;">
+  <div class="process-diagonal"></div>
+  <div class="max-w-[1400px] mx-auto px-6" style="position:relative;z-index:10;">
+    <div class="mb-16 reveal">
+      <span class="section-tag"><span class="line"></span>Study flow</span>
+      <h2 class="section-title">Three steps.<br/><span class="text-dim">IELTS readiness.</span></h2>
+    </div>
+
+    <div class="process-layout">
+      <div>
+        <div class="process-step" data-step="0">
+          <div class="process-step-inner">
+            <span class="process-step-num">I</span>
+            <div>
+              <h3>Assess your level</h3>
+              <p>Take a quick diagnostic to understand your current band and identify strengths and weaknesses across all modules.</p>
+              <div class="progress-track"><div class="progress-fill" id="progress0"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="process-step step-dimmed" data-step="1">
+          <div class="process-step-inner">
+            <span class="process-step-num">II</span>
+            <div>
+              <h3>Practice & learn</h3>
+              <p>Follow your personalised learning path with original lessons, drills, and timed exercises for each IELTS module.</p>
+              <div class="progress-track"><div class="progress-fill" id="progress1"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="process-step step-dimmed" data-step="2">
+          <div class="process-step-inner">
+            <span class="process-step-num">III</span>
+            <div>
+              <h3>Mock test & improve</h3>
+              <p>Complete full mock tests, receive criterion-level feedback, and track your band progression over time.</p>
+              <div class="progress-track"><div class="progress-fill" id="progress2"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Code panel -->
+      <div class="reveal" style="align-self:start;">
+        <div class="code-panel">
+          <div class="code-header">
+            <span class="code-dot"></span><span class="code-dot"></span><span class="code-dot"></span>
+            <span class="code-filename">learner-path.json</span>
+          </div>
+          <div class="code-body" id="codeBody">
+            <div class="code-line">{</div>
+            <div class="code-line">  <span class="code-string">"currentBand"</span>: <span class="code-string">"6.0"</span>,</div>
+            <div class="code-line">  <span class="code-string">"targetBand"</span>: <span class="code-string">"7.5"</span>,</div>
+            <div class="code-line">  <span class="code-string">"focus"</span>: [<span class="code-string">"Task 2 coherence"</span>, <span class="code-string">"Listening maps"</span>],</div>
+            <div class="code-line">  <span class="code-string">"today"</span>: [<span class="code-string">"20 vocab cards"</span>, <span class="code-string">"1 reading passage"</span>],</div>
+            <div class="code-line">  <span class="code-string">"nextMock"</span>: <span class="code-string">"After all four modules are ready"</span></div>
+            <div class="code-line">}</div>
+            <div class="code-line"> </div>
+            <div class="code-line"><span class="code-comment">// Band predictions stay unofficial and transparent.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     INFRASTRUCTURE / STATS
+     ============================================ -->
+<section id="infrastructure">
+  <div class="max-w-[1400px] mx-auto px-6">
+    <div class="section-header reveal">
+      <span class="section-tag"><span class="line"></span>Learner trust</span>
+      <h2 class="section-title">Built for focused,<br/><span class="text-muted">honest preparation.</span></h2>
+    </div>
+
+    <div class="stats-grid reveal">
+      <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">IELTS Modules</div></div>
+      <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">Study Modes</div></div>
+      <div class="stat-card"><div class="stat-num">0</div><div class="stat-label">Book Scans Hosted</div></div>
+      <div class="stat-card"><div class="stat-num">1</div><div class="stat-label">Progress Timeline</div></div>
+    </div>
+
+    <div class="reveal" style="margin-top:3rem;">
+      <div class="status-row">
+        <span class="text-sm font-mono text-muted">Preparation workflow</span>
+        <span class="status-dot"></span>
+      </div>
+      <div class="region-grid">
+        <div class="region-card"><div><div class="region-name">Resources</div><div class="region-area">Lessons, vocabulary, grammar</div></div><span class="region-latency">Learn</span></div>
+        <div class="region-card"><div><div class="region-name">Practice</div><div class="region-area">Reading, listening, writing, speaking</div></div><span class="region-latency">Drill</span></div>
+        <div class="region-card"><div><div class="region-name">Mock Tests</div><div class="region-area">Timed four-module attempts</div></div><span class="region-latency">Simulate</span></div>
+        <div class="region-card"><div><div class="region-name">Feedback</div><div class="region-area">Criteria, score rationale, next steps</div></div><span class="region-latency">Improve</span></div>
+        <div class="region-card"><div><div class="region-name">Progress</div><div class="region-area">Attempts, streaks, achievements</div></div><span class="region-latency">Track</span></div>
+        <div class="region-card"><div><div class="region-name">Integrity</div><div class="region-area">Original or licensed content only</div></div><span class="region-latency">Trust</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     LEARNING TOOLS MARQUEE
+     ============================================ -->
+<div class="integrations-marquee">
+  <div class="integrations-track" id="integrationsTrack">
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span>Resources</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg><span>Writing</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg><span>Speaking</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-8h3Z"/><path d="M3 19a2 2 0 0 0 2 2h1v-8H3Z"/></svg><span>Listening</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2Z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7Z"/></svg><span>Reading</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M3 10h18"/></svg><span>Mock Tests</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-6"/></svg><span>Progress</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3Z"/></svg><span>Integrity</span></div>
+
+    <!-- Duplicate for seamless loop -->
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span>Resources</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg><span>Writing</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg><span>Speaking</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-8h3Z"/><path d="M3 19a2 2 0 0 0 2 2h1v-8H3Z"/></svg><span>Listening</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2Z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7Z"/></svg><span>Reading</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M3 10h18"/></svg><span>Mock Tests</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-6"/></svg><span>Progress</span></div>
+    <div class="integration-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3Z"/></svg><span>Integrity</span></div>
+  </div>
+</div>
+
+<!-- ============================================
+     TESTIMONIALS
+     ============================================ -->
+<section id="testimonials">
+  <div class="max-w-[1400px] mx-auto px-6">
+    <div class="section-header reveal">
+      <span class="section-tag"><span class="line"></span>What learners say</span>
+      <h2 class="section-title">Hear from learners preparing<br/>with Doshomik IELTS.</h2>
+    </div>
+
+    <div class="testimonials-grid" id="testimonialsGrid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     TRUSTED BY MARQUEE
+     ============================================ -->
+<div class="trusted-marquee">
+  <div class="trusted-track">
+    <span class="trusted-name">First-time test takers</span>
+    <span class="trusted-name">Self-study retakers</span>
+    <span class="trusted-name">Classroom learners</span>
+    <span class="trusted-name">Vocabulary builders</span>
+    <span class="trusted-name">Writing improvers</span>
+    <span class="trusted-name">Speaking practice</span>
+    <span class="trusted-name">Mock test prep</span>
+    <span class="trusted-name">Band 7 path</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="trusted-name">First-time test takers</span>
+    <span class="trusted-name">Self-study retakers</span>
+    <span class="trusted-name">Classroom learners</span>
+    <span class="trusted-name">Vocabulary builders</span>
+    <span class="trusted-name">Writing improvers</span>
+    <span class="trusted-name">Speaking practice</span>
+    <span class="trusted-name">Mock test prep</span>
+    <span class="trusted-name">Band 7 path</span>
+  </div>
+</div>
+
+<!-- ============================================
+     CTA
+     ============================================ -->
+<section id="cta">
+  <div class="max-w-[1400px] mx-auto px-6">
+    <div class="reveal">
+      <h2 class="section-title cta-title">Ready to achieve your<br/>target band score?</h2>
+      <p class="cta-desc">
+        Build the habit, practise the modules, and use transparent feedback to prepare for your next IELTS attempt.
+      </p>
+      <div class="cta-buttons">
+        <a href="study.html" class="btn btn-primary btn-xl">
+          Start learning free
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-arrow" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#process" class="btn btn-outline btn-xl">See study flow</a>
+      </div>
+      <p class="cta-sub">No credit card required</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer role="contentinfo">
+  <div class="max-w-[1400px] mx-auto px-6">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">Doshomik</span>
+        <p>An IELTS preparation platform for original resources, practice, mock tests, progress tracking, and transparent unofficial feedback.</p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="#features">Features</a></li><li><a href="#courses">Modules</a></li><li><a href="#process">Learning path</a></li><li><a href="study.html">Vocabulary study</a></li></ul></div>
+      <div class="footer-col"><h4>IELTS</h4><ul><li><a href="#courses">Reading</a></li><li><a href="#courses">Listening</a></li><li><a href="#courses">Writing</a></li><li><a href="#courses">Speaking</a></li></ul></div>
+      <div class="footer-col"><h4>Trust</h4><ul><li><a href="#infrastructure">Original content</a></li><li><a href="#infrastructure">Private recordings</a></li><li><a href="#infrastructure">Hidden answer keys</a></li><li><a href="#infrastructure">Unofficial estimates</a></li></ul></div>
+      <div class="footer-col"><h4>Start</h4><ul><li><a href="study.html">Flashcards</a></li><li><a href="study.html">Learn mode</a></li><li><a href="study.html">Test mode</a></li><li><a href="#cta">Get started</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Doshomik IELTS. All rights reserved.</span>
+      <div class="footer-status">
+        <span class="dot"></span>
+        Original-content workflow
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================
+     JAVASCRIPT
+     ============================================ -->
+<script>
+(function() {
+  'use strict';
+
+  // ================================================
+  // 1. CANVAS — futuristic IELTS HUD animation (hero)
+  // ================================================
+  const canvas = document.getElementById('heroCanvas');
+  if (canvas) {
+    const ctx = canvas.getContext('2d');
+    let W, H, DPR;
+    const modules = [
+      { label: 'R', name: 'Reading', score: '7.5', angle: -0.35, radius: 0.36 },
+      { label: 'L', name: 'Listening', score: '8.0', angle: 1.15, radius: 0.33 },
+      { label: 'W', name: 'Writing', score: '7.0', angle: 2.65, radius: 0.35 },
+      { label: 'S', name: 'Speaking', score: '7.5', angle: 4.1, radius: 0.32 }
+    ];
+    const particles = Array.from({ length: 72 }, (_, i) => ({
+      lane: i % 4,
+      offset: Math.random(),
+      speed: 0.00008 + Math.random() * 0.0001,
+      size: 1 + Math.random() * 1.8
+    }));
+
+    function resize() {
+      DPR = Math.min(window.devicePixelRatio || 1, 2);
+      W = canvas.offsetWidth || 600;
+      H = canvas.offsetHeight || 600;
+      canvas.width = Math.floor(W * DPR);
+      canvas.height = Math.floor(H * DPR);
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    }
+
+    function cssRgb(name, fallback) {
+      const value = getComputedStyle(document.body).getPropertyValue(name).trim();
+      return value || fallback;
+    }
+
+    function themedColor(name, alpha, fallback) {
+      return `rgba(${cssRgb(name, fallback)}, ${alpha})`;
+    }
+
+    function cssColor(alpha) {
+      return themedColor('--hud-rgb', alpha, '248, 250, 252');
+    }
+
+    function accentColor(alpha) {
+      return themedColor('--hud-accent-rgb', alpha, '255, 177, 90');
+    }
+
+    function panelColor(alpha) {
+      return themedColor('--hud-panel-rgb', alpha, '54, 34, 22');
+    }
+
+    function glowColor(alpha) {
+      return themedColor('--hud-glow-rgb', alpha, '255, 166, 74');
+    }
+
+    function drawArc(cx, cy, r, start, end, alpha, width = 1, color = cssColor(alpha)) {
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, start, end);
+      ctx.strokeStyle = color;
+      ctx.lineWidth = width;
+      ctx.stroke();
+    }
+
+    function drawText(text, x, y, size, alpha, align = 'center', weight = '500', family = 'JetBrains Mono, monospace') {
+      ctx.font = `${weight} ${size}px ${family}`;
+      ctx.fillStyle = cssColor(alpha);
+      ctx.textAlign = align;
+      ctx.textBaseline = 'middle';
+      ctx.fillText(text, x, y);
+    }
+
+    function drawRoundedRect(x, y, w, h, r, alpha, strokeAlpha) {
+      ctx.beginPath();
+      ctx.roundRect(x, y, w, h, r);
+      ctx.fillStyle = panelColor(alpha);
+      ctx.fill();
+      ctx.strokeStyle = cssColor(strokeAlpha);
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    }
+
+    function draw(now) {
+      ctx.clearRect(0, 0, W, H);
+      const t = now || 0;
+      const cx = W * 0.68;
+      const cy = H * 0.48;
+      const base = Math.min(W, H) * 0.25;
+      const pulse = Math.sin(t * 0.002) * 0.5 + 0.5;
+
+      const gradient = ctx.createRadialGradient(cx, cy, base * 0.1, cx, cy, base * 1.45);
+      gradient.addColorStop(0, glowColor(0.16));
+      gradient.addColorStop(0.45, accentColor(0.075));
+      gradient.addColorStop(1, cssColor(0));
+      ctx.fillStyle = gradient;
+      ctx.beginPath();
+      ctx.arc(cx, cy, base * 1.45, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Rotating IELTS band rings.
+      drawArc(cx, cy, base * 0.72, 0, Math.PI * 2, 0.08, 1);
+      drawArc(cx, cy, base * 1.02, 0, Math.PI * 2, 0.06, 1);
+      drawArc(cx, cy, base * 1.24, 0, Math.PI * 2, 0.04, 1);
+      drawArc(cx, cy, base * 0.86, t * 0.001, t * 0.001 + Math.PI * 1.25, 0.34, 2, accentColor(0.34));
+      drawArc(cx, cy, base * 1.13, -t * 0.0007, -t * 0.0007 + Math.PI * 0.85, 0.2, 1.5, accentColor(0.22));
+
+      // Doshomik core.
+      ctx.save();
+      ctx.shadowColor = glowColor(0.32);
+      ctx.shadowBlur = 22 + pulse * 10;
+      ctx.beginPath();
+      ctx.arc(cx, cy, base * 0.26, 0, Math.PI * 2);
+      ctx.fillStyle = panelColor(0.16);
+      ctx.fill();
+      ctx.strokeStyle = cssColor(0.42);
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+      ctx.restore();
+
+      drawText('D', cx, cy - 8, base * 0.21, 0.94, 'center', '700', 'Georgia, serif');
+      drawText('BAND ENGINE', cx, cy + base * 0.16, 11, 0.56);
+      drawText('7.5', cx, cy + base * 0.31, 28, 0.88, 'center', '600', 'Instrument Serif, Georgia, serif');
+
+      // Four IELTS module satellites.
+      const positions = modules.map((module, i) => {
+        const angle = module.angle + t * (0.00018 + i * 0.000025);
+        const rx = base * (1.06 + module.radius * 0.25);
+        const ry = base * (0.74 + module.radius * 0.18);
+        return {
+          ...module,
+          x: cx + Math.cos(angle) * rx,
+          y: cy + Math.sin(angle) * ry,
+          angle
+        };
+      });
+
+      for (const module of positions) {
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.lineTo(module.x, module.y);
+        ctx.strokeStyle = cssColor(0.09);
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        ctx.save();
+        ctx.shadowColor = glowColor(0.22);
+        ctx.shadowBlur = 14;
+        ctx.beginPath();
+        ctx.arc(module.x, module.y, 22, 0, Math.PI * 2);
+        ctx.fillStyle = panelColor(0.72);
+        ctx.fill();
+        ctx.strokeStyle = cssColor(0.36);
+        ctx.lineWidth = 1;
+        ctx.stroke();
+        ctx.restore();
+
+        drawText(module.label, module.x, module.y - 2, 15, 0.92, 'center', '700');
+        drawText(module.score, module.x, module.y + 23, 10, 0.55);
+        drawText(module.name.toUpperCase(), module.x, module.y + 39, 8, 0.34);
+      }
+
+      // Data particles moving around module lanes.
+      for (const particle of particles) {
+        const lane = 0.74 + particle.lane * 0.13;
+        const angle = (particle.offset * Math.PI * 2) + t * particle.speed;
+        const x = cx + Math.cos(angle) * base * lane;
+        const y = cy + Math.sin(angle) * base * lane * 0.72;
+        ctx.beginPath();
+        ctx.arc(x, y, particle.size, 0, Math.PI * 2);
+        ctx.fillStyle = cssColor(0.18 + particle.lane * 0.035);
+        ctx.fill();
+      }
+
+      // Listening waveform and writing scan bars.
+      const waveX = cx - base * 1.34;
+      const waveY = cy + base * 0.77;
+      ctx.beginPath();
+      for (let i = 0; i < 92; i++) {
+        const x = waveX + i * 4;
+        const y = waveY + Math.sin(i * 0.42 + t * 0.006) * (8 + Math.sin(i * 0.13) * 5);
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = accentColor(0.42);
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+      drawText('LISTENING SIGNAL', waveX, waveY - 28, 9, 0.36, 'left');
+
+      const panelX = Math.min(cx + base * 0.58, W - 150);
+      const panelY = cy - base * 0.92;
+      drawRoundedRect(panelX, panelY, 128, 82, 10, 0.035, 0.16);
+      drawText('WRITING TASK 2', panelX + 14, panelY + 18, 9, 0.46, 'left');
+      for (let i = 0; i < 4; i++) {
+        const w = 46 + ((Math.sin(t * 0.002 + i) + 1) * 27);
+        drawRoundedRect(panelX + 14, panelY + 34 + i * 10, w, 3, 2, 0.26, 0);
+      }
+
+      // Scanning line across the HUD.
+      const scanY = cy - base * 1.1 + ((t * 0.035) % (base * 2.2));
+      const scan = ctx.createLinearGradient(cx - base * 1.35, scanY, cx + base * 1.35, scanY);
+      scan.addColorStop(0, accentColor(0));
+      scan.addColorStop(0.5, accentColor(0.24));
+      scan.addColorStop(1, accentColor(0));
+      ctx.strokeStyle = scan;
+      ctx.beginPath();
+      ctx.moveTo(cx - base * 1.35, scanY);
+      ctx.lineTo(cx + base * 1.35, scanY);
+      ctx.stroke();
+
+      requestAnimationFrame(draw);
+    }
+
+    resize();
+    requestAnimationFrame(draw);
+
+    window.addEventListener('resize', () => {
+      resize();
+    });
+  }
+
+  // ================================================
+  // 2. HERO GRID OVERLAY
+  // ================================================
+  const grid = document.getElementById('heroGrid');
+  if (grid) {
+    for (let i = 1; i <= 8; i++) {
+      const h = document.createElement('div');
+      h.className = 'hline';
+      h.style.top = (i * 12.5) + '%';
+      grid.appendChild(h);
+    }
+    const cols = [8.33, 16.66, 24.99, 33.32, 41.65, 49.98, 58.31, 66.64, 74.97, 83.3, 91.63, 99.96];
+    for (const c of cols) {
+      const v = document.createElement('div');
+      v.className = 'vline';
+      v.style.left = c + '%';
+      grid.appendChild(v);
+    }
+  }
+
+  // ================================================
+  // 3. HERO WORD ANIMATION
+  // ================================================
+  const heroTitle = document.getElementById('heroTitle');
+  if (heroTitle) {
+    const spans = heroTitle.querySelectorAll('span.block');
+    if (spans.length >= 2) {
+      const secondLine = spans[1];
+      const highlight = secondLine.querySelector('.highlight');
+      if (highlight) {
+        const textNode = Array.from(highlight.childNodes).find(node => node.nodeType === 3 && node.textContent.trim());
+        if (textNode) {
+          const words = ['Doshomik', 'practice', 'feedback', 'progress'];
+          let wordIndex = 0;
+          const wrapper = document.createElement('span');
+          wrapper.className = 'hero-word';
+
+          function renderHeroWord(word) {
+            wrapper.innerHTML = '';
+            word.split('').forEach((ch, i) => {
+            const span = document.createElement('span');
+              span.className = 'letter';
+            span.textContent = ch === ' ' ? '\u00A0' : ch;
+              span.style.animationDelay = (i * 55) + 'ms';
+            wrapper.appendChild(span);
+          });
+          }
+
+          textNode.textContent = '';
+          renderHeroWord(words[wordIndex]);
+          highlight.insertBefore(wrapper, highlight.firstChild);
+
+          setInterval(() => {
+            wordIndex = (wordIndex + 1) % words.length;
+            renderHeroWord(words[wordIndex]);
+          }, 3000);
+        }
+      }
+    }
+  }
+
+  // ================================================
+  // 4. SCROLL-TRIGGERED REVEAL (IntersectionObserver)
+  // ================================================
+  const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .hero-tag, .hero-desc, .hero-buttons, .hero h1, .marquee-wrap, .feature-pills, .feature-row, .stat-card');
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    for (const el of revealElements) {
+      if (el.classList.contains('hero-tag') || el.classList.contains('hero-desc') || el.classList.contains('hero-buttons') || el.classList.contains('marquee-wrap') || el.classList.contains('feature-pills')) {
+        // Hero elements get visible after timeout, not via observer
+        continue;
+      }
+      observer.observe(el);
+    }
+  } else {
+    // Fallback: show all
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .feature-row').forEach(el => el.classList.add('visible'));
+  }
+
+  // Hero sequence (timeout-based)
+  setTimeout(() => document.getElementById('heroTag')?.classList.add('visible'), 300);
+  setTimeout(() => document.getElementById('heroTitle')?.classList.add('visible'), 600);
+  setTimeout(() => document.getElementById('featurePills')?.classList.add('visible'), 900);
+  setTimeout(() => document.getElementById('heroDesc')?.classList.add('visible'), 1100);
+  setTimeout(() => document.getElementById('heroButtons')?.classList.add('visible'), 1400);
+  setTimeout(() => document.getElementById('marqueeWrap')?.classList.add('visible'), 1800);
+
+  // ================================================
+  // 5. HEADER SCROLL BEHAVIOR
+  // ================================================
+  const header = document.getElementById('header');
+  let lastScroll = 0;
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    if (scrollY > 80) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    lastScroll = scrollY;
+  }, { passive: true });
+
+  // ================================================
+  // 6. MOBILE MENU
+  // ================================================
+  const mobileToggle = document.getElementById('mobileToggle');
+  const mobileOverlay = document.getElementById('mobileOverlay');
+
+  if (mobileToggle && mobileOverlay) {
+    const closeMenu = () => {
+      mobileOverlay.classList.remove('open');
+      mobileToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>';
+      mobileToggle.setAttribute('aria-label', 'Open menu');
+      document.body.style.overflow = '';
+    };
+
+    mobileToggle.addEventListener('click', () => {
+      const isOpen = mobileOverlay.classList.toggle('open');
+      mobileToggle.innerHTML = isOpen
+        ? '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>'
+        : '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>';
+      mobileToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileOverlay.classList.contains('open')) {
+        closeMenu();
+      }
+    });
+  }
+
+  // ================================================
+  // 7. COURSES DATA
+  // ================================================
+  const courses = [
+    { title: 'IELTS Speaking — Part 1, 2 & 3', desc: 'Part 1, Part 2, and Part 3 practice with text or audio response paths and feedback after evaluation.', rating: '5.0', free: true, exercises: 12, learners: 150 },
+    { title: 'Full Mock Tests — Timed Practice', desc: 'Complete all four modules in a timed mock test to unlock an unofficial score prediction.', rating: '5.0', free: true, exercises: 12, learners: 150 },
+    { title: 'Vocabulary & Grammar Foundation', desc: 'Build your English foundation with targeted vocabulary, synonym, and grammar drills.', rating: '4.2', free: true, exercises: 12, learners: 150 },
+    { title: 'IELTS Listening — Audio Drills', desc: 'Original audio, transcripts, objective answers, accepted variants, and instant estimated scoring.', rating: '4.4', free: true, exercises: 12, learners: 150 },
+    { title: 'IELTS Reading — Passage Practice', desc: 'IELTS-style passages, question sets, answer explanations, and source-span rationale.', rating: '4.5', free: true, exercises: 12, learners: 130 },
+    { title: 'IELTS Writing — Task Feedback', desc: 'Task 1 and Task 2 responses evaluated against IELTS-style criteria with practical revision advice.', rating: '5.0', free: true, exercises: 12, learners: 120 },
+  ];
+
+  const gridContainer = document.getElementById('coursesGrid');
+  if (gridContainer) {
+    for (const [idx, c] of courses.entries()) {
+      const card = document.createElement('div');
+      card.className = 'course-card';
+      card.style.transitionDelay = (idx % 6 * 75) + 'ms';
+
+      const gradientHues = ['220', '180', '280', '140', '200', '320'];
+      const hue = gradientHues[idx % gradientHues.length];
+
+      card.innerHTML = `
+        <div class="course-image" style="background:linear-gradient(135deg, hsl(${hue}, 40%, 15%), hsl(${hue}, 20%, 8%));">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="width:50px;height:50px;opacity:0.15;">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+          </svg>
+          <span class="course-badge${c.free ? ' free' : ''}">${c.free ? 'Free' : 'Premium'}</span>
+        </div>
+        <div class="course-body">
+          <h3>${c.title}</h3>
+          <p>${c.desc}</p>
+          <div class="course-meta">
+            <span class="rating">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              ${c.rating}
+            </span>
+            <span>${c.free ? 'Free' : 'Premium'}</span>
+            <span>${c.exercises} exercises</span>
+            <span>${c.learners} learners</span>
+          </div>
+        </div>
+      `;
+      gridContainer.appendChild(card);
+    }
+  }
+
+  // ================================================
+  // 8. TESTIMONIALS DATA
+  // ================================================
+  const testimonials = [
+    { quote: 'অডিও সাবমিশন এবং মূল্যায়নসহ স্পিকিং প্র্যাকটিস আমার ঠিক যা প্রয়োজন ছিল। উচ্চারণ এবং ফ্লুয়েন্সির উপর ফিডব্যাক আমার আত্মবিশ্বাস বাড়াতে সাহায্য করেছে।', name: 'নাসরিন জাহান', role: 'IELTS শিক্ষার্থী', initial: 'ন' },
+    { quote: 'প্রোগ্রেস ট্র্যাকিং আমাকে অনুপ্রাণিত রেখেছে। আমি সপ্তাহে সপ্তাহে আমার উন্নতি দেখতে পাচ্ছিলাম। ড্যাশবোর্ড পরবর্তীতে কী ফোকাস করতে হবে তা জানাতে সহজ করে দিয়েছে।', name: 'মোঃ ইব্রাহিম', role: 'IELTS শিক্ষার্থী', initial: 'ই' },
+    { quote: 'কপিরাইট-নিরাপদ পদ্ধতিটি আমার জন্য গুরুত্বপূর্ণ ছিল। জেনে রাখা যে সব কন্টেন্ট অরিজিনাল, তা প্ল্যাটফর্মের উপর আমার আস্থা বাড়িয়েছে। পড়ার প্যাসেজগুলো আকর্ষণীয় এবং সুন্দরভাবে লেখা।', name: 'ফারহানা ইয়াসমিন', role: 'IELTS শিক্ষার্থী', initial: 'ফ' },
+    { quote: 'প্ল্যাটফর্মটি আমাকে রাইটিংয়ে আমার দুর্বল দিকগুলো বুঝতে সাহায্য করেছে। AI ফিডব্যাক বিস্তারিত এবং কার্যকর ছিল। আমি মাত্র দুই মাসে ব্যান্ড ৬ থেকে ৭ এ উন্নতি করেছি।', name: 'রফিকুল ইসলাম', role: 'IELTS শিক্ষার্থী', initial: 'র' },
+    { quote: 'মক টেস্টগুলো অসাধারণ ছিল। সময়ধারণ পরিবেশ আসল পরীক্ষার মতোই অনুভূত হয়েছিল। টাইমড প্র্যাকটিস আমার সময়ম্যানেজমেন্ট দক্ষতা অনেক উন্নত করেছে।', name: 'তাহমিনা আক্তার', role: 'IELTS শিক্ষার্থী', initial: 'ত' },
+  ];
+
+  const testimonialGrid = document.getElementById('testimonialsGrid');
+  if (testimonialGrid) {
+    for (const [idx, t] of testimonials.entries()) {
+      const card = document.createElement('div');
+      card.className = 'testimonial-card';
+      card.style.transitionDelay = (idx * 100) + 'ms';
+      card.innerHTML = `
+        <blockquote>"${t.quote}"</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">${t.initial}</div>
+          <div>
+            <div class="testimonial-name">${t.name}</div>
+            <div class="testimonial-role">${t.role}</div>
+          </div>
+        </div>
+      `;
+      testimonialGrid.appendChild(card);
+    }
+  }
+
+  // ================================================
+  // 9. COURSE & TESTIMONIAL CARD OBSERVER
+  // ================================================
+  const cardObserver = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        cardObserver.unobserve(entry.target);
+      }
+    }
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.course-card, .testimonial-card').forEach(el => cardObserver.observe(el));
+
+  document.querySelectorAll('.stat-card').forEach((card, idx) => {
+    card.style.animationDelay = (idx * 100) + 'ms';
+  });
+
+  // ================================================
+  // 10. PROCESS SECTION — sequential step animation
+  // ================================================
+  const steps = document.querySelectorAll('.process-step');
+  const stepObserver = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting && entry.target.dataset) {
+        const idx = parseInt(entry.target.dataset.step);
+        if (!isNaN(idx)) {
+          const fill = document.getElementById('progress' + idx);
+          if (fill) {
+            fill.classList.add('animate');
+          }
+          // Activate step
+          entry.target.classList.remove('step-dimmed');
+          // Dim subsequent steps
+          for (let i = idx + 1; i < steps.length; i++) {
+            steps[i].classList.add('step-dimmed');
+          }
+        }
+        stepObserver.unobserve(entry.target);
+      }
+    }
+  }, { threshold: 0.5 });
+
+  for (const step of steps) {
+    stepObserver.observe(step);
+  }
+
+  // ================================================
+  // 11. CODE TERMINAL TYPING EFFECT
+  // ================================================
+  const codeLines = document.querySelectorAll('.code-line');
+  if (codeLines.length) {
+    const codeObserver = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          const lines = entry.target.querySelectorAll('.code-line');
+          lines.forEach((line, i) => {
+            setTimeout(() => {
+              line.classList.add('revealed');
+            }, i * 150);
+          });
+          codeObserver.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.3 });
+
+    const codeBody = document.getElementById('codeBody');
+    if (codeBody) codeObserver.observe(codeBody);
+  }
+
+  // ================================================
+  // 12. SMOOTH SCROLL FOR ANCHOR LINKS
+  // ================================================
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // ================================================
+  // 13. THEME TOGGLE (3-way: light → blue → green)
+  // ================================================
+  const body = document.body;
+  const themeToggles = document.querySelectorAll('.theme-toggle');
+  const THEMES = ['light', 'blue', 'green'];
+
+  function getPreferredTheme() {
+    const stored = localStorage.getItem('theme');
+    if (THEMES.includes(stored)) return stored;
+    return 'blue';
+  }
+
+  function applyTheme(theme) {
+    body.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }
+
+  function nextTheme(current) {
+    const idx = THEMES.indexOf(current);
+    return THEMES[(idx + 1) % THEMES.length];
+  }
+
+  // Apply saved theme on load
+  applyTheme(getPreferredTheme());
+
+  // Cycle on click
+  for (const btn of themeToggles) {
+    btn.addEventListener('click', () => {
+      const current = body.getAttribute('data-theme') || 'blue';
+      applyTheme(nextTheme(current));
+    });
+  }
+
+})();
+</script>
+</body>
+</html>
